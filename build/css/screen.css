@@ -1394,6 +1394,19 @@ nav + #main-inner { margin-left: 200px; }
 .clinic .my-time .fa { margin-left: 20px; color: white; }
 .clinic .my-time .my-time-time { color: white; }
 
+.user-nav-mod { background: #fbfbfb; position: relative; }
+.user-nav-mod:before { content: ""; position: absolute; left: 0; right: 0; top: 100%; bottom: -10000px; background: #fbfbfb; }
+
+.wrapper-mod { overflow: hidden; }
+
+.checked-form { margin-bottom: 20px; padding-top: 25px; border-top: 1px dashed #cacaca; border-bottom: 1px solid #efefef; }
+
+.my-section { margin-top: 20px; }
+.my-section:first-child { margin-top: 0; }
+.my-section .my-section-title { margin-bottom: 20px; font-size: 21px; color: #252525; }
+.my-section p { margin-bottom: 30px; }
+.my-section .my-section-selecteble { color: red; }
+
 .cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png { font-size: 2em; }
 
 @font-face { font-family: "raty"; font-style: normal; font-weight: normal; src: url("fonts/raty.eot"); src: url("fonts/raty.eot?#iefix") format("embedded-opentype"); src: url("fonts/raty.svg#raty") format("svg"); src: url("fonts/raty.ttf") format("truetype"); src: url("fonts/raty.woff") format("woff"); }
