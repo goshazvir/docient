@@ -2252,6 +2252,8 @@ nav
 		display: table
 		overflow: visible
 		text-align: center
+		+r(w560)
+			background: transparent !important 
 		& > .layout
 			display: table-cell
 			vertical-align: middle
@@ -2271,7 +2273,8 @@ nav
 	+r(w760)
 		font-size: 26px
 	+r(w560)
-		font-size: 16px
+		font-size: 21px
+		padding: 30px 0
 #search-form
 	margin: 30px 0 20px
 	p
@@ -4117,6 +4120,32 @@ nav
 			top: 0
 			+s(ch)
 
+.checkbox2
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	font-size: 15px
+	color: #4c4c4c 
+	input
+		+opacity(0)
+		display: inline-block
+		vertical-align: middle
+	input:checked + span
+		&:before
+			+s(ch2_a)
+	input + span
+		padding-left: 3px
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		&:before
+			content: ""
+			position: absolute
+			left: -20px
+			top: 0
+			+s(ch2)
+
 .search-form-level2
 	.search-form-level2-in
 		padding-top: 40px
@@ -4238,6 +4267,7 @@ nav
 			margin-left: 0
 			
 .my-time
+	display: block
 	padding: 10px 15px
 	background-color: #ffb300
 	box-shadow: 0 1px 2px rgba(0,0,0,.26), inset 0 1px 0 rgba(255,255,255,.75)
@@ -4245,6 +4275,12 @@ nav
 	font-size: 17px
 	font-weight: 600
 	+clr
+	color: #252525
+	+transition(all 250ms)
+	&:hover
+		color: #252525
+		+opacity(0.8)
+		+transition(all 250ms)
 	&.m-blue
 		background: #5cb7e0 
 	.my-time-date
@@ -4434,7 +4470,25 @@ nav
 	p
 		margin-bottom: 30px
 	.my-section-selecteble
-		color: red 
+		color: red
+
+.my-row
+	padding: 10px 13px
+	border-top: 1px solid #efefef
+	&:hover
+		background: #FBFBFB 
+	.my-row-label
+		width: 180px
+		display: inline-block
+		vertical-align: middle
+		.checkbox2
+			margin: 14px 0 15px
+	.textbox
+		width: 518px
+		display: inline-block
+		vertical-align: middle
+	
+
 
 
 	

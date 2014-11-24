@@ -454,8 +454,8 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .dpicker .ui-datepicker .ui-datepicker-next span, .dpicker .ui-datepicker .ui-datepicker-prev span { position: static; margin: 0; cursor: pointer; }
 .dpicker .ui-datepicker .ui-datepicker-prev { left: 10px; top: 9px; }
 .dpicker .ui-datepicker .ui-datepicker-next { right: 10px; top: 9px; }
-.dpicker .ui-datepicker .ui-datepicker-next span { background: url('../img/icons-s15e35eadf6.png') 0 -75px no-repeat; width: 9px; height: 14px; }
-.dpicker .ui-datepicker .ui-datepicker-prev span { background: url('../img/icons-s15e35eadf6.png') 0 -99px no-repeat; width: 9px; height: 14px; }
+.dpicker .ui-datepicker .ui-datepicker-next span { background: url('../img/icons-s13ee9da058.png') 0 -127px no-repeat; width: 9px; height: 14px; }
+.dpicker .ui-datepicker .ui-datepicker-prev span { background: url('../img/icons-s13ee9da058.png') 0 -151px no-repeat; width: 9px; height: 14px; }
 .dpicker .ui-state-disabled, .dpicker .ui-widget-content .ui-state-disabled, .dpicker .ui-widget-header .ui-state-disabled { opacity: 1; }
 .dpicker .ui-state-disabled span, .dpicker .ui-widget-content .ui-state-disabled span, .dpicker .ui-widget-header .ui-state-disabled span { color: #a3a3a3 !important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
@@ -770,13 +770,14 @@ nav + #main-inner { margin-left: 200px; }
 
 .search-block { position: relative; }
 .search-block#search-block { width: 100%; display: table; overflow: visible; text-align: center; }
+@media only screen and (max-width: 560px) { .search-block#search-block { background: transparent !important; } }
 .search-block#search-block > .layout { display: table-cell; vertical-align: middle; }
 .search-block#search-block .search-form { display: table-row; vertical-align: bottom; }
 
 .search-block-text { width: 740px; margin: 0 auto; text-align: center; font-weight: 300; font-size: 40px; color: black; }
 @media only screen and (max-width: 999px) { .search-block-text { width: auto; font-size: 32px; } }
 @media only screen and (max-width: 760px) { .search-block-text { font-size: 26px; } }
-@media only screen and (max-width: 560px) { .search-block-text { font-size: 16px; } }
+@media only screen and (max-width: 560px) { .search-block-text { font-size: 21px; padding: 30px 0; } }
 
 #search-form { margin: 30px 0 20px; }
 #search-form p { margin: 16px auto; }
@@ -1297,9 +1298,15 @@ nav + #main-inner { margin-left: 200px; }
 
 .radio { position: relative; display: inline-block; vertical-align: middle; cursor: pointer; font-size: 16px; }
 .radio input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
-.radio input:checked + span:before { background: url('../img/icons-s15e35eadf6.png') 0 -45px no-repeat; width: 20px; height: 20px; }
+.radio input:checked + span:before { background: url('../img/icons-s13ee9da058.png') 0 -97px no-repeat; width: 20px; height: 20px; }
 .radio input + span { padding-left: 3px; position: relative; }
-.radio input + span:before { content: ""; position: absolute; left: -20px; top: 0; background: url('../img/icons-s15e35eadf6.png') 0 -15px no-repeat; width: 20px; height: 20px; }
+.radio input + span:before { content: ""; position: absolute; left: -20px; top: 0; background: url('../img/icons-s13ee9da058.png') 0 -15px no-repeat; width: 20px; height: 20px; }
+
+.checkbox2 { position: relative; display: inline-block; vertical-align: middle; cursor: pointer; font-size: 15px; color: #4c4c4c; }
+.checkbox2 input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; display: inline-block; vertical-align: middle; }
+.checkbox2 input:checked + span:before { background: url('../img/icons-s13ee9da058.png') 0 -71px no-repeat; width: 16px; height: 16px; }
+.checkbox2 input + span { padding-left: 3px; position: relative; display: inline-block; vertical-align: middle; }
+.checkbox2 input + span:before { content: ""; position: absolute; left: -20px; top: 0; background: url('../img/icons-s13ee9da058.png') 0 -45px no-repeat; width: 16px; height: 16px; }
 
 .search-form-level2 .search-form-level2-in { padding-top: 40px; padding-bottom: 30px; margin-top: 25px; border-top: 1px dashed #cacaca; text-align: left; }
 @media only screen and (max-width: 999px) { .search-form-level2 .search-form-level2-in { text-align: center; } }
@@ -1342,8 +1349,9 @@ nav + #main-inner { margin-left: 200px; }
 @media only screen and (max-width: 480px) { .index-doc-row .index-doc-label { width: 96%; } }
 .index-doc-row .index-doc-label:first-child { margin-left: 0; }
 
-.my-time { padding: 10px 15px; background-color: #ffb300; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.75); border-radius: 15px; font-size: 17px; font-weight: 600; *zoom: 1; }
+.my-time { display: block; padding: 10px 15px; background-color: #ffb300; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.75); border-radius: 15px; font-size: 17px; font-weight: 600; *zoom: 1; color: #252525; -moz-transition: all 250ms; -o-transition: all 250ms; -webkit-transition: all 250ms; transition: all 250ms; }
 .my-time:after { content: " "; display: table; clear: both; }
+.my-time:hover { color: #252525; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; -moz-transition: all 250ms; -o-transition: all 250ms; -webkit-transition: all 250ms; transition: all 250ms; }
 .my-time.m-blue { background: #5cb7e0; }
 .my-time .my-time-date { float: left; }
 .my-time .my-time-time { float: right; font-size: 17px; color: #252525; }
@@ -1406,6 +1414,12 @@ nav + #main-inner { margin-left: 200px; }
 .my-section .my-section-title { margin-bottom: 20px; font-size: 21px; color: #252525; }
 .my-section p { margin-bottom: 30px; }
 .my-section .my-section-selecteble { color: red; }
+
+.my-row { padding: 10px 13px; border-top: 1px solid #efefef; }
+.my-row:hover { background: #fbfbfb; }
+.my-row .my-row-label { width: 180px; display: inline-block; vertical-align: middle; }
+.my-row .my-row-label .checkbox2 { margin: 14px 0 15px; }
+.my-row .textbox { width: 518px; display: inline-block; vertical-align: middle; }
 
 .cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png { font-size: 2em; }
 
