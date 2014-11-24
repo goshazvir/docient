@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	 <script>
+		$(function() {
+			$("#frame-width-slider").slider({
+				range: "min",
+				value:800,
+				min: 600,
+				max: 1200,
+				step: 10,
+				slide: function(event, ui){
+					$("#frame-width-value").text(ui.value + "px");
+				}
+			});
+			$("#frame-width-value").text($("#frame-width-slider" ).slider("value") + "px");
+			});
+		</script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="../css/ie_lte8.css">
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" media="all" type="text/css" href="../css/cf_elements.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/smoothness/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" media="screen,projection,tv" type="text/css" href="../css/screen.css" />
+
+</head>
+<body ontouchstart="">
+	<div id="wrapper" class="wrapper-mod">
+		
+
+		<header id="header">
+			<div class="layout">
+				<div class="left">
+					<a href="#" id="site-logo"><img src="../img/logo.png" alt="Docient"/></a>
+					<div id="slogan">Connecting doctors and patients<br/>all over the world</div>
+				</div>
+				<a href="#" id="main-nav-mobile" onclick="event.preventDefault();">MENU<i class="fa fa-align-justify"></i>
+					<select>
+						<optgroup label="Surgey">
+							<option>General surgery</option>
+							<option>Oral and Maxillofacial Surgery</option>
+							<option>Plastic surgery</option>
+						</optgroup>
+						<optgroup label="Cancer treatment">
+							<option>...</option>
+						</optgroup>
+					</select>
+				</a>
+				<div class="right">
+					<div class="header-user">
+						<div class="user-picture">
+							<img src="../img/content/user.jpg" alt=""/>
+							<a href="#" class="notifications">2</a>
+						</div>
+						<div class="user-details">
+							<span class="user-role">Doctor</span>
+							<span class="user-name">Anton Matiukhin<a href="#">Sign out</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				<nav class="nav-mod">
+					<ul id="user-nav" class="user-nav-mod">
+						<li>
+							<a href="#"><span>Settings</span></a>
+						</li>
+						<li>
+							<a href="#"><span>My medical data</span></a>
+						</li>
+						<li>
+							<a href="#"><span>Communication with doctor</span></a>
+						</li>
+						<li>
+							<a href="#"><span>My buyings / invoices</span></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+							</ul>
+						</li>
+						<li class="expanded">
+							<a href="#"><span>Feedback after visiting / services</span></a>
+						</li>
+					</ul>
+				</nav>
+				
+				<div id="main-inner">
+					<h1>Embeding code generation</h1>
+					<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+					<p class="hor-separator"></p>
+					
+					<div class="embedding-params">
+						<h2>Parameters</h2>
+						<div class="margin-b20">
+							<div class="table-cell">
+								<p class="pad-l5">Font</p>
+								<p>
+									<select class="custom mobile-wide" data-title="%var%" style="width:360px;">
+										<option value="1">Open Sans</option>
+										<option value="2">Arial</option>
+									</select>
+								</p>
+							</div>
+							<div class="table-cell pad-l20">
+								<p class="pad-l5">Width of the embeded frame</p>
+								<div class="slider-wrap">
+									<div id="frame-width-slider" style="width:300px;">
+										<div class="slider-ruler"></div>
+										<span class="slider-min-value">600px</span>
+										<span class="slider-max-value">1200px</span>
+									</div>
+									<div class="slider-value" id="frame-width-value"></div>
+								</div>
+							</div>
+						</div>
+						<div class="margin-b20">
+							<div class="table-cell">
+								<p class="pad-l5">Background color</p>
+								<div class="color-picker">
+									<div class="color-box" style="background:#5cb7e0;"></div>
+									<div class="color-info">#5cb7e0</div>
+								</div>
+							</div>
+							<div class="table-cell pad-l20">
+								<p class="pad-l5">Text color</p>
+								<div class="color-picker">
+									<div class="color-box" style="background:#4c4c4c;"></div>
+									<div class="color-info">#4c4c4c</div>
+								</div>
+							</div>
+							<div class="table-cell pad-l20">
+								<p class="pad-l5">Link color</p>
+								<div class="color-picker">
+									<div class="color-box" style="background:#5cb7e0;"></div>
+									<div class="color-info">#5cb7e0</div>
+								</div>
+							</div>
+							<div class="table-cell pad-l20">
+								<p class="pad-l5">Button color</p>
+								<div class="color-picker">
+									<div class="color-box" style="background:#ffb400;"></div>
+									<div class="color-info">#ffb400</div>
+								</div>
+							</div>
+						</div>
+						
+						<p class="margin-b20"><input type="checkbox" class="custom" checked /><label class="font14">Don`t show flight and hotel to local patients</label></p>
+
+					
+						<div class="checked-form">
+							<div class="my-section">
+								<div class="my-section-title">Booking Sequence</div>
+								<p>Activate the things you need in your booking and drag it into the proper positions. What you do here is what will user see while making a booking.</p>
+								<div class="my-section-selecteble">
+									1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eius expedita in corporis quos. Earum at possimus est reiciendis quam eligendi, unde velit consequuntur laborum totam atque dolorum ea quod hic sint fuga. Atque asperiores doloremque quasi architecto perspiciatis molestiae repellat labore odio nostrum, quod, ut similique? Provident ut rerum ullam, officia amet eos id, doloribus, saepe velit, cupiditate corporis aspernatur dignissimos. Asperiores at, officiis dolores sed. Nostrum labore adipisci quos beatae sequi optio tenetur quidem, ducimus, reprehenderit reiciendis cupiditate quae, minima voluptate aut et incidunt suscipit! Placeat illum, eos ab, pariatur ea porro ipsum deserunt, nesciunt consequuntur perferendis cumque?
+								</div>
+							</div>
+							<div class="my-section">
+								<div class="my-section-title">Booking for locals options</div>
+								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+								<div class="my-section-selecteble">
+									<div class="my-row">
+										<div class="my-row-label">
+											<label class="checkbox2">
+												<input type="checkbox" name="type" class="js-checkbox">
+												<span>Haigekassa</span>
+											</label>
+										</div>
+										<input type="text" class="textbox js-input" placeholder="Write some description here...">
+									</div>
+									<div class="my-row">
+										<div class="my-row-label">
+											<label class="checkbox2">
+												<input type="checkbox" name="type" class="js-checkbox">
+												<span>Isemaksja</span>
+											</label>
+										</div>
+										<input type="text" class="textbox js-input" placeholder="Write some description here...">
+									</div>
+									<div class="my-row">
+										<div class="my-row-label">
+											<label class="checkbox2">
+												<input type="checkbox" name="type" class="js-checkbox">
+												<span>Tagasikutsumine</span>
+											</label>
+										</div>
+										<input type="text" class="textbox js-input" placeholder="Write some description here...">
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<p class="text-center"><button class="def-button" type=""><i class="fa fa-code pad-r10" style="font-size:20px; vertical-align:baseline;"></i>Generate code</button></p>
+					</div>
+					
+					<h2>Your code:</h2>
+					<p><textarea class="textbox" style="width:725px; height:150px;"></textarea></p>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		<div class="footer-push"></div>
+		<footer id="footer">
+			<div class="layout">
+				<div class="footer-about fcell">
+					<h1>What is <b>DOC</b>IENT?</h1>
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">About DOCIENT project</a></li>
+						<li><a href="#">News / Press</a></li>
+						<li><a href="#">Vacancies</a></li>
+						<li><a href="#">Partners / Health Insurers</a></li>
+					</ul>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Feedback form</a></li>
+						<li class="text-dark">+1 646-419-4452</li>
+						<li><a href="#">info@docent.com</a></li>
+					</ul>
+				</div>
+				<div class="fcell social-copyright">
+					<div class="social-links">
+						<a href="#" title=""><i class="fa fa-facebook"></i></a><a href="#" title=""><i class="fa fa-twitter"></i></a><a href="#" title=""><i class="fa fa-google-plus"></i></a><a href="#" title=""><i class="fa fa-youtube"></i></a>
+					</div>
+					<p class="text-dark">Copyright by DOCIENT</p>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+	
+</body>
+</html>
