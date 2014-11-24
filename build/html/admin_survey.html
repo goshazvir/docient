@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="../css/ie_lte8.css">
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" media="all" type="text/css" href="../css/cf_elements.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/smoothness/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" media="screen,projection,tv" type="text/css" href="../css/screen.css" />
+
+	<script>
+		function showAccountTypes(e){
+			e.preventDefault();
+			
+			var list = $(e.target).next(".account-types-popup-list");
+			if(list.hasClass("active")){
+				list.removeClass("active").fadeOut(200);
+			}else{
+				list.addClass("active").fadeOut(0).fadeIn(200);
+			}
+		}
+	</script>
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		<header id="header">
+			<div class="layout">
+				<div class="left">
+					<a href="#" id="site-logo"><img src="../img/logo.png" alt="Docient"/></a>
+					<div id="slogan">Connecting doctors and patients<br/>all over the world</div>
+				</div>
+				<a href="#" id="main-nav-mobile" onclick="event.preventDefault();">MENU<i class="fa fa-align-justify"></i>
+					<select>
+						<optgroup label="Surgey">
+							<option>General surgery</option>
+							<option>Oral and Maxillofacial Surgery</option>
+							<option>Plastic surgery</option>
+						</optgroup>
+						<optgroup label="Cancer treatment">
+							<option>...</option>
+						</optgroup>
+					</select>
+				</a>
+				<div class="right">
+					<div class="header-user">
+						<div class="user-picture">
+							<img src="../img/content/user.jpg" alt=""/>
+							<a href="#" class="notifications">2</a>
+						</div>
+						<div class="user-details">
+							<span class="user-role">Moderator</span>
+							<span class="user-name">Anton Matiukhin<a href="#">Sign out</a></span>
+						</div>
+					</div>
+					<div class="header-user-options">
+						<p>
+							<label class="fa fa-globe"></label><select class="custom simple" data-title="%var%">
+								<option value="0" selected="selected">English</option>
+								<option value="1">Eesti</option>
+								<option value="2">Svensk</option>
+							</select>
+						</p>
+						<p>
+							<label class="fa fa-money"></label><select class="custom simple" data-title="%var%">
+								<option value="0" selected="selected">EUR</option>
+								<option value="1">USD</option>
+								<option value="2">SEK</option>
+							</select>
+						</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				<nav>
+					<ul id="user-nav">
+						<li class="expanded">
+							<a href="#"><span>Settings</span><i class="notifications">!</i></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+								<li class="active"><a href="#">+ Add clinic</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>My medical data</span></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>Communication with doctor</span><i class="notifications">2</i></a>
+						</li>
+						<li>
+							<a href="#"><span>My buyings / invoices</span></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>Feedback after visiting / services</span></a>
+						</li>
+					</ul>
+				</nav>
+				
+				<div id="main-inner">
+					<div class="overflow">
+						<h1>New survey</h1>
+					</div>
+					<p>Use expert survey template</p>
+					<p>
+						<select class="custom mobile-wide" data-title="%var%" style="width: 704px;">
+							<option value="placeholder">Choose one of survey templates</option>
+							<option value="0">Template #1</option>
+							<option value="1">Template #2</option>
+							<option value="2">Template #3</option>
+						</select>
+					</p>
+					<p class="margin-t20">Duplicate your existing survey</p>
+					<p>
+						<select class="custom mobile-wide" data-title="%var%" style="width: 704px;">
+							<option value="placeholder">Choose your existing survey</option>
+							<option value="0">Survey #1</option>
+							<option value="1">Survey #2</option>
+							<option value="2">Survey #3</option>
+						</select>
+					</p>
+					<p class="margin-t20">Survey title</p>
+					<p><input type="text" class="textbox" placeholder="..." style="width:672px;"></p>
+
+					<p class="margin-t20 margin-b20">Choose procedures you allowed for booking, where this survey is recuired</p>
+					<div class="custom-scroll mobile-wide" style="width: 704px;">
+						<ul class="options-list" style="width: 100%">
+							<li><input type="checkbox" class="custom"/><label>Cutting leg from the patient</label></li>
+							<li><input type="checkbox" class="custom"/><label>Changing the tooth with extra laser diagnistic</label></li>
+							<li><input type="checkbox" class="custom"/><label>Changing eye from the normal to glass one</label></li>
+							<li><input type="checkbox" class="custom"/><label>Hrenologia</label></li>
+							<li><input type="checkbox" class="custom"/><label>Ufologia and ancient aliens</label></li>
+							<li><input type="checkbox" class="custom"/><label>Autologia and motologia</label></li>
+							<li><input type="checkbox" class="custom"/><label>Cutting leg from the patient</label></li>
+							<li><input type="checkbox" class="custom"/><label>Changing the tooth with extra laser diagnistic</label></li>
+							<li><input type="checkbox" class="custom"/><label>Changing eye from the normal to glass one</label></li>
+							<li><input type="checkbox" class="custom"/><label>Hrenologia</label></li>
+							<li><input type="checkbox" class="custom"/><label>Ufologia and ancient aliens</label></li>
+							<li><input type="checkbox" class="custom"/><label>Autologia and motologia</label></li>
+						</ul>
+					</div>
+
+					<p class="text-center margin-t30 margin-b20"><button type="submit" class="def-button"><i class="fa fa-save pad-r10" style="font-size:18px; vertical-align:baseline;"></i>Save survey and edit questions</button></p>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		<div class="footer-push"></div>
+		<footer id="footer">
+			<div class="layout">
+				<div class="footer-about fcell">
+					<h1>What is <b>DOC</b>IENT?</h1>
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">About DOCIENT project</a></li>
+						<li><a href="#">News / Press</a></li>
+						<li><a href="#">Vacancies</a></li>
+						<li><a href="#">Partners / Health Insurers</a></li>
+					</ul>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Feedback form</a></li>
+						<li class="text-dark">+1 646-419-4452</li>
+						<li><a href="#">info@docent.com</a></li>
+					</ul>
+				</div>
+				<div class="fcell social-copyright">
+					<div class="social-links">
+						<a href="#" title=""><i class="fa fa-facebook"></i></a><a href="#" title=""><i class="fa fa-twitter"></i></a><a href="#" title=""><i class="fa fa-google-plus"></i></a><a href="#" title=""><i class="fa fa-youtube"></i></a>
+					</div>
+					<p class="text-dark">Copyright by DOCIENT</p>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+	
+</body>
+</html>

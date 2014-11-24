@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+
+	<script src="../js/scripts.min.js"></script>
+	<script>
+		$(function() {
+			$("#frame-width-slider").slider({
+				range: "min",
+				value:900,
+				min: 600,
+				max: 1200,
+				step: 10,
+				slide: function(event, ui){
+					$("#frame-width-value").text(ui.value + "px");
+				}
+			});
+			$("#frame-width-value").text($("#frame-width-slider" ).slider("value") + "px");
+			});
+	</script>
+	include "head_css"
+
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+
+		include "header-main"
+
+		<div id="search-block" class="search-block" style="background:url(../img/content/front_3.jpg); background-size:cover; height:605px; background-repeat: no-repeat; background-position: left center;"><!-- IMAGE 2400x604 -->
+			<div class="layout">
+				<div style="height:10px;" class="mobile-land-hide"></div>
+				<div class="search-block-text">
+					<p>Otsi raviteenuseid, kliinikuid või arste</p>
+					<p>ja broneeri kohe aeg vastuvõtule!</p>
+				</div>
+			</div>
+			<div class="search-form">
+				<div class="search-form-in layout">
+					<div class="search-form-row">
+						<div class="search-form-label1">
+							<p class="search-field m-mod">
+								<select class="custom search s-left" data-title="%var%">
+									<option value="0">in all categories</option>
+									<option value="1">some category</option>
+									<option value="ssdf">some really long long caregory</option>
+									<option value="XXX">Zzz</option>
+								</select><input type="text" class="textbox" placeholder="Otsi meditsiiniteenuseid, arste, kliiikuid, näidustust või diagnoosi"/>
+							</p>
+							<div class="search-form-label1-bottom">
+								<div class="search-advanced">
+									<div class="search-advanced-label1">
+										<div class="search-advanced-in">
+											<span class="search-advanced-note">Piirkond:</span>
+
+											<div class="select js-select"><span class="select__value"><em class="js-select-text">Harjumaa</em><i></i></span>
+											  <input type="hidden" val="" value="Петров Александр Васильевич" class="js-select-input">
+											  <div class="select__scroll">
+										  		<div class="select__drop js-select-drop">
+										  		  <ul class="jcustom-scroll">
+										  		    <li data-id="1" class="is-selected">Harjumaa</li>
+										  		    <li data-id="2">Harjumaa 2</li>
+										  		    <li data-id="3">Harjumaa 3</li>
+										  		    <li data-id="4">Harjumaa 4</li>
+										  		    <li data-id="5">Harjumaa 4</li>
+										  		    <li data-id="6">Harjumaa 4</li>
+										  		    <li data-id="7">Harjumaa 4</li>
+										  		    <li data-id="8">Harjumaa 4</li>
+										  		    <li data-id="9">Harjumaa 4</li>
+										  		    <li data-id="10">Harjumaa 4</li>
+										  		  </ul>
+										  		</div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<div class="search-advanced-label2">
+										<div class="search-advanced-label2-item">
+											<label class="radio">
+												<input type="radio" name="type">
+												<span>Tasuline</span>
+											</label>
+										</div>
+										<div class="search-advanced-label2-item">
+											<label class="radio">
+												<input type="radio" name="type">
+												<span>Tagasikutsumine</span>
+											</label>
+										</div>
+										<div class="search-advanced-label2-item">
+											<label class="radio">
+												<input type="radio" name="type">
+												<span>Haigekassa</span>
+											</label>
+											<div class="search-advanced-label2-note">*Only for insuranced in Eesti Haigekassa</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search-form-label2">
+							<button type="submit" class="def-button">Otsi</button>
+							<div class="search-form-label2-bottom">
+								<a href="#" class="search-form-open js-open-level2">Tapsem otsing</a>
+							</div>
+						</div>
+					</div>
+					<div class="search-form-level2" style="display:none;">
+						<div class="search-form-level2-in layout">
+							<div class="search-form-level2-row"> 
+								<div class="search-form-level2-label1"> 
+									<div class="help-info">Reitingu järgi 
+										<i class="fa fa-question-circle js-tooltipster" title=
+											"<div class='tooltipster-my-head'>Siin on selgitatud, kuidas mingi hinnaklass on kujunenud. Näiteks:</div>
+											<div class='tooltipster-my-content'>Valitud piirkonna ja/või otsitud protseduuri keskmisest hinnatasemest kõrgem hind / kõrgemad hinnad</div>
+											<div class='tooltipster-my-meta'>(kui ei otsitud protseduurijärgi)</div>
+											">
+										</i>
+									</div>
+									<div class="js-rating" data-score="4"></div>
+								</div>
+								<div class="search-form-level2-label2">
+									<div class="help-info">Hinnaskaala järgi
+										<i class="fa fa-question-circle js-tooltipster" title=
+											"<div class='tooltipster-my-head'>Siin on selgitatud, kuidas mingi hinnaklass on kujunenud. Näiteks:</div>
+											<div class='tooltipster-my-content'>Valitud piirkonna ja/või otsitud protseduuri keskmisest hinnatasemest kõrgem hind / kõrgemad hinnad</div>
+											<div class='tooltipster-my-meta'>(kui ei otsitud protseduurijärgi)</div>
+											">
+										</i>
+									</div>
+									<div class="slider-wrap m-mod">
+										<div id="frame-width-slider" style="width:685px;">
+											<div class="slider-ruler m-mod"></div>
+											<span class="slider-min-value">Madalam hind</span>
+											<span class="slider-max-value">Kõrgem hind</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="main" class="no-border frontpage"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			<div class="layout">
+				<div class="index-content">
+					<div class="index-content-top">
+						<div class="index-content-title">Esimesed vabad ajad:</div>
+						<div class="index-content-search">
+							<span class="index-content-search-meta">Sorteerimine:</span>
+							<select class="index-content-search-item">
+								<option value="hind">hind</option>
+								<option value="1">asd</option>
+								<option value="2">2asd</option>
+								<option value="3">3asd</option>
+							</select>
+							<select class="index-content-search-item">
+								<option value="lähim aeg">lähim aeg</option>
+								<option value="1">asd</option>
+								<option value="2">2asd</option>
+								<option value="3">3asd</option>
+							</select>
+						</div>
+					</div>
+					<div class="index-content-in">
+						<div class="index-doc-row">
+							<div class="index-doc-label">
+								<div class="doc">
+									<div class="doc-left">
+										<div class="doc-media">
+											<img class="round" src="../img/content/tumb.jpg" alt="">
+										</div>
+										<div class="doc-price"><i class="fa fa-tags"></i>2890 €</div>
+									</div>
+									<div class="doc-right">
+										<a href="#" class="doc-name">Dr. House</a>
+										<a href="#" class="doc-note">(Medicum Perearstikeskus AS)</a>
+										<span class="pad-r10 rating">
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<span class="text-grey">(78)</span>
+										</span>
+										<div class="my-time">
+											<span class="my-time-date">12.09.2014</span>
+											<span class="my-time-time"><i class="fa fa-clock-o"></i>14.00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="index-doc-label">
+								<div class="doc">
+									<div class="doc-left">
+										<div class="doc-media">
+											<img class="round" src="../img/content/tumb.jpg" alt="">
+										</div>
+										<div class="doc-price"><i class="fa fa-tags"></i>3,5 €</div>
+									</div>
+									<div class="doc-right">
+										<a href="#" class="doc-name">Dr. House</a>
+										<a href="#" class="doc-note">(Medicum Perearstikeskus AS)</a>
+										<span class="pad-r10 rating">
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<span class="text-grey">(78)</span>
+										</span>
+										<div class="my-time">
+											<span class="my-time-date">12.09.2014</span>
+											<span class="my-time-time"><i class="fa fa-clock-o"></i>14.00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="index-doc-label">
+								<div class="doc">
+									<div class="doc-left">
+										<div class="doc-media">
+											<img class="round" src="../img/content/tumb.jpg" alt="">
+										</div>
+										<div class="doc-price"><i class="fa fa-tags"></i>150 €</div>
+									</div>
+									<div class="doc-right">
+										<a href="#" class="doc-name">Dr. House</a>
+										<a href="#" class="doc-note">(Medicum Perearstikeskus AS)</a>
+										<span class="pad-r10 rating">
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<i class="fa fa-star text-yellow"></i>
+											<span class="text-grey">(78)</span>
+										</span>
+										<div class="my-time">
+											<span class="my-time-date">12.09.2014</span>
+											<span class="my-time-time"><i class="fa fa-clock-o"></i>14.00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="index-doc-row">
+							<div class="index-doc-label">
+								<div class="clinic">
+									<div class="clinic-logo">
+										<a href="#">
+											<img src="../img/clinic1.png" alt="">
+										</a>
+									</div>
+									<div class="clinic-content">
+										<a href="#" class="clinic-name">DETOX pakett 3 ood 4 paeva</a>
+										<div class="clinic-row">
+											<a href="#" class="clinic-meta">(Saaremaa Spa Hotels)</a>
+											<span class="pad-r10 rating">
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<span class="text-grey">(78)</span>
+											</span>
+										</div>
+										<div class="clinic-row m-price">
+											<div class="clinic-price"><i class="fa fa-tags"></i>150 €</div>
+											<div class="my-time m-blue">
+												<span class="my-time-date">12.09.2014</span>
+												<span class="my-time-time"><i class="fa fa-clock-o"></i>14.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="index-doc-label">
+								<div class="clinic">
+									<div class="clinic-logo"><a href="#"><img src="../img/clinic2.png" alt=""></a></div>
+									<div class="clinic-content">
+										<a href="#" class="clinic-name">DETOX pakett 3 ood 4 paeva</a>
+										<div class="clinic-row">
+											<a href="#" class="clinic-meta">(Saaremaa Spa Hotels)</a>
+											<span class="pad-r10 rating">
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<span class="text-grey">(78)</span>
+											</span>
+										</div>
+										<div class="clinic-row m-price">
+											<div class="clinic-price"><i class="fa fa-tags"></i>150 €</div>
+											<div class="my-time m-blue">
+												<span class="my-time-date">12.09.2014</span>
+												<span class="my-time-time"><i class="fa fa-clock-o"></i>14.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="index-doc-label">
+								<div class="clinic">
+									<div class="clinic-logo"><a href="#"><img src="../img/clinic3.png" alt=""></a></div>
+									<div class="clinic-content">
+										<a href="#" class="clinic-name">DETOX pakett 3 ood 4 paeva</a>
+										<div class="clinic-row">
+											<a href="#" class="clinic-meta">(Saaremaa Spa Hotels)</a>
+											<span class="pad-r10 rating">
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<i class="fa fa-star text-yellow"></i>
+												<span class="text-grey">(78)</span>
+											</span>
+										</div>
+										<div class="clinic-row m-price">
+											<div class="clinic-price"><i class="fa fa-tags"></i>150 €</div>
+											<div class="my-time m-blue">
+												<span class="my-time-date">12.09.2014</span>
+												<span class="my-time-time"><i class="fa fa-clock-o"></i>14.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="index-content-spinner">
+							<i class="fa fa-spinner fa-spin"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		<div class="bottom-block">
+			<div class="layout">
+				<div class="teaser-blocks">
+					<div class="block">
+						<h2>Patient</h2>
+						<p>Your treatment is too expencive?<br/>Through us you can find cheaper way<br/>to treat yourself.</p>
+						<p><a href="#" class="color-button bigger">Look, how it works<i class="fa fa-share pad-l7"></i></a></p>
+					</div>
+					<div class="block">
+						<h2>Partner</h2>
+						<p>IT company or private praxis?<br/>Become an affiliate and help patients<br/>from whole world.</p>
+						<p><a href="#" class="color-button purple bigger">Your benefits are<i class="fa fa-share pad-l7"></i></a></p>
+					</div>
+					<div class="block">
+						<h2>Health insurer</h2>
+						<p>Want you to see patients<br/>treatment information?<br/><br/></p>
+						<p><a href="#" class="color-button lpurple bigger">See, how it`s possible<i class="fa fa-share pad-l7"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		include "footer-main"
+		
+	</div>
+</body>
+</html>

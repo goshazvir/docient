@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+
+	<script>
+		function showAccountTypes(e){
+			e.preventDefault();
+			
+			var list = $(e.target).next(".account-types-popup-list");
+			if(list.hasClass("active")){
+				list.removeClass("active").fadeOut(200);
+			}else{
+				list.addClass("active").fadeOut(0).fadeIn(200);
+			}
+		}
+	</script>
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		include "header_user"
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				include "nav_user"
+				
+				<div id="main-inner">
+					<div class="overflow">
+						<div class="page-title-rblock">
+							<select class="custom simple" data-title="%var%">
+								<option value="0">new users</option>
+								<option value="1">blocked users</option>
+							</select>
+						</div>
+						<h1>Users</h1>
+					</div>
+					
+					<form>
+						<p><span class="icon-field"><input type="text" class="textbox" style="width:710px;" placeholder="Search by username(s), phone number, e-mail or ID" /><button class="fa fa-search"></button></span></p>
+						<p class="filter-user-search">
+							<span><input type="checkbox" class="custom" /><label>Patients</label></span>
+							<span><input type="checkbox" class="custom" /><label>Doctors</label></span>
+							<span><input type="checkbox" class="custom" /><label>Health insurance</label></span>
+							<span><input type="checkbox" class="custom" /><label>Clinic representative</label></span>
+							<span><input type="checkbox" class="custom" /><label>Moderators</label></span>
+							<span><input type="checkbox" checked="checked" class="custom" /><label>All</label></span>
+						</p>
+					</form>
+					
+					<p class="hor-separator"></p>
+					
+					<table class="users-table">
+						<tr>
+							<th><a href="#">Name<i class="fa fa-sort-amount-asc"></i></a></th>
+							<th><a href="#">Phone</a></th>
+							<th><a href="#">Email</a></th>
+							<th><a href="#">Account type</a></th>
+						</tr>
+						<tr>
+							<td>Prof. Kaupo Kuusk (55%)</td>
+							<td>+372 7776655</td>
+							<td><a href="#">kaupo@gmail.com</a></td>
+							<td>doctor</td>
+						</tr>
+						<tr>
+							<td>John Pupkevich Junior (40%)</td>
+							<td>+372 7776655</td>
+							<td><a href="#">afanasiy.mirgorodskiy@gmail.com</a></td>
+							<td>health insurance</td>
+						</tr>
+						<tr>
+							<td>Prof. Kaupo Kuusk (55%)</td>
+							<td>+372 7776655</td>
+							<td><a href="#">kaupo@gmail.com</a></td>
+							<td>doctor</td>
+						</tr>
+						<tr>
+							<td>John Pupkevich Junior (40%)</td>
+							<td>+372 7776655</td>
+							<td><a href="#">afanasiy.mirgorodskiy@gmail.com</a></td>
+							<td>health insurance</td>
+						</tr>
+						<tr>
+							<td>Prof. Kaupo Kuusk (55%)</td>
+							<td>+372 7776655</td>
+							<td><a href="#">kaupo@gmail.com</a></td>
+							<td>doctor</td>
+						</tr>
+						<tr class="edit">
+							<td colspan="4">
+								<div class="top-row">
+									<div><input type="text" class="textbox small" value="John Pupkevich Junior" style="width:195px;"/></div>
+									<div><input type="tel" class="textbox small" value="+372 7776655" style="width:95px;"/></div>
+									<div><input type="email" class="textbox small" value="afanasiy.mirgorodskiy@gmail.com" style="width:215px;"/></div>
+									<div class="relative" style="width:145px;">
+										<a href="#" class="account-types-but mobile-land-hide" onclick="showAccountTypes(event);">Account types<i class="fa fa-caret-down pad-l7"></i></a>
+										<ul class="account-types-popup-list">
+											<li><input type="checkbox" class="custom" checked="checked" /><label>Patient</label></li>
+											<li><input type="checkbox" class="custom" /><label>Doctor</label></li>
+											<li><input type="checkbox" class="custom" /><label>Health insurance</label></li>
+											<li><input type="checkbox" class="custom" /><label>Clinic representative</label></li>
+											<li><input type="checkbox" class="custom" /><label>Moderator</label></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="bottom-row">
+									<div class="table-cell">
+										<img class="round" src="../img/content/tumb.jpg" alt=""/>
+									</div>
+									<div class="table-cell">
+										<p><span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span></p>
+										<p class="text-grey"><strong class="text-blue pad-r10">75%</strong>Profile completed</p>
+										<p class="text-grey"><i class="fa fa-user pad-r5"></i>Profile verified</p>
+										<p class="text-grey">Connected: <span style="font-size:14px;"><i class="fa fa-linkedin-square pad-r5"></i><i class="fa fa-google-plus-square  pad-r5"></i><i class="fa fa-facebook  pad-r5"></i></span></p>
+									</div>
+									<div class="table-cell pad-l20">
+										<p><a href="#"><i class="fa fa-user pad-r5"></i>User details</a></p>
+										<p><a href="#"><i class="fa fa-list-ul pad-r5"></i>Invoices</a></p>
+										<p><a href="#"><i class="fa fa-file-text-o pad-r5"></i>User documents</a></p>
+										<p><a href="#"><i class="fa fa-clock-o pad-r5"></i>History</a></p>
+									</div>
+									<div class="table-cell pad-l20">
+										<p><a href="#"><i class="fa fa-thumbs-up pad-r5"></i>Approve</a></p>
+										<p><a href="#"><i class="fa fa-thumbs-down text-red pad-r5"></i>Deny</a></p>
+										<p><a href="#"><i class="fa fa-envelope-o pad-r5"></i>Send Email</a></p>
+									</div>
+									<div class="table-cell pad-l20">
+										<p><a href="#"><i class="fa fa-save pad-r5"></i>Save</a></p>
+										<p><a href="#"><i class="fa fa-ban text-red pad-r5"></i>Block</a></p>
+										<p><a href="#"><i class="fa fa-trash-o pad-r5"></i>Send Email</a></p>
+									</div>
+								</div>
+								
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		include "footer"
+		
+	</div>
+	
+</body>
+</html>

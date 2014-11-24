@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		include "header_user"
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				include "nav_user"
+				
+				<div id="main-inner" class="search-page">
+					<h1>Detailed Search</h1>
+					<!-- begin search -->
+					<div class="search">
+						<div class="search__row">
+							<input type="text" class="search__query textbox" placeholder="Search for..." style="width: 531px">
+							<div class="search__note">
+								<i class="fa fa-info-circle"></i>
+								Procedure, clicic, doctor, speciality or diagnose
+							</div>
+						</div>
+						<div class="search__row">
+							<div class="search__colleft">
+								<input type="checkbox" class="custom" name="test" checked /><label>Include flight</label>
+							</div>
+							<span class="location-field">
+								<i class="fa fa-location-arrow"></i>
+								<input type="text" class="textbox" style="width:142px;" placeholder="London, UK">
+							</span>
+							<span class="fa fa-exchange font20 text-grey mobile-block-center"></span>
+							<input type="text" class="textbox" style="width:167px;" placeholder="Tallinn, Estonia">
+							<select class="custom w145 mobile-wide" data-title="%var%">
+								<option value="0" selected>1 adult</option>
+								<option value="1">2 adults</option>
+								<option value="2">99 adults</option>
+							</select>
+						</div>
+						<div class="search__row">
+							<div class="search__colleft">
+								<input type="checkbox" class="custom" name="test" checked /><label>Include hotel</label>
+							</div>
+							<span class="stars">
+								<i class="fa fa-star is-active"></i>
+								<i class="fa fa-star is-active"></i>
+								<i class="fa fa-star is-active"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+
+							<span class="switch-option">
+								<span class="selection-box"></span>
+								<span class="options">
+									<a data-value="airport" href="#" class="active"><span class="title">Close to airport</span></a><a data-value="clinic" href="#"><span class="title">Close to clinic</span></a>
+								</span>
+								<input type="hidden" name="sdf"/>
+							</span>
+
+							<select class="custom w145 mobile-wide" data-title="%var%">
+								<option value="0" selected>Single room</option>
+								<option value="1">...</option>
+								<option value="2">...</option>
+							</select>
+						</div>
+						<div class="search__row">
+							<div class="search__colleft">
+								Show results:
+							</div>
+
+							<span class="switch-option switch-option_mod">
+								<span class="selection-box"></span>
+								<span class="options">
+									<a data-value="cheapest" href="#" class="active"><span class="title">Cheapest</span></a><a data-value="closest" href="#"><span class="title">Closest date</span></a><a data-value="choosedate" href="#"><span class="title">Choose date<i class="fa fa-calendar pad-l5"></i></span></a>
+								</span>
+								<input type="hidden" name="sdf"/>
+							</span>
+
+
+							<div class="search__note">
+								<i class="fa fa-info-circle"></i>
+								Choose search options<br> for flight and hotel
+							</div>
+						</div>
+						<p class="text-center margin-b20"><button type="submit" class="def-button">Search</button></p>
+					</div>
+					<!-- end search -->
+					<div class="add-clinic-block">
+						<div class="d-tabs d-tabs_mod">
+							<div class="d-tabs-switches"><span>Clinics</span><span>Services</span><span class="active">Doctors</span>
+							</div>
+							<div class="d-tabs-contents">
+
+
+								<section>
+									<div class="d-tabs__sort">
+										Sort by:
+										<select class="custom simple" data-title="%var%">
+											<option value="0">procedure cost (low to high)</option>
+											<option value="1">procedure cost (hight to low)</option>
+										</select>
+									</div>
+									<table class="users-table">
+
+										<tr>
+											<td>
+													<h2 class="title"><a href="#">Lasik eye surgery</a></h2>
+													<p class="users-table__date"><span class="text-grey">13.10.2013 - 15.10.2013</span> (Estonia)</p>
+													<p class="price">1400 €</p>
+											</td>
+											<td>
+												<div class="users-table__meta">
+													<p class="text-grey"><i class="fa fa-plane w20"></i>Flight <i class="fa fa-exchange"></i> included (500 €)</p>
+													<p class="text-grey"><i class="fa fa-building-o w20"></i>Hotel included (400 €)</p>
+													<p class="text-grey"><i class="fa fa-reply w20"></i>Health insurance (-500 €)</p>
+													<p><span class="text-grey"><i class="fa fa-briefcase w20"></i>package price:</span> <strong>500 €</strong></p>
+												</div>
+											</td>
+											<td>
+												<p class="clinic-title"><a href="#">KSA Silmaklinik</a></p>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+												<p><a href="#">Dr. Ants Haavel <i class="fa fa-info-circle"></i></a></p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+													<h2 class="title"><a href="#">Lasik eye surgery</a></h2>
+													<p class="users-table__date"><span class="text-grey">13.10.2013 - 15.10.2013</span> (Estonia)</p>
+													<p class="price">1400 €</p>
+											</td>
+											<td>
+												<div class="users-table__meta">
+													<p class="text-grey"><i class="fa fa-plane w20"></i>Flight <i class="fa fa-exchange"></i> included (500 €)</p>
+													<p class="text-grey"><i class="fa fa-building-o w20"></i>Hotel included (400 €)</p>
+													<p class="text-grey"><i class="fa fa-reply w20"></i>Health insurance (-500 €)</p>
+													<p><span class="text-grey"><i class="fa fa-briefcase w20"></i>package price:</span> <strong>500 €</strong></p>
+												</div>
+											</td>
+											<td>
+												<p class="clinic-title"><a href="#">KSA Silmaklinik</a></p>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+												<p><a href="#">Dr. Ants Haavel <i class="fa fa-info-circle"></i></a></p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+													<h2 class="title"><a href="#">Lasik eye surgery</a></h2>
+													<p class="users-table__date"><span class="text-grey">13.10.2013 - 15.10.2013</span> (Estonia)</p>
+													<p class="price">1400 €</p>
+											</td>
+											<td>
+												<div class="users-table__meta">
+													<p class="text-grey"><i class="fa fa-plane w20"></i>Flight <i class="fa fa-exchange"></i> included (500 €)</p>
+													<p class="text-grey"><i class="fa fa-building-o w20"></i>Hotel included (400 €)</p>
+													<p class="text-grey"><i class="fa fa-reply w20"></i>Health insurance (-500 €)</p>
+													<p><span class="text-grey"><i class="fa fa-briefcase w20"></i>package price:</span> <strong>500 €</strong></p>
+												</div>
+											</td>
+											<td>
+												<p class="clinic-title"><a href="#">KSA Silmaklinik</a></p>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+												<p><a href="#">Dr. Ants Haavel <i class="fa fa-info-circle"></i></a></p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+													<h2 class="title"><a href="#">Lasik eye surgery</a></h2>
+													<p class="users-table__date"><span class="text-grey">13.10.2013 - 15.10.2013</span> (Estonia)</p>
+													<p class="price">1400 €</p>
+											</td>
+											<td>
+												<div class="users-table__meta">
+													<p class="text-grey"><i class="fa fa-plane w20"></i>Flight <i class="fa fa-exchange"></i> included (500 €)</p>
+													<p class="text-grey"><i class="fa fa-building-o w20"></i>Hotel included (400 €)</p>
+													<p class="text-grey"><i class="fa fa-reply w20"></i>Health insurance (-500 €)</p>
+													<p><span class="text-grey"><i class="fa fa-briefcase w20"></i>package price:</span> <strong>500 €</strong></p>
+												</div>
+											</td>
+											<td>
+												<p class="clinic-title"><a href="#">KSA Silmaklinik</a></p>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+												<p><a href="#">Dr. Ants Haavel <i class="fa fa-info-circle"></i></a></p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+													<h2 class="title"><a href="#">Lasik eye surgery</a></h2>
+													<p class="users-table__date"><span class="text-grey">13.10.2013 - 15.10.2013</span> (Estonia)</p>
+													<p class="price">1400 €</p>
+											</td>
+											<td>
+												<div class="users-table__meta">
+													<p class="text-grey"><i class="fa fa-plane w20"></i>Flight <i class="fa fa-exchange"></i> included (500 €)</p>
+													<p class="text-grey"><i class="fa fa-building-o w20"></i>Hotel included (400 €)</p>
+													<p class="text-grey"><i class="fa fa-reply w20"></i>Health insurance (-500 €)</p>
+													<p><span class="text-grey"><i class="fa fa-briefcase w20"></i>package price:</span> <strong>500 €</strong></p>
+												</div>
+											</td>
+											<td>
+												<p class="clinic-title"><a href="#">KSA Silmaklinik</a></p>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+												<p><a href="#">Dr. Ants Haavel <i class="fa fa-info-circle"></i></a></p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+													<h2 class="title"><a href="#">Lasik eye surgery</a></h2>
+													<p class="users-table__date"><span class="text-grey">13.10.2013 - 15.10.2013</span> (Estonia)</p>
+													<p class="price">1400 €</p>
+											</td>
+											<td>
+												<div class="users-table__meta">
+													<p class="text-grey"><i class="fa fa-plane w20"></i>Flight <i class="fa fa-exchange"></i> included (500 €)</p>
+													<p class="text-grey"><i class="fa fa-building-o w20"></i>Hotel included (400 €)</p>
+													<p class="text-grey"><i class="fa fa-reply w20"></i>Health insurance (-500 €)</p>
+													<p><span class="text-grey"><i class="fa fa-briefcase w20"></i>package price:</span> <strong>500 €</strong></p>
+												</div>
+											</td>
+											<td>
+												<p class="clinic-title"><a href="#">KSA Silmaklinik</a></p>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+												<p><a href="#">Dr. Ants Haavel <i class="fa fa-info-circle"></i></a></p>
+											</td>
+										</tr>
+
+									</table>
+								</section>
+
+								<section>
+									<div class="d-tabs__sort">
+										Sort by:
+										<select class="custom simple" data-title="%var%">
+											<option value="0">rating (low to high)</option>
+											<option value="1">rating (hight to low)</option>
+										</select>
+									</div>
+									<table class="users-table">
+										<tr>
+											<th><a href="#">Clinic title<i class="fa fa-sort-amount-asc"></i></a></th>
+											<th><a href="#">Rating</a></th>
+											<th><a href="#">Country</a></th>
+											<th><a href="#">Doctors</a></th>
+										</tr>
+										<tr>
+											<td><a href="#">Medicum  Perearsticescus</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+											</td>
+											<td>Estonia</td>
+											<td><a href="#">Show doctors</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="#">Medicum  Perearsticescus</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+											</td>
+											<td>Estonia</td>
+											<td><a href="#">Show doctors</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="#">Medicum  Perearsticescus</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+											</td>
+											<td>Estonia</td>
+											<td><a href="#">Show doctors</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="#">Medicum  Perearsticescus</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+											</td>
+											<td>Estonia</td>
+											<td><a href="#">Show doctors</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="#">Medicum  Perearsticescus</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+											</td>
+											<td>Estonia</td>
+											<td><a href="#">Show doctors</a>
+											</td>
+										</tr>
+									</table>
+								</section>
+
+								<section>
+									<div class="d-tabs__sort">
+										Sort by:
+										<select class="custom simple" data-title="%var%">
+											<option value="0">rating (low to high)</option>
+											<option value="1">rating (hight to low)</option>
+										</select>
+									</div>
+									<table class="users-table">
+										<tr>
+											<th><a href="#">Doctor<i class="fa fa-sort-amount-asc"></i></a></th>
+											<th><a href="#">Rating</a></th>
+											<th><a href="#">Clinic</a></th>
+											<th><a href="#">Country</a></th>
+											<th class="users-table__profilecompleted"><a href="#">Profile completed</a></th>
+										</tr>
+										<tr>
+											<td><a href="#">Dr. Kaupo Kuusk</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+											</td>
+											<td><a href="#">Medicum Perearstikeskus</a></td>
+											<td>Estonia</td>
+											<td>75%</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="#">Dr. Andrea Bocelli</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(15)</span></a></p>
+											</td>
+											<td><a href="#">Sambo Hoetl Policlinic</a></td>
+											<td>Spain</td>
+											<td>15%</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="#">Dr. Kaupo Kuusk</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+											</td>
+											<td><a href="#">Medicum Perearstikeskus</a></td>
+											<td>Estonia</td>
+											<td>75%</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="#">Dr. Andrea Bocelli</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(15)</span></a></p>
+											</td>
+											<td><a href="#">Sambo Hoetl Policlinic</a></td>
+											<td>Spain</td>
+											<td>15%</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="#">Dr. Kaupo Kuusk</a></td>
+											<td>
+												<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+											</td>
+											<td><a href="#">Medicum Perearstikeskus</a></td>
+											<td>Estonia</td>
+											<td>75%</a>
+											</td>
+										</tr>
+									</table>
+								</section>
+							</div>
+						</div>
+						<p class="text-center margin-t30 margin-b20"><a class="moreoffers" href="#">Show more offers <i class="fa fa-spinner"></i></a></p>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		include "footer"
+		
+	</div>
+</body>
+</html>

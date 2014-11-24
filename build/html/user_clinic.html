@@ -1,0 +1,539 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="../css/ie_lte8.css">
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" media="all" type="text/css" href="../css/cf_elements.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/smoothness/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" media="screen,projection,tv" type="text/css" href="../css/screen.css" />
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		<header id="header">
+			<div class="layout">
+				<div class="left">
+					<a href="#" id="site-logo"><img src="../img/logo.png" alt="Docient"/></a>
+					<div id="slogan">Connecting doctors and patients<br/>all over the world</div>
+				</div>
+				<a href="#" id="main-nav-mobile" onclick="event.preventDefault();">MENU<i class="fa fa-align-justify"></i>
+					<select>
+						<optgroup label="Surgey">
+							<option>General surgery</option>
+							<option>Oral and Maxillofacial Surgery</option>
+							<option>Plastic surgery</option>
+						</optgroup>
+						<optgroup label="Cancer treatment">
+							<option>...</option>
+						</optgroup>
+					</select>
+				</a>
+				<div class="right">
+					<div class="header-user">
+						<div class="user-picture">
+							<img src="../img/content/user.jpg" alt=""/>
+							<a href="#" class="notifications">2</a>
+						</div>
+						<div class="user-details">
+							<span class="user-role">Moderator</span>
+							<span class="user-name">Anton Matiukhin<a href="#">Sign out</a></span>
+						</div>
+					</div>
+					<div class="header-user-options">
+						<p>
+							<label class="fa fa-globe"></label><select class="custom simple" data-title="%var%">
+								<option value="0" selected="selected">English</option>
+								<option value="1">Eesti</option>
+								<option value="2">Svensk</option>
+							</select>
+						</p>
+						<p>
+							<label class="fa fa-money"></label><select class="custom simple" data-title="%var%">
+								<option value="0" selected="selected">EUR</option>
+								<option value="1">USD</option>
+								<option value="2">SEK</option>
+							</select>
+						</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				<nav>
+					<ul id="user-nav">
+						<li class="expanded">
+							<a href="#"><span>Settings</span><i class="notifications">!</i></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+								<li class="active"><a href="#">+ Add clinic</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>My medical data</span></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>Communication with doctor</span><i class="notifications">2</i></a>
+						</li>
+						<li>
+							<a href="#"><span>My buyings / invoices</span></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>Feedback after visiting / services</span></a>
+						</li>
+					</ul>
+				</nav>
+				
+				<div id="main-inner">
+					<h1>Add clinic</h1>
+					<div class="add-clinic-block">
+						<h2>Contact information</h2>
+						<p><input type="text" class="textbox w315 margin-r10" placeholder="Clinic name"/><input type="text" class="textbox w315" placeholder="Legal name"/></p>
+						<p><input type="text" class="textbox w315 margin-r10" placeholder="Licence nr."/><input type="text" class="textbox w315" placeholder="Registration nr."/></p>
+
+						<div class="contact-row">
+							<div class="contact-col1  js-clone">
+								<div class="contact-input">
+								<input type="tel" class="textbox w315 margin-r10" placeholder="Contact phone number"/>
+								</div>
+								<a href="#" class="add-another-phone w315 js-clone-btn">+ Add another phone number</a>
+							</div>
+							<div class="contact-col2  js-clone">
+								<div class="contact-input">
+								<input type="tel" class="textbox w315" placeholder="Legal phone number"/>
+								</div>
+								<a href="#" class="add-another-phone w315 js-clone-btn">+ Add another phone number</a>
+							</div>
+						</div>
+
+						<p><input type="email" class="textbox w315 margin-r10" placeholder="Contact e-mail address"/><input type="email" class="textbox w315" placeholder="Legal e-mail address"/></p>
+						<p class="margin-t20">Clinic address</p>
+						<p>
+							<select class="custom mobile-wide w345 margin-r10" data-title="%var%">
+								<option value="placeholder">Country</option>
+								<option value="0">Estonia</option>
+								<option value="0">Estonia</option>
+								<option value="0">Estonia</option>
+							</select><input type="text" class="textbox w315 vertical-middle" placeholder="City / town"/>
+						</p>
+						<p><input type="text" class="textbox margin-r10" placeholder="Address" style="width:555px;"/><input type="text" class="textbox" placeholder="ZIP" style="width:73px;"/></p>
+						<p class="hor-separator"></p>
+						<h2>Clinic description</h2>
+						<p><textarea class="textbox" placeholder="Decribe all positive about your clinic. This will see your patients." style="width:670px;"></textarea></p>
+						<p class="hor-separator"></p>
+						<h2>Choose payment options</h2>
+						<p>
+							<select class="custom mobile-wide margin-r10" data-title="<b>Payment method: </b>%var%" style="width:704px;">
+								<option value="placeholder">Country</option>
+								<option value="0">Estonia</option>
+								<option value="0">Estonia</option>
+								<option value="0">Estonia</option>
+							</select>
+						</p>
+						<p class="margin-t20">Clinic bank details</p>
+						<p><input type="text" class="textbox w315 margin-r10" placeholder="Recepient name"/><input type="text" class="textbox w315" placeholder="IBAN"/></p>
+						<p><input type="text" class="textbox w315 margin-r10" placeholder="Bank name"/><input type="text" class="textbox w315" placeholder="Bank address"/></p>
+						<p class="text-center margin-t20 margin-b20"><button type="submit" class="def-button">Save clinic details</button></p>
+					</div>
+					<div class="add-clinic-block">
+						<p class="hor-separator"></p>
+						<h2>Defining users</h2>
+						<table class="defining-users-table">
+							<tr>
+								<td>Prof. Kaupo Kuusk</td>
+								<td>profile completed: 80%</td>
+								<td><a href="#">Edit</a> / <a href="#">Send message</a> / <a href="#">Delete</a></td>
+							</tr>
+							<tr>
+								<td>Dr. Arnold Swarzneger</td>
+								<td>profile completed: 80%</td>
+								<td><a href="#">Edit</a> / <a href="#">Send message</a> / <a href="#">Delete</a></td>
+							</tr>
+							<tr>
+								<td>Prof. Kaupo Kuusk</td>
+								<td>profile completed: <span class="text-red">0%</span></td>
+								<td><a href="#">Edit</a> / <a href="#">Send message</a> / <a href="#">Delete</a></td>
+							</tr>
+						</table>
+						<p class="margin-l15"><a href="#">+ Add another user</a></p>
+					</div>
+					<div class="add-clinic-block">
+						<p class="hor-separator"></p>
+						<div class="profile-completed right">profile-completed:<span class="profile-percentage">80%</span></div>
+						<h2>Adding new user to clinic</h2>
+						<div class="d-tabs">
+							<div class="d-tabs-switches">
+								<span class="active">Contact information</span><span>Specialty and diagnoses</span><span>Services</span><span>Professional information</span>
+							</div>
+							<div class="d-tabs-contents">
+								
+								<section>
+									<div class="d-tabs-column">
+										<div class="d-tabs-block">
+											<p class="d-tabs-block-title">User details</p>
+											<p>
+												<select class="custom margin-r10 vertical-top" data-title="%var%" style="width:98px">
+													<option value="0">Dr.</option>
+													<option value="1">Prof.</option>
+												</select><input type="text" class="textbox margin-r10" placeholder="First name" style="width:125px;"/><input type="text" class="textbox" placeholder="Lastname" style="width:125px;"/>
+											</p>
+											<p>
+												<input type="tel" class="textbox margin-r10" placeholder="Phone number" style="width:233px;"/>
+												<span class="inline-block vertical-middle" style="width:150px;">
+													<span class="table-cell"><input type="checkbox" class="custom" checked="checked"/></span>
+													<label class="table-cell pad-l10">Allow patients to see phone number</label>
+												</span>
+											</p>
+											<p>
+												<input type="email" class="textbox" placeholder="Email address" style="width:400px;"/>
+											</p>
+											<p>
+												<input type="password" class="textbox margin-r10" placeholder="Password" style="width:179px;"/><input type="password" class="textbox" placeholder="Retype password" style="width:179px;"/>
+											</p>
+										</div>
+										<div class="d-tabs-block">
+											<p class="d-tabs-block-title">User address</p>
+											<p>
+												<select class="custom mobile-wide vertical-top margin-r10" data-title="%var%" style="width:211px;">
+													<option value="placeholder">Country</option>
+													<option value="0">Estonia</option>
+													<option value="0">Estonia</option>
+													<option value="0">Estonia</option>
+												</select><input type="text" class="textbox" placeholder="City / Town" style="width:179px;"/>
+											</p>
+											<p>
+												<input type="text" class="textbox margin-r10" placeholder="Address" style="width:290px;"/><input type="text" class="textbox" placeholder="ZIP" style="width:68px;"/>
+											</p>
+										</div>
+									</div>
+									<div class="d-tabs-column pad-l30">
+										<div class="d-tabs-block">
+											<p class="d-tabs-block-title">Image</p>
+											<p class="text-center"><button type="button" class="color-button lblue" style="width:210px;">Browse file...<i class="fa fa-upload pad-l7"></i></button></p>
+											<p class="user-picture-big">
+												<img src="../img/content/user-big.jpg" alt=""/><!-- 140x140 -->
+												<a href="#">Delete</a>
+											</p>
+										</div>
+									</div>
+								</section>
+									
+								<section>
+									<div class="d-tabs-column">
+										<div class="d-tabs-block">
+											<p class="d-tabs-block-title">Define your speciality</p>
+											<div class="custom-scroll">
+												<ul class="options-list">
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+													<li><input type="checkbox" class="custom"/><label>Neurologie</label></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="d-tabs-column pad-l30">
+										<div class="d-tabs-block">
+											<p class="d-tabs-block-title">Define your diagnoses</p>
+											<div class="custom-scroll">
+												<ul class="options-list">
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+													<li><input type="checkbox" class="custom"/><label>K02.2 Caries Dentiti</label></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="d-tabs-block margin-t10">
+										<textarea class="textbox" placeholder="Enter here keywords for finding you by patient, separate with commas" style="width:620px; height:150px; overflow:auto;"></textarea>
+									</div>
+									<p class="d-tabs-save-but"><a href="#">Save</a></p>
+								</section>
+								
+								<section class="pad-h0">
+									<ul class="services-edit">
+										<li>
+											<p class="first-col"></p>
+											<p class="second-col"><span>Procedure</span></p>
+											<p class="third-col"><span>Cost</span></p>
+											<p class="fourth-col">For booking</p>
+											<p class="fifth-col"></p>
+										</li>
+										<li>
+											<div class="vline up-line-end"><div class="hline"></div></div>
+											<p class="first-col"><input type="checkbox" class="custom" checked="checked"/></p>
+											<p class="second-col">
+												<span class="view"><span class="mobile-show">Procedure: </span>First visit, tests</span>
+												<span class="edit"><span class="mobile-show">Procedure: </span><input type="text" class="textbox" value="First visit, tests" style="width:210px;"/></span>
+											</p>
+											<p class="third-col">
+												<span class="view"><span class="mobile-show">Cost: </span>5000 &euro;</span>
+												<span class="edit"><span class="mobile-show">Cost: </span><input type="text" class="textbox" value="5000" style="width:50px;"/> <span class="font20 mobile-land-hide">&euro;</span></span>
+											</p>
+											<p class="fourth-col"><span class="mobile-show">For booking: </span><input type="checkbox" class="custom"/></p>
+											<p class="fifth-col"><a href="#" class="edit-but">Edit</a> / <a href="#">Save</a> / <a href="#">Delete</a></p>
+											<div class="edit row-additional-fields">
+												<p><span class="mobile-show">Description: </span><textarea class="textbox" placeholder="" style="width:615px; height:130px; overflow:auto;"></textarea></p>
+											</div>
+										</li>
+										<li>
+											<div class="vline line-full-end"><div class="hline"></div></div>
+											<p class="first-col"><input type="checkbox" class="custom" checked="checked"/></p>
+											<p class="second-col">
+												<span class="view"><span class="mobile-show">Procedure: </span>First visit, tests</span>
+												<span class="edit"><span class="mobile-show">Procedure: </span><input type="text" class="textbox" value="First visit, tests" style="width:210px;"/></span>
+											</p>
+											<p class="third-col">
+												<span class="view"><span class="mobile-show">Cost: </span>5000 &euro;</span>
+												<span class="edit"><span class="mobile-show">Cost: </span><input type="text" class="textbox" value="5000" style="width:50px;"/> <span class="font20 mobile-land-hide">&euro;</span></span>
+											</p>
+											<p class="fourth-col"><span class="mobile-show">For booking: </span><input type="checkbox" class="custom"/></p>
+											<p class="fifth-col"><a href="#" class="edit-but">Edit</a> / <a href="#">Save</a> / <a href="#">Delete</a></p>
+											<div class="edit row-additional-fields">
+												<p><span class="mobile-show">Description: </span><textarea class="textbox" placeholder="" style="width:615px; height:130px; overflow:auto;"></textarea></p>
+											</div>
+										</li>
+										<li>
+											<div class="vline line-full"><div class="hline"></div></div>
+											<p class="first-col"><input type="checkbox" class="custom" checked="checked"/></p>
+											<p class="second-col">
+												<span class="view"><span class="mobile-show">Procedure: </span>First visit, tests</span>
+												<span class="edit"><span class="mobile-show">Procedure: </span><input type="text" class="textbox" value="First visit, tests" style="width:210px;"/></span>
+											</p>
+											<p class="third-col">
+												<span class="view"><span class="mobile-show">Cost: </span>5000 &euro;</span>
+												<span class="edit"><span class="mobile-show">Cost: </span><input type="text" class="textbox" value="5000" style="width:50px;"/> <span class="font20 mobile-land-hide">&euro;</span></span>
+											</p>
+											<p class="fourth-col"><span class="mobile-show">For booking: </span><input type="checkbox" class="custom"/></p>
+											<p class="fifth-col"><a href="#" class="edit-but">Edit</a> / <a href="#">Save</a> / <a href="#">Delete</a></p>
+											<div class="edit row-additional-fields">
+												<p><span class="mobile-show">Description: </span><textarea class="textbox" placeholder="" style="width:615px; height:130px; overflow:auto;"></textarea></p>
+											</div>
+										</li>
+										<li class="group">
+											<div class="group-info">Group these into a procedures to promote it as one boundle of services:</div>
+											<div class="group-desc">
+												<p class="second-col">
+													<span class="view">First visit, tests</span>
+													<span class="edit"><input type="text" class="textbox margin-l15" value="First visit, tests" style="width:210px;"/></span>
+												</p>
+												<p class="third-col"><span>Total sum:</span><br/><span class="font20">5000 &euro;</span></p>
+												<p class="fourth-col"><span>Booking fee:</span><br/><span class="font20">20 &euro;</span></p>
+												<p class="fifth-col"><a href="#" class="edit-but">Edit</a> / <a href="#">Save</a> / <a href="#">Delete</a></p>
+											</div>
+										</li>
+										<li>
+											<div class="vline line-full"><div class="hline"></div></div>
+											<p class="first-col"><input type="checkbox" class="custom" checked="checked"/></p>
+											<p class="second-col">
+												<span class="view"><span class="mobile-show">Procedure: </span>First visit, tests</span>
+												<span class="edit"><span class="mobile-show">Procedure: </span><input type="text" class="textbox" value="First visit, tests" style="width:210px;"/></span>
+											</p>
+											<p class="third-col">
+												<span class="view"><span class="mobile-show">Cost: </span>5000 &euro;</span>
+												<span class="edit"><span class="mobile-show">Cost: </span><input type="text" class="textbox" value="5000" style="width:50px;"/> <span class="font20 mobile-land-hide">&euro;</span></span>
+											</p>
+											<p class="fourth-col"><span class="mobile-show">For booking: </span><input type="checkbox" class="custom"/></p>
+											<p class="fifth-col"><a href="#" class="edit-but">Edit</a> / <a href="#">Save</a> / <a href="#">Delete</a></p>
+											<div class="edit row-additional-fields">
+												<p><span class="mobile-show">Description: </span><textarea class="textbox" placeholder="" style="width:615px; height:130px; overflow:auto;"></textarea></p>
+											</div>
+										</li>
+										<li>
+											<div class="vline line-full-end"><div class="hline"></div></div>
+											<p class="first-col"><input type="checkbox" class="custom" checked="checked"/></p>
+											<p class="second-col">
+												<span class="view"><span class="mobile-show">Procedure: </span>First visit, tests</span>
+												<span class="edit"><span class="mobile-show">Procedure: </span><input type="text" class="textbox" value="First visit, tests" style="width:210px;"/></span>
+											</p>
+											<p class="third-col">
+												<span class="view"><span class="mobile-show">Cost: </span>5000 &euro;</span>
+												<span class="edit"><span class="mobile-show">Cost: </span><input type="text" class="textbox" value="5000" style="width:50px;"/> <span class="font20 mobile-land-hide">&euro;</span></span>
+											</p>
+											<p class="fourth-col"><span class="mobile-show">For booking: </span><input type="checkbox" class="custom"/></p>
+											<p class="fifth-col"><a href="#" class="edit-but">Edit</a> / <a href="#">Save</a> / <a href="#">Delete</a></p>
+											<div class="edit row-additional-fields">
+												<p><span class="mobile-show">Description: </span><textarea class="textbox" placeholder="" style="width:615px; height:130px; overflow:auto;"></textarea></p>
+											</div>
+										</li>
+										<li>
+											<div class="vline down-line-end"><div class="hline"></div></div>
+											<p class="first-col"><input type="checkbox" class="custom" checked="checked"/></p>
+											<p class="second-col">
+												<span class="view"><span class="mobile-show">Procedure: </span>First visit, tests</span>
+												<span class="edit"><span class="mobile-show">Procedure: </span><input type="text" class="textbox" value="First visit, tests" style="width:210px;"/></span>
+											</p>
+											<p class="third-col">
+												<span class="view"><span class="mobile-show">Cost: </span>5000 &euro;</span>
+												<span class="edit"><span class="mobile-show">Cost: </span><input type="text" class="textbox" value="5000" style="width:50px;"/> <span class="font20 mobile-land-hide">&euro;</span></span>
+											</p>
+											<p class="fourth-col"><span class="mobile-show">For booking: </span><input type="checkbox" class="custom"/></p>
+											<p class="fifth-col"><a href="#" class="edit-but">Edit</a> / <a href="#">Save</a> / <a href="#">Delete</a></p>
+											<div class="edit row-additional-fields">
+												<p><span class="mobile-show">Description: </span><textarea class="textbox" placeholder="" style="width:615px; height:130px; overflow:auto;"></textarea></p>
+											</div>
+										</li>
+									</ul>
+									<p class="services-edit-add-another"><a href="#">+ Add another procedure</a></p>
+									<script>
+										$("ul.services-edit").find("a.edit-but").on("click", function(e){
+											e.preventDefault();
+											$(this).closest("li").toggleClass("edit-row");
+										});
+									</script>
+								</section>
+								
+								<section>
+									<div class="d-tabs-column">
+										<div class="d-tabs-block">
+											<p class="d-tabs-block-title">Doctor’s licence number</p>
+											<p><input type="text" class="textbox" style="width:290px;"/></p>
+										</div>
+										<div class="d-tabs-block">
+											<p class="d-tabs-block-title">Doctor usually replies within:</p>
+											<p>
+												<select class="custom" data-title="%var%" style="width:160px;">
+													<option value="0">don't reply</option>
+													<option value="24">24 hours</option>
+												</select><span class="pad-l20">on work days</span>
+											</p>
+											<p>
+												<select class="custom" data-title="%var%" style="width:160px;">
+													<option value="0">don't reply</option>
+													<option value="24">24 hours</option>
+												</select><span class="pad-l20">on weekends</span>
+											</p>
+										</div>
+									</div>
+									<div class="d-tabs-column pad-l30">
+										<div class="d-tabs-block">
+											<div class="d-tabs-language-options-titles">
+												<p class="d-tabs-block-title" style="width:145px; margin-right:10px !important;">Language you operate</p><p class="d-tabs-block-title" style="width:145px;">Level of knowlege</p>
+											</div>
+											<p>
+												<select class="custom margin-r10" data-title="%var%" style="width:145px;">
+													<option value="0">Estonian</option>
+													<option value="1">English</option>
+												</select><select class="custom" data-title="%var%" style="width:145px;">
+													<option value="0">Poor</option>
+													<option value="1">Good</option>
+												</select>
+											</p>
+											<p>
+												<select class="custom margin-r10" data-title="%var%" style="width:145px;">
+													<option value="0">Estonian</option>
+													<option value="1">English</option>
+												</select><select class="custom" data-title="%var%" style="width:145px;">
+													<option value="0">Poor</option>
+													<option value="1">Good</option>
+												</select>
+											</p>
+											<p><a href="#">+ Add another language</a></p>
+										</div>
+									</div>
+									<div class="margin-t10">
+										<p class="d-tabs-block-title">Curriculum vitae of the doctor.</p>
+										<textarea class="textbox" style="width:640px; height:150px; overflow:auto;"></textarea>
+									</div>
+									<p class="d-tabs-save-but"><a href="#">Save</a></p>
+								</section>
+								
+							</div>
+						</div>
+						<p class="text-center margin-b20"><button type="submit" class="def-button">Save user details</button></p>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		<div class="footer-push"></div>
+		<footer id="footer">
+			<div class="layout">
+				<div class="footer-about fcell">
+					<h1>What is <b>DOC</b>IENT?</h1>
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">About DOCIENT project</a></li>
+						<li><a href="#">News / Press</a></li>
+						<li><a href="#">Vacancies</a></li>
+						<li><a href="#">Partners / Health Insurers</a></li>
+					</ul>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Feedback form</a></li>
+						<li class="text-dark">+1 646-419-4452</li>
+						<li><a href="#">info@docent.com</a></li>
+					</ul>
+				</div>
+				<div class="fcell social-copyright">
+					<div class="social-links">
+						<a href="#" title=""><i class="fa fa-facebook"></i></a><a href="#" title=""><i class="fa fa-twitter"></i></a><a href="#" title=""><i class="fa fa-google-plus"></i></a><a href="#" title=""><i class="fa fa-youtube"></i></a>
+					</div>
+					<p class="text-dark">Copyright by DOCIENT</p>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+
+	<script>
+		function showAccountTypes(e){
+			e.preventDefault();
+			
+			var list = $(e.target).next(".account-types-popup-list");
+			if(list.hasClass("active")){
+				list.removeClass("active").fadeOut(200);
+			}else{
+				list.addClass("active").fadeOut(0).fadeIn(200);
+			}
+		}
+	</script>
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		include "header_user"
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				include "nav_user"
+				
+				<div id="main-inner">
+					<div class="overflow">
+						<div class="page-title-rblock page-title-rblock_mod">
+							<a href="#" class="newsurvey-btn def-button blue"><i class="fa fa-save pad-r10"></i>New survey</a>
+						</div>
+						<h1>Your surveys</h1>
+					</div>
+
+					<table class="users-table">
+						<tr>
+							<th><a href="#">Survey title<i class="fa fa-sort-amount-asc"></i></a></th>
+							<th><a href="#">Category</a></th>
+							<th><a href="#">Created</a></th>
+							<th><a href="#">Questions</a></th>
+							<th><a href="#">Tools</a></th>
+						</tr>
+						<tr>
+							<td><a href="#">Survey for my patients</a></td>
+							<td>Surgery / ...</td>
+							<td>21.12.2013</td>
+							<td>20</td>
+							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Test survey surgery</a></td>
+							<td>Tooth health / ...</td>
+							<td>02.12.2013</td>
+							<td>23</td>
+							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Reanimation survey</a></td>
+							<td>Reanimation / ...</td>
+							<td>31.11.2013</td>
+							<td>83</td>
+							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Common questions</a></td>
+							<td>Fucking people / ...</td>
+							<td>17.11.2013</td>
+							<td>5</td>
+							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Test survey surgery</a></td>
+							<td>Tooth health / ...</td>
+							<td>02.12.2013</td>
+							<td>23</td>
+							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Reanimation survey</a></td>
+							<td>Reanimation / ...</td>
+							<td>31.11.2013</td>
+							<td>83</td>
+							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Common questions</a></td>
+							<td>Fucking people / ...</td>
+							<td>17.11.2013</td>
+							<td>5</td>
+							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		include "footer"
+		
+	</div>
+	
+</body>
+</html>

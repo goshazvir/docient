@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+
+	<script>
+		function showAccountTypes(e){
+			e.preventDefault();
+			
+			var list = $(e.target).next(".account-types-popup-list");
+			if(list.hasClass("active")){
+				list.removeClass("active").fadeOut(200);
+			}else{
+				list.addClass("active").fadeOut(0).fadeIn(200);
+			}
+		}
+	</script>
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		include "header_user"
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				include "nav_user"
+				
+				<div id="main-inner">
+					<div class="overflow">
+						<h1>New survey</h1>
+					</div>
+					<p>Use expert survey template</p>
+					<p>
+						<select class="custom mobile-wide" data-title="%var%" style="width: 704px;">
+							<option value="placeholder">Choose one of survey templates</option>
+							<option value="0">Template #1</option>
+							<option value="1">Template #2</option>
+							<option value="2">Template #3</option>
+						</select>
+					</p>
+					<p class="margin-t20">Duplicate your existing survey</p>
+					<p>
+						<select class="custom mobile-wide" data-title="%var%" style="width: 704px;">
+							<option value="placeholder">Choose your existing survey</option>
+							<option value="0">Survey #1</option>
+							<option value="1">Survey #2</option>
+							<option value="2">Survey #3</option>
+						</select>
+					</p>
+					<p class="margin-t20">Survey title</p>
+					<p><input type="text" class="textbox" placeholder="..." style="width:672px;"></p>
+
+					<p class="margin-t20 margin-b20">Choose procedures you allowed for booking, where this survey is recuired</p>
+					<div class="custom-scroll mobile-wide" style="width: 704px;">
+						<ul class="options-list" style="width: 100%">
+							<li><input type="checkbox" class="custom"/><label>Cutting leg from the patient</label></li>
+							<li><input type="checkbox" class="custom"/><label>Changing the tooth with extra laser diagnistic</label></li>
+							<li><input type="checkbox" class="custom"/><label>Changing eye from the normal to glass one</label></li>
+							<li><input type="checkbox" class="custom"/><label>Hrenologia</label></li>
+							<li><input type="checkbox" class="custom"/><label>Ufologia and ancient aliens</label></li>
+							<li><input type="checkbox" class="custom"/><label>Autologia and motologia</label></li>
+							<li><input type="checkbox" class="custom"/><label>Cutting leg from the patient</label></li>
+							<li><input type="checkbox" class="custom"/><label>Changing the tooth with extra laser diagnistic</label></li>
+							<li><input type="checkbox" class="custom"/><label>Changing eye from the normal to glass one</label></li>
+							<li><input type="checkbox" class="custom"/><label>Hrenologia</label></li>
+							<li><input type="checkbox" class="custom"/><label>Ufologia and ancient aliens</label></li>
+							<li><input type="checkbox" class="custom"/><label>Autologia and motologia</label></li>
+						</ul>
+					</div>
+
+					<p class="text-center margin-t30 margin-b20"><button type="submit" class="def-button"><i class="fa fa-save pad-r10" style="font-size:18px; vertical-align:baseline;"></i>Save survey and edit questions</button></p>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		include "footer"
+		
+	</div>
+	
+</body>
+</html>

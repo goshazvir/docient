@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="../css/ie_lte8.css">
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" media="all" type="text/css" href="../css/cf_elements.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/smoothness/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" media="screen,projection,tv" type="text/css" href="../css/screen.css" />
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+		<header id="header">
+			<div class="layout">
+				<div class="left">
+					<a href="#" id="site-logo"><img src="../img/logo.png" alt="Docient"/></a>
+					<div id="slogan">Connecting doctors and patients<br/>all over the world</div>
+				</div>
+				<a href="#" id="main-nav-mobile" onclick="event.preventDefault();">MENU<i class="fa fa-align-justify"></i>
+					<select>
+						<optgroup label="Surgey">
+							<option>General surgery</option>
+							<option>Oral and Maxillofacial Surgery</option>
+							<option>Plastic surgery</option>
+						</optgroup>
+						<optgroup label="Cancer treatment">
+							<option>...</option>
+						</optgroup>
+					</select>
+				</a>
+				<div class="right">
+					<div id="signin-join">
+						<a href="#"><i class="fa fa-sign-in pad-r7"></i>Sign in</a>
+						<a href="#">Join DOCIENT</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+		
+		<div id="search-block" class="smaller" style="background:url(../img/content/front_2.jpg) no-repeat center top; background-size:auto 100%; height:459px;"><!-- IMAGE 2400x459 -->
+			<div class="layout">
+				<form id="search-form">
+					<h1>Find treatment all over the world</h1>
+					<p class="search-field">
+						<input type="text" class="textbox" placeholder="Search for medical service..."/><select class="custom search s-left" data-title="%var%">
+																											<option value="0">in all categories</option>
+																											<option value="1">some category</option>
+																											<option value="ssdf">some really long long caregory</option>
+																											<option value="XXX">Zzz</option>
+																										</select>
+					</p>
+					<p class="search-field">
+						<select class="custom search s-right" data-title="<i class='fa fa-location-arrow'></i><span>%var%</span>">
+							<option value="0">Estonia</option>
+							<option value="1">Norway</option>
+							<option value="2">Sweden</option>
+							<option value="3">Zimbabwe</option>
+						</select><select class="custom search s-left" data-title="%var%">
+							<option value="0">Tallinn</option>
+							<option value="1">Tartu</option>
+							<option value="2">Pärnu</option>
+							<option value="3">New-York</option>
+						</select>
+					</p>
+					<p class="text-center button-field">
+						<button type="submit" class="def-button">Search</button>
+						<a href="#" class="detailed-search-button"><i>detailed search</i></a>
+					</p>
+				</form>
+			</div>
+			<div class="search-quotes">
+				<div class="layout">
+					<div class="quote">
+						<h2>Cheaper than in your homecountry</h2>
+					</div>
+					<div class="quote">
+						<h2>Health insurance<br/>spendings withdraw</h2>
+					</div>
+					<div class="quote">
+						<h2>Easy and fast<br/>all in one service</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="main" class="no-border frontpage"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				<nav>
+					<ul id="main-nav">
+						<li class="expanded">
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Surgey</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>General surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Oral and Maxillofacial Surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Plastic surgery</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Cancer treatment</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>General surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Oral and Maxillofacial Surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Plastic surgery</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Gynecology</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Consultation</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>General surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Oral and Maxillofacial Surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Plastic surgery</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Survey</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>...</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Prophylaxis</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>...</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Diagnostics</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>...</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Recovery</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>...</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				
+				<div id="main-inner">
+					<div class="heading-wbutton">
+						<h1 class="title"><i class="fa fa-star text-yellow"></i>Popular procedures</h1>
+						<a href="#" class="color-button">all popular procedures<i class="fa fa-expand pad-l10"></i></a>
+					</div>
+					<table class="proc-table">
+						<tr>
+							<th style="width:175px;">Procedure</th>
+							<th class="mobile-port-hide">Stay days</th>
+							<th>Procedure cost</th>
+							<th>Back & forth</th>
+							<th class="mobile-port-hide">Accomodation costs</th>
+							<th class="mobile-port-hide mobile-land-hide">Health insurance</th>
+							<th class="mobile-port-hide mobile-land-hide">Sum</th>
+						</tr>
+						<tr>
+							<td><a href="#">Artificial insemination <span class="text-grey">(EST)</span></a></td>
+							<td class="mobile-port-hide">3 days</td>
+							<td>5000€</td>
+							<td>450€</td>
+							<td class="mobile-port-hide">250€</td>
+							<td class="mobile-port-hide mobile-land-hide">N/A</td>
+							<td class="mobile-port-hide mobile-land-hide">5700€</td>
+						</tr>
+						<tr>
+							<td><a href="#">Artificial insemination <span class="text-grey">(EST)</span></a></td>
+							<td class="mobile-port-hide">3 days</td>
+							<td>5000€</td>
+							<td>450€</td>
+							<td class="mobile-port-hide">250€</td>
+							<td class="mobile-port-hide mobile-land-hide">N/A</td>
+							<td class="mobile-port-hide mobile-land-hide">5700€</td>
+						</tr>
+						<tr>
+							<td><a href="#">Artificial insemination <span class="text-grey">(EST)</span></a></td>
+							<td class="mobile-port-hide">3 days</td>
+							<td>5000€</td>
+							<td>450€</td>
+							<td class="mobile-port-hide">250€</td>
+							<td class="mobile-port-hide mobile-land-hide">N/A</td>
+							<td class="mobile-port-hide mobile-land-hide">5700€</td>
+						</tr>
+					</table>
+					<div class="heading-wbutton">
+						<h1 class="title"><i class="fa fa-thumbs-up text-blue"></i>Suggested procedures</h1>
+						<a href="#" class="color-button">all popular procedures<i class="fa fa-expand pad-l10"></i></a>
+					</div>
+					<table class="proc-table">
+						<tr>
+							<th style="width:175px;">Procedure</th>
+							<th class="mobile-port-hide" >Stay days</th>
+							<th>Procedure cost</th>
+							<th>Back & forth</th>
+							<th class="mobile-port-hide">Accomodation costs</th>
+							<th class="mobile-port-hide mobile-land-hide">Health insurance</th>
+							<th class="mobile-port-hide mobile-land-hide">Sum</th>
+						</tr>
+						<tr>
+							<td><a href="#">Artificial insemination <span class="text-grey">(EST)</span></a></td>
+							<td class="mobile-port-hide">3 days</td>
+							<td>5000€</td>
+							<td>450€</td>
+							<td class="mobile-port-hide">250€</td>
+							<td class="mobile-port-hide mobile-land-hide">N/A</td>
+							<td class="mobile-port-hide mobile-land-hide">5700€</td>
+						</tr>
+						<tr>
+							<td><a href="#">Artificial insemination <span class="text-grey">(EST)</span></a></td>
+							<td class="mobile-port-hide">3 days</td>
+							<td>5000€</td>
+							<td>450€</td>
+							<td class="mobile-port-hide">250€</td>
+							<td class="mobile-port-hide mobile-land-hide">N/A</td>
+							<td class="mobile-port-hide mobile-land-hide">5700€</td>
+						</tr>
+						<tr>
+							<td><a href="#">Artificial insemination <span class="text-grey">(EST)</span></a></td>
+							<td class="mobile-port-hide">3 days</td>
+							<td>5000€</td>
+							<td>450€</td>
+							<td class="mobile-port-hide">250€</td>
+							<td class="mobile-port-hide mobile-land-hide">N/A</td>
+							<td class="mobile-port-hide mobile-land-hide">5700€</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		<div class="bottom-block">
+			<div class="layout">
+				<div class="teaser-blocks">
+					<div class="block">
+						<h2>Patient</h2>
+						<p>Your treatment is too expencive?<br/>Through us you can find cheaper way<br/>to treat yourself.</p>
+						<p><a href="#" class="color-button bigger">Look, how it works<i class="fa fa-share pad-l7"></i></a></p>
+					</div>
+					<div class="block">
+						<h2>Partner</h2>
+						<p>IT company or private praxis?<br/>Become an affiliate and help patients<br/>from whole world.</p>
+						<p><a href="#" class="color-button purple bigger">Your benefits are<i class="fa fa-share pad-l7"></i></a></p>
+					</div>
+					<div class="block">
+						<h2>Health insurer</h2>
+						<p>Want you to see patients<br/>treatment information?<br/><br/></p>
+						<p><a href="#" class="color-button lpurple bigger">See, how it`s possible<i class="fa fa-share pad-l7"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-push"></div>
+		<footer id="footer">
+			<div class="layout">
+				<div class="footer-about fcell">
+					<h1>What is <b>DOC</b>IENT?</h1>
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">About DOCIENT project</a></li>
+						<li><a href="#">News / Press</a></li>
+						<li><a href="#">Vacancies</a></li>
+						<li><a href="#">Partners / Health Insurers</a></li>
+					</ul>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Feedback form</a></li>
+						<li class="text-dark">+1 646-419-4452</li>
+						<li><a href="#">info@docent.com</a></li>
+					</ul>
+				</div>
+				<div class="fcell social-copyright">
+					<div class="social-links">
+						<a href="#" title=""><i class="fa fa-facebook"></i></a><a href="#" title=""><i class="fa fa-twitter"></i></a><a href="#" title=""><i class="fa fa-google-plus"></i></a><a href="#" title=""><i class="fa fa-youtube"></i></a>
+					</div>
+					<p class="text-dark">Copyright by DOCIENT</p>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+</body>
+</html>

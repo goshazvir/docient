@@ -1,0 +1,4413 @@
+//***********
+//*	RESET
+//************* 
+$blue: #5bb7e6
+$blue_d: #4383b8
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+	margin: 0
+	padding: 0
+	border: 0
+	outline: 0
+	font-size: 100%
+	vertical-align: baseline
+	background: transparent
+
+body
+	line-height: 1
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote
+	&:before, &:after
+		content: ''
+
+q
+	&:before, &:after
+		content: ''
+
+\:focus
+	outline: 0
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+//****************
+//*	TYPOGRAPHY
+//******************
+
+body
+	font-family: "Open Sans", Arial, Helvetica, sans-serif
+	font-size: 13px
+	line-height: 1.2
+	color: #252525
+	cursor: default
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.authorization
+	background: url("../img/search-bg-pat.png")
+
+p, li
+	margin: 8px 0
+
+p:first-child
+	margin: 0 0 8px
+
+h1, h2, h3, h4, h5, h6
+	line-height: 1
+	margin: 0 0 15px
+	font-weight: 400
+
+h1
+	font-weight: 300
+	font-size: 44px
+	margin: 0 0 30px 0
+
+h2
+	font-weight: 300
+	font-size: 20px
+	margin: 0 0 20px 0
+
+h3
+	font-size: 14px
+	font-weight: 400
+
+h4!, h5!, h6!
+
+h1 .subheader
+	display: block
+	color: #a0a0a0
+	font-size: 12px
+	line-height: 1.5
+	padding-left: 3px
+
+a
+	color: #4383b8
+	text-decoration: none
+	&:hover
+		color: #135388
+
+.text-yellow
+	color: #ffb400 !important
+
+.text-blue
+	color: #3a719d !important
+
+.text-grey
+	color: #7d7d7d !important
+
+.text-red
+	color: #990000 !important
+
+::selection
+	background: #5cb7e0
+	color: #ffffff
+::-moz-selection
+	background: #5cb7e0
+	color: #ffffff
+
+.hor-separator
+	margin: 20px 0 !important
+	border-top: 1px dashed #cacaca
+
+.content
+	li
+		margin: 0 0 5px 2px
+		position: relative
+		padding: 0 0 0 14px
+		&:before
+			content: "\f0da"
+			font-family: 'FontAwesome'
+			display: block
+			position: absolute
+			top: 1px
+			left: 0
+			margin: 0 5px 0 0
+	> p:first-child
+		margin-top: 0
+	table
+		width: 100%
+		margin: 20px 0
+		th, td
+			padding: 10px 20px
+			border: 1px solid #e4e4e4
+			font-weight: normal
+		th
+			background: #fcfcfc
+			font-size: 14px
+			text-align: center
+		td
+			vertical-align: top
+
+.userlogin
+	+clr
+	padding: 55px 0
+	+r(w999)
+		width: 290px
+		margin: 0 auto
+	.userlogin__info
+		float: left
+		width: 395px
+		margin-right: 45px
+		+r(w999)
+			float: none
+			text-align: left
+			width: 100%
+			margin: 0 auto 30px
+		h1
+			color: #fff
+			text-align: right
+			margin-bottom: 46px
+			strong
+				font-weight: 400
+			+r(w999)
+				text-align: left
+				margin-bottom: 20px
+	.userlogin__form
+		float: left
+		width: 407px
+		margin-top: -10px
+		.textbox
+			+box
+			+r(w999)
+				margin: 0 0 10px
+		.def-button
+			padding: 0
+			text-align: center
+		+r(w999)
+			float: none
+			width: 100%
+	.def-button
+		+r(w999)
+			margin: 5px 0
+	.userlogin__row
+		margin: 13px 0
+		+clr
+		+r(w999)
+			margin: 0
+	.userlogin__colleft
+		float: left
+		width: 197px
+		margin-bottom: 5px 
+		+r(w999)
+			float: none
+			width: 100%
+	.userlogin__colright
+		float: right
+		width: 197px
+		margin-bottom: 5px 
+		+r(w999)
+			float: none
+			width: 100%
+
+	.userlogin__radios
+		font-size: 15px
+		color: #fff
+		min-width: 225px
+		float: right
+		label
+			cursor: pointer
+			+r(w999)
+				max-width: 245px
+				display: inline-block
+				vertical-align: middle
+				+text-overflow
+		.checked + label
+			border-bottom: 1px dashed white
+		+r(w999)
+			float: none
+			width: auto
+	.userlogin__submit
+		margin-top: 20px
+		+r(w999)
+			margin-top: 10px
+	.userlogin__sep
+		text-align: center
+		color: #fff
+		line-height: 1
+		margin: 5px 0
+		+r(w999)
+			margin: 10px 0
+	.userlogin__msg
+		color: #fff
+		font-size: 15px
+		+r(w999)
+			margin-top: 10px
+			text-align: center
+		.fa
+			padding-right: 7px
+			color: #ffb400
+
+
+
+.newsurvey-btn
+	margin-top: 2px
+	margin-bottom: 15px
+
+.questiontype
+	.questiontype__item
+		display: inline-block
+		vertical-align: top
+		margin-left: 30px
+		+r(w479)
+			display: block
+			margin-left: 0
+			margin-top: 5px
+			&:first-child
+				margin-top: 0
+		&:first-child
+			margin-left: 0
+
+.btngroup
+	+clr
+	max-width: 710px
+	+r(w999)
+		max-width: 100%
+		text-align: center
+	.def-button
+		float: right
+		+r(w999)
+			float: none
+			margin-bottom: 10px
+		&:first-child
+			float: left
+			+r(w999)
+				float: none
+
+.useragree
+	text-align: center
+	margin-bottom: 15px
+	label
+		cursor: pointer
+
+.userdetails
+	.userdetails__title
+		margin-bottom: 30px
+		span
+			display: inline-block
+			vertical-align: middle
+			font-size: 17px
+			color: #fff
+			width: 39px
+			height: 39px
+			line-height: 39px
+			+border-radius(50%)
+			background-color: #ffb300
+			text-align: center
+			margin-right: 10px
+			i
+				position: relative
+				top: -2px
+	.d-tabs-column
+		width: 100%
+		// vertical-align: bottom
+		vertical-align: middle
+	.userdetails__row
+		margin-bottom: 40px
+		.color-button
+			+r(w999)
+				margin-top: 10px
+
+.submiticon
+	position: absolute
+	top: -19px
+	right: 0
+	bottom: -16px
+	width: 55px
+	background-color: #ffb300
+	+border-radius(0 15px 15px 0)
+	border: none
+	padding: 0
+	font-size: 20px
+	color: #2f2f2f
+	text-align: center
+	@include box-shadow(0 1px 3px rgba(0,0,0,.66), inset 0 1px 0 rgba(255,255,255,.75))
+	transition: background 150ms linear
+	+r(w999)
+		top: -3px
+		bottom: 0
+	.fa
+		position: relative !important
+		right: auto !important
+		top: 2px !important
+		font-size: 20px !important
+		color: #2f2f2f !important
+		@include text-shadow(0 1px 0 rgba(255,255,255,.63))
+	&:hover
+		background: #ffc400
+		color: #252525
+	&:active
+		background: #ffa400
+		transition: none
+
+.messages
+	margin-left: 20px
+	+r(w479)
+		margin-left: 0
+	&.messages_mod
+		margin-left: 0
+		.message
+			margin: 0
+			padding: 20px 0 12px
+			border-top: 1px dotted #bdbdbd
+			&:first-child
+				padding: 15px 0 12px
+				border-top: none
+			&.message_unread
+				.message__meta
+					> .fa
+						color: #ffb400
+				.message__text
+					font-weight: bold
+
+	.message
+		margin-top: 30px
+		&.message_sent
+			.fa-comment
+				display: none
+			.message__meta
+				color: #959595
+		&.message_inbox
+			.fa-comment-o
+				display: none
+		&.message_first
+			.message__text
+				font-weight: bold
+	.message__meta
+		margin-bottom: 10px
+		.fa
+			padding-right: 5px
+
+.useragreement
+	width: 655px
+	+r(w999)
+		width: auto
+	.useragreement__radios
+		margin: 20px 0
+	.useragreement__options
+		margin-top: 40px
+		+r(w999)
+			margin-bottom: 20px
+	.useragreement__optionstitle
+		margin-bottom: 12px
+	.useragreement__optionscol
+		display: table-cell
+		vertical-align: top
+		padding-left: 15px
+		width: 100%
+		padding-bottom: 20px
+		+r(w999)
+			display: block
+			padding: 0
+			width: auto
+		&:first-child
+			padding-left: 0
+			padding-right: 15px
+			+r(w999)
+				padding: 0
+	.useragreement__generate
+	.useragreement__generatetop
+		margin-bottom: 30px
+	.useragreement__generatelabel
+		display: table-cell
+		vertical-align: top
+		padding-right: 30px
+		+r(w479)
+			display: block
+			padding-right: 0
+			margin-bottom: 20px
+		a
+			border-bottom: 1px dotted #5cb7e0
+			text-decoration: none
+			&:hover
+				border-color: #135388
+	.useragreement__generatenote
+		position: relative
+		display: table-cell
+		vertical-align: top
+		padding-left: 20px
+		color: #7a7a7a
+		+r(w479)
+			display: block
+		p
+			margin: 0 0 8px
+		> .fa
+			position: absolute
+			top: 0
+			left: 0
+			font-size: 15px
+	.useragreement__agreement
+		margin-bottom: 20px
+		.custom-scroll
+			height: 145px
+			font-size: 14px
+	.useragreement__action
+		text-align: center
+		.def-button
+			padding: 0 123px
+
+.custom-scroll-wrap
+	padding: 20px 15px
+	border: 1px solid #d7d7d7
+	+border-radius(15px)
+
+.datamed
+	max-width: 710px
+	+r(w999)
+		max-width: 100%
+	.datamed__upload
+		.def-button
+			height: 48px
+			line-height: 48px
+			padding: 0
+			text-align: center
+			+r(w999)
+				display: block
+				max-width: 345px
+				margin: 10px auto 0
+	.datamed__file
+		width: 345px
+		margin-right: 8px
+		+box
+		+r(w999)
+			margin: 5px 0
+			display: block
+			width: 100%
+
+.invoice
+	position: relative
+	padding: 20px 15px
+	border: 1px solid #cacaca
+	font-size: 14px
+	+r(w999)
+		font-size: 13px
+	.invoice__close
+		position: absolute
+		top: 20px
+		right: 15px
+		color: #cfcfcf
+		font-size: 18px
+		+transition(all 150ms)
+		&:hover
+			color: #4c4c4c
+	.invoice__top
+	.invoice__title
+		font-size: 28px
+		display: table-cell
+		width: 50%
+		// vertical-align: middle
+		vertical-align: baseline
+		margin: 0
+		+r(w999)
+			display: block
+			width: auto
+			margin-bottom: 10px
+			font-size: 22px
+	.invoice__date
+		font-weight: bold
+		display: table-cell
+		width: 50%
+		// vertical-align: middle
+		vertical-align: baseline
+		padding-left: 40px
+		+r(w999)
+			padding-left: 0
+	.invoice__info
+	.invoice__infocol
+		display: table-cell
+		vertical-align: top
+		width: 50%
+		padding-left: 20px
+		+r(w999)
+			display: block
+			width: auto
+			padding-left: 0
+			padding-top: 10px
+		&:first-child
+			padding-left: 0
+			padding-right: 20px
+			+r(w999)
+				padding-right: 0
+				padding-top: 0
+	.invoice__infosub
+		font-weight: bold
+		margin-bottom: 10px
+	.invoice__infotable
+		// +r(w999)
+			// table-layout: fixed
+			// width: 100%
+		td
+			padding: 12px 0 0
+			+r(w999)
+				display: block
+				width: 100%
+				padding: 6px 0 12px
+			&:first-child
+				padding-right: 15px
+				+r(w999)
+					padding: 0
+	.invoice__price
+	.invoice__pricetable
+		// table-layout: fixed
+		width: 100%
+		margin-bottom: 35px
+		th
+			text-transform: uppercase
+			font-weight: bold
+			// text-align: center
+			padding-bottom: 20px
+			padding-top: 0
+			// white-space: nowrap
+		td
+			// text-align: center
+			// padding-top: 10px
+		th, td
+			text-align: center
+			padding: 10px 0 0 40px
+			+r(w999)
+				padding: 10px 0 0 20px
+			+r(w479)
+				padding: 10px 0 0 10px
+			&:first-child
+				text-align: left
+				padding-left: 0
+				// min-width: 400px
+	.inovice__pricetotal
+		font-weight: bold
+		text-transform: uppercase
+		span
+			float: right
+	.invoice__action
+		+clr
+	.invoice__actionlabel
+		float: left
+		color: #4c4c4c
+		+r(w999)
+			float: none
+			margin-bottom: 10px
+	.invoice__actionbtn
+		float: right
+		+r(w999)
+			float: none
+		.fa
+			color: #4c4c4c
+			padding-right: 4px
+		a
+			margin-left: 20px
+			&:first-child
+				margin-left: 0
+
+.adminhome
+	.table-cell
+		vertical-align: top
+		padding-left: 15px
+		+r(w999)
+			padding-left: 0
+		&:first-child
+			padding-left: 0
+			padding-right: 15px
+			+r(w999)
+				padding-right: 0
+	.simple-table
+		width: 100%
+		table-layout: fixed
+		td
+			// font-size: 13px
+			+r(w999)
+				text-align: right
+			&:first-child
+				width: 50%
+				+r(w999)
+					text-align: left
+	.iconlink
+		margin-right: 20px
+		+r(w999)
+			margin-right: 10px
+
+.title-alt
+	font-size: 34px
+
+.overflow
+	.iconlink
+		margin-top: 12px
+
+.iconlink
+	border-bottom: 1px dotted #4383b8
+	&:hover
+		border-color: #135388
+
+
+.admincat
+	overflow: hidden
+	.overflow
+		h1
+			margin-bottom: 10px
+	.page-title-rblock
+		.simple
+			margin-right: 15px
+
+.admin-msg
+	overflow: hidden
+
+.adminbox
+	width: 741px
+	+r(w999)
+		width: 100%
+	.adminbox__row
+		+clr
+		margin-bottom: 10px
+		+r(w999)
+			margin-bottom: 0
+	.adminbox__col
+		float: left
+		margin-left: 10px
+		+clr
+		+r(w999)
+			float: none
+			margin-left: 0
+			margin-bottom: 10px
+		&:first-child
+			margin-left: 0
+		.textbox
+			margin: 0
+			vertical-align: top
+	.adminbox__label
+		display: block
+		margin-left: 5px
+		margin-bottom: 10px
+		font-size: 13px
+		&.adminbox__label_inline
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			margin-bottom: 0
+			+r(w999)
+				display: block
+				margin-bottom: 10px
+		&.adminbox__label_send
+			float: left
+			margin-bottom: 0
+			height: 50px
+			line-height: 50px
+			+r(w999)
+				height: auto
+				line-height: 1
+				float: none
+				margin-bottom: 10px
+	.adminbox__select_send
+		float: right
+		+r(w999)
+			float: none
+			margin-bottom: 10px !important
+	.adminbox__uservisit
+		+r(w999)
+			float: left
+			width: 80% !important
+	.adminbox__uservisitdays
+		+r(w999)
+			float: right
+			display: inline-block !important
+			width: 16% !important
+	.adminbox__action
+		+clr
+		+r(w999)
+			text-align: center
+		.def-button
+			float: right
+			+r(w999)
+				float: none
+				margin-bottom: 10px
+			&:first-child
+				float: left
+				+r(w999)
+					float: none
+
+.msgpanel
+	+border-radius(15px)
+	overflow: hidden
+	border: 1px solid #d7d7d7
+	margin-bottom: 10px
+	.msgpanel__toolbar
+		+box-shadow(0 1px 0 rgba(158,158,158,.82))
+		background: #dfdfdf
+		+background-image(linear-gradient(bottom, #dfdfdf 0%, #fff 86.74%, #fff 100%))
+		padding: 12px 16px 3px
+		img
+			max-width: 100%
+	.msgpanel__content
+		padding: 25px
+	.msgpanel__text
+		height: 160px
+		font-size: 15px
+		p
+			margin-bottom: 1em
+
+.search-page
+	overflow: hidden
+
+.stars
+	display: inline-block
+	vertical-align: middle
+	margin-right: 10px
+	// +r(w999)
+		// display: block
+		// margin: 5px 0
+	.fa
+		font-size: 21px
+		color: #bdbdbd
+		padding-right: 2px
+		cursor: pointer
+		&.is-active
+			color: #5cb7e0
+
+.btngroup
+	display: inline-block
+	vertical-align: middle
+	border: 1px solid #d7d7d7
+	+border-radius(15px)
+	padding: 2px
+	height: 50px
+	+box
+	font-size: 0
+	&.btngroup_wide
+		.btngroup__btn
+			padding: 0 29px
+	.btngroup__btn
+		height: 44px
+		line-height: 44px
+		padding: 0 25px
+		&.inactive
+			background: #fff
+			color: #4c4c4c
+
+.search
+	width: 735px
+	+r(w999)
+		width: 100%
+	.search__row
+		+clr
+		margin-bottom: 10px
+		+r(w999)
+			text-align: center
+		.fa-exchange
+			padding: 0 3px
+		.cfe-select
+			vertical-align: middle
+			margin-left: 10px
+			+r(w999)
+				margin-left: 0
+	
+	.search__colleft
+		display: inline-block
+		vertical-align: middle
+		min-height: 1px
+		width: 130px
+		font-weight: bold
+		+r(w999)
+			display: block
+			margin-bottom: 10px
+			text-align: center
+			width: 100%
+	.search__query
+		float: left
+	.search__note
+		position: relative
+		display: inline-block
+		font-size: 13px
+		color: #797979
+		padding-left: 23px
+		width: 137px
+		font-size: 12px
+		margin-left: 12px
+		// padding-top: 10px
+		+r(w999)
+			display: none
+			width: auto
+		.fa
+			position: absolute
+			top: 0
+			left: 0
+			font-size: 14px
+
+.location-field
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	+r(w999)
+		display: block
+	.textbox
+		padding: 0 15px 0 40px
+	.fa-location-arrow
+		position: absolute
+		top: 50%
+		margin-top: -9px
+		left: 15px
+		font-size: 18px
+
+//*************
+//*	HELPERS
+//***************
+
+.text-left
+	text-align: left
+
+.text-right
+	text-align: right
+
+.text-center
+	text-align: center
+
+.left
+	float: left
+
+.right
+	float: right
+
+.clear
+	clear: both
+
+.overflow
+	overflow: hidden
+
+.wide
+	width: 100%
+
+.inline-block
+	display: inline-block
+
+.table-block
+	display: table
+
+.table-cell
+	display: table-cell
+
+.vertical-top
+	vertical-align: top !important
+
+.vertical-middle
+	vertical-align: middle !important
+
+.verical-bottom
+	vertical-align: bottom !important
+
+.round
+	-webkit-border-radius: 300px
+	border-radius: 300px
+
+.relative
+	position: relative
+
+.font12
+	font-size: 12px
+
+.font14
+	font-size: 14px
+
+.font20
+	font-size: 20px
+	font-weight: 300
+
+.pad-r5
+	padding-right: 5px !important
+
+.pad-r7
+	padding-right: 7px !important
+
+.pad-r10
+	padding-right: 10px !important
+
+.pad-r20
+	padding-right: 20px !important
+
+.pad-l5
+	padding-left: 5px !important
+
+.pad-l7
+	padding-left: 7px !important
+
+.pad-l10
+	padding-left: 10px !important
+
+.pad-l20
+	padding-left: 20px !important
+
+.pad-l30
+	padding-left: 30px !important
+
+.pad-h0
+	padding-right: 0px !important
+	padding-left: 0px !important
+
+.pad-h5
+	padding-right: 5px !important
+	padding-left: 5px !important
+
+.pad-h25
+	padding-right: 25px !important
+	padding-left: 25px !important
+
+.pad-t7
+	padding-top: 7px !important
+
+.no-margin
+	margin: 0 !important
+
+.margin-t10
+	margin-top: 10px !important
+
+.margin-t20
+	margin-top: 20px !important
+
+.margin-t30
+	margin-top: 30px !important
+
+.margin-b20
+	margin-bottom: 20px !important
+
+.margin-b30
+	margin-bottom: 30px !important
+
+.margin-l10
+	margin-left: 10px !important
+
+.margin-l15
+	margin-left: 15px !important
+
+.margin-l20
+	margin-left: 20px !important
+
+.margin-r10
+	margin-right: 10px !important
+
+.margin-r20
+	margin-right: 20px !important
+
+.w20
+	width: 20px
+
+.w145
+	width: 145px !important
+
+.w200
+	width: 200px !important
+
+.w230
+	width: 230px
+
+.w315
+	width: 315px
+
+.w345
+	width: 345px !important
+
+.w702
+	width: 702px !important
+
+.form-width
+	width: 534px
+
+//*************
+//*	INPUTS
+//***************
+
+input, textarea, button
+	font-family: "Open Sans", Arial, Helvetica, sans-serif
+	font-size: 14px
+	color: #252525
+	font-weight: 300
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+	color: #252525
+
+input::-moz-placeholder, textarea::-moz-placeholder
+	color: #252525
+	opacity: 1
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, input::input-placeholder, textarea::input-placeholder
+	color: #252525
+
+input[type=date]
+	&::-webkit-inner-spin-button, &::-webkit-calendar-picker-indicator
+		-webkit-appearance: none
+		display: none
+	&::-webkit-clear-button
+		display: block
+		-webkit-appearance: none
+
+.cfe-select
+	font-weight: normal
+.cfe-select select
+	-webkit-appearance: none
+.cfe-select .cfe-select-title.placeholder
+	color: #959595
+.cfe-file .cfe-filename.placeholder
+	color: #959595
+	font-weight: normal
+
+.textbox
+	height: 48px
+	padding: 0 15px
+	background: #ffffff
+	box-shadow: none
+	border: 1px solid #d7d7d7
+	outline: none
+	border-radius: 15px
+	-webkit-border-radius: 15px
+	transition: border 150ms linear
+	+placeholder-color(#959595)
+
+input.textbox
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: normal
+
+textarea.textbox
+	height: 86px
+	padding: 15px 15px
+	resize: vertical
+	overflow: hidden
+
+.textbox
+	&.small
+		height: 32px
+		padding: 0 12px
+	&:focus
+		border-color: #b7b7b7
+	&.error
+		border-color: #d75757
+
+.date-field
+	display: inline-block
+	position: relative
+	vertical-align: middle
+	&:after
+		content: "\f073"
+		font-family: 'FontAwesome'
+		position: absolute
+		top: 15px
+		right: 15px
+		font-size: 16px
+		color: #4c4c4c
+	.textbox
+		display: inline-block
+		padding-right: 40px
+		width: 80px
+		text-align: left
+	label
+		position: absolute
+		top: -18px
+		left: 10px
+		font-size: 12px
+
+.textbox.type-2
+	background: #ffffff
+	background: rgba(255, 255, 255, 0.8)
+	height: 50px
+	-webkit-border-radius: 15px
+	border-radius: 15px
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), inset 0 -1px 0 white
+	border: none
+
+// icon-field
+
+.icon-field
+	position: relative
+	&.icon-field_mod
+		.textbox
+			padding-right: 70px
+	.textbox
+		padding-right: 35px
+	.fa
+		position: absolute
+		top: 0
+		right: 12px
+		font-size: 16px
+		color: #4c4c4c
+		border: none
+		background: none
+		outline: none
+		margin: 0
+		padding: 0
+	button
+		cursor: pointer
+
+
+.dpicker
+	font-family: "Open Sans", Arial, Helvetica, sans-serif
+	.ui-datepicker-inline
+		border: none
+		padding: 0
+		background: #fff
+	.ui-datepicker-header
+		background: #58b9d9
+		background: url("../img/search-bg-pat.png")
+		border: none
+		+border-radius(0)
+	.ui-datepicker-title
+		color: #fff
+		text-transform: uppercase
+		font-weight: normal
+		font-size: 15px
+	.ui-datepicker-calendar
+		text-align: center
+		th
+			color: #787878
+			font-weight: normal
+			font-size: 13px
+		td
+			padding: 0
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+		background: none
+		border: none
+		color: #3373a8
+		text-align: center
+		padding: 0
+		width: 33px
+		height: 33px
+		line-height: 33px
+		font-size: 12px
+		&.ui-state-active
+			background: #5cb7e0
+			color: #fff
+			+border-radius(50%)
+	.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next
+		width: auto
+		height: auto
+		&:hover
+			background: none
+			border: none
+	.ui-datepicker .ui-datepicker-next span,
+	.ui-datepicker .ui-datepicker-prev span
+		position: static
+		margin: 0
+		cursor: pointer
+	.ui-datepicker .ui-datepicker-prev
+		left: 10px
+		top: 9px
+	.ui-datepicker .ui-datepicker-next
+		right: 10px
+		top: 9px
+	.ui-datepicker .ui-datepicker-next span
+		+s(dtp_next)
+		// right: 10px
+
+	.ui-datepicker .ui-datepicker-prev span
+		+s(dtp_prev)
+		// left: 10px
+	.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled
+		opacity: 1
+		span
+			color: #a3a3a3 !important
+			+nosel
+	// .ui-datepicker-other-month,
+	// .ui-datepicker-unselectable .ui-state-disabled
+	// 	span
+	// 		color: #a3a3a3 !important
+
+//*************
+//*	BUTTONS
+//***************
+
+.def-button, .color-button
+	display: inline-block
+	height: 50px
+	line-height: 50px
+	border: none
+	outline: none
+	font-weight: 400
+	cursor: pointer
+	white-space: nowrap
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: normal
+	-webkit-border-radius: 15px
+	border-radius: 15px
+	transition: background 150ms linear
+	+font-smoothing
+
+// def-button
+
+.def-button
+	background: #ffb400
+	padding: 0 40px
+	font-size: 18px
+	color: #252525
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0, 0, 0, 0.2)
+	font-size: 18px
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
+	&:hover
+		background: #ffc400
+		color: #252525
+	&:active
+		background: #ffa400
+		transition: none
+	&.blue
+		background: #54b8dc
+		color: #fff
+		text-shadow: none
+		&:hover
+			background: #6cc7f0
+			color: #fff
+		&:active
+			background: #4ca7d0
+			color: #fff
+	&.def-button_openid
+		font-size: 13px
+		color: #fff
+		+box
+		padding: 0
+		text-align: center
+		background: transparent
+		border: 2px solid #fff
+		line-height: 46px
+		box-shadow: none
+		.fa
+			font-size: 22px
+			padding-right: 8px
+			position: relative
+			top: -3px
+		&:hover
+			background: #fff
+			color: #5cb7e0
+	> .fa
+		font-size: 15px
+		height: 18px
+		vertical-align: middle
+
+// color-button
+
+.color-button
+	background: #3a719d
+	color: #ffffff
+	font-size: 14px
+	padding: 0 30px
+	&:hover
+		background: #4a81ad
+		color: #ffffff
+	&:active
+		background: #2a618d
+		transition: none
+	&.bigger
+		height: 58px
+		line-height: 58px
+	&.large
+		font-size: 18px
+		height: 48px
+		line-height: 48px
+	&.small
+		font-size: 13px
+		height: 26px
+		line-height: 26px
+		padding: 0 17px
+	&.lblue
+		background: #5cb7e0
+		&:hover
+			background: #6cc7f0
+		&:active
+			background: #4ca7d0
+	&.gray
+		color: #252525
+		background: #ebebeb
+		&:hover
+			color: #252525
+			background: rgba(#ebebeb, .8)
+		&:active
+			color: #252525
+			background: rgba(#ebebeb, .6)
+	&.purple
+		background: #86246e
+		&:hover
+			background: #96347e
+		&:active
+			background: #76145e
+	&.lpurple
+		background: #cf6fb7
+		&:hover
+			background: #df7fc7
+		&:active
+			background: #bf5fa7
+	&.shadow
+		+box-shadow(0 1px 3px rgba(0,0,0,.66))
+
+.center-brow
+	text-align: center
+	margin: 15px 0
+
+// close-but
+
+.close-but
+	display: block
+	width: 21px
+	height: 21px
+	background: url(../img/close.png) no-repeat
+	cursor: pointer
+	&:hover
+		background-position: 0 -21px
+	&.white
+		width: 20px
+		height: 20px
+		background: url(../img/close-white.png) no-repeat
+		&:hover
+			background-position: 0 -20px
+
+//*************
+//*	SHARED
+//***************
+// date-stamp
+
+.date-stamp
+	font-size: 20px
+	font-weight: 300
+	color: #a8a8a8
+	line-height: 20px
+	.fa
+		font-size: 16px
+		padding: 0 8px 0 0
+		vertical-align: top
+		line-height: 21px
+	span
+		display: inline-block
+		vertical-align: top
+
+// dashed-box
+
+.dashed-box
+	border: 1px dashed #7a7a7a
+	margin: 30px 0
+	padding: 20px
+	> :last-child
+		margin-bottom: 0
+
+// dotted-box
+
+.dotted-box
+	border: 1px dotted #7a7a7a
+	margin: 30px 0
+	padding: 20px
+	> :last-child
+		margin-bottom: 0
+
+// acricle-title
+
+.acricle-title
+	overflow: hidden
+	.heading
+		float: left
+	.date-stamp
+		float: right
+
+// heading
+
+.heading
+	margin: 0 0 20px 0
+	.title
+		font-size: 32px
+		padding: 5px 0 0 25px
+		margin: 0
+		.fa
+			font-size: 20px
+			padding: 0 15px 0 0
+			vertical-align: middle
+
+// heading-wbutton
+
+.heading-wbutton
+	overflow: hidden
+	margin: 0 0 20px 0
+	.title
+		float: left
+		font-size: 32px
+		padding: 5px 0 0 25px
+		margin: 0
+		.fa
+			font-size: 20px
+			padding: 0 15px 0 0
+			vertical-align: middle
+	> a
+		float: right
+		.fa
+			font-size: 16px
+
+// proc-table
+
+.proc-table
+	width: 100%
+	margin: 20px 0 40px
+	border-top: 3px solid #6c99be
+	th, td
+		padding: 10px 20px
+		border-left: 1px solid #cacaca
+		border-bottom: 1px solid #cacaca
+		text-align: center
+		vertical-align: middle
+	th:first-child, td:first-child
+		border-left: none
+		text-align: left
+	th
+		background: #fbfbfb
+		font-weight: 600
+	td
+		border-bottom: 1px solid #cacaca
+		background: #ffffff
+	&.blocks-table td
+		padding: 20px 10px
+		text-align: center
+		vertical-align: middle
+		width: 25%
+		p
+			margin: 5px 0
+			font-size: 13px
+		h2
+			margin: 12px 0 0 0
+			font-size: 21px
+			font-weight: 400
+		h3
+			margin: 0 0 12px
+			font-weight: 600
+		&.more
+			background: #f4f4f4
+			p
+				font-size: 14px
+
+// dotted-blocks
+
+.dotted-blocks
+	margin: 30px 0
+	border-top: 1px dotted #000000
+	border-bottom: 1px dotted #000000
+	background: #fcfcfc
+	.block
+		padding: 20px 0
+		border-top: 1px dotted #bdbdbd
+		&:first-child
+			border-top: none
+
+// rating-blue
+
+.rating-blue
+	display: inline-block
+	vertical-align: middle
+	font-size: 20px
+	color: #5cb7e0
+	.fa
+		padding: 0 3px
+	.fa-star-o
+		color: #bdbdbd
+
+
+.js-login-tab1,
+.js-login-tab2
+	display: none
+	&.is-active
+		display: block
+
+.contact-row
+	overflow: hidden
+	.add-another-phone
+		margin: 8px 0 0
+		+r(w999)
+			margin: 8px 0
+	.contact-col1
+		float: left
+	.contact-input
+		.textbox + .textbox
+			margin-top: 8px
+	.contact-col2
+		float: right
+	.contact-col1,
+	.contact-col2
+		width: 347px
+		+r(w999)
+			width: 100%
+			display: block
+			float: none
+
+// switch-option
+
+.switch-option
+	display: inline-block
+	position: relative
+	vertical-align: middle
+	height: 48px
+	width: auto
+	font-size: 14px
+	color: #252525
+	background: #ffffff
+	border: 1px solid #d7d7d7
+	font-weight: 300
+	border-radius: 15px
+	-webkit-border-radius: 15px
+	&.switch-option_mod
+		.selection-box
+			+gpu
+			width: 136px
+			+transition(all 200ms ease-out)
+		.options
+			a
+				width: 140px
+				+r(w999)
+					display: block
+					width: auto
+					+transition(all 100ms linear)
+	.options
+		display: block
+		position: relative
+		a
+			display: inline-block
+			height: 48px
+			width: 148px
+			cursor: pointer
+			line-height: 46px
+			text-align: center
+			color: #252525
+			transition: all 100ms linear
+			.title
+				display: inline-block
+				line-height: 1.2
+				padding: 0 10px
+				vertical-align: middle
+			&.active
+				color: #ffffff
+	.selection-box
+		position: absolute
+		top: 0px
+		left: 0px
+		height: 44px
+		width: 144px
+		margin: 2px
+		background: #5cb7e0
+		border-radius: 13px
+		-webkit-border-radius: 13px
+		transition: all 200ms ease-out
+
+// user-picture
+
+.user-picture
+	display: inline-block
+	position: relative
+	img
+		display: block
+		border-radius: 55px
+	.notifications
+		display: block
+		position: absolute
+		top: 0px
+		left: -8px
+		width: 20px
+		height: 20px
+		background: #ffb400
+		line-height: 19px
+		color: #ffffff
+		text-align: center
+		border-radius: 15px
+		cursor: pointer
+		font-size: 13px
+
+// user-picture-big
+
+.user-picture-big
+	text-align: center
+	margin: 15px 0
+	img
+		border-radius: 140px
+		width: 140px
+		margin: 0 auto 10px
+		display: block
+
+// d-tabs
+
+.d-tabs
+	&.d-tabs_mod
+		.d-tabs-switches
+			margin-bottom: 0
+		.d-tabs-contents
+			padding: 0
+			section
+				padding: 0
+				position: relative
+			.d-tabs__sort
+				position: absolute
+				right: 0
+				top: -25px
+				+r(w999)
+					position: relative
+					text-align: right
+					top: auto
+					margin: 10px 0
+			.users-table
+				margin: 0
+				td, th
+					border-left: 1px solid #d7d7d7
+					vertical-align: middle
+					&:first-child
+						border-left: none
+					+r(w999)
+						border-left: none
+				.users-table__profilecompleted
+					width: 84px
+				.users-table__meta
+					.fa
+						color: #3a719d
+						font-size: 11px
+					.fa-exchange
+						color: #7a7a7a
+				.users-table__date
+					font-size: 13px
+			.title
+				margin-bottom: 0
+				a
+					font-weight: normal
+			.price
+				font-size: 24px
+				margin-bottom: 0
+			.rating
+				font-size: 13px
+
+.d-tabs-switches
+	border-bottom: 1px solid #d7d7d7
+	padding: 0 13px
+	margin: 0 0 8px 0
+	span
+		display: inline-block
+		color: #626262
+		font-size: 14px
+		cursor: pointer
+		padding: 12px 15px 10px
+		margin: 0 2px
+		border: 1px solid #d7d7d7
+		border-radius: 15px 15px 0 0
+		margin-bottom: -1px
+		transition: all 150ms linear
+		&:hover, &.active
+			background: #5cb7e0
+			border-color: #5cb7e0
+			color: #ffffff
+
+.d-tabs-contents section
+	display: none
+	padding: 15px
+
+.d-tabs-column
+	display: table-cell
+	vertical-align: top
+
+.d-tabs-block
+	padding: 0 0 20px 0
+
+.d-tabs-block-title
+	margin: 0 0 12px 0 !important
+
+.d-tabs-save-but
+	text-align: right
+	padding: 0 50px 0 0
+	margin: 0 !important
+	font-size: 14px
+
+.d-tabs-language-options-titles
+	margin: 0 0 12px
+	p
+		display: inline-block
+		margin-bottom: 0 !important
+
+.moreoffers
+	font-size: 20px
+	color: #252525
+	text-decoration: none
+	.fa
+		padding-left: 5px
+	&:hover
+		color: #000
+
+// custom-scroll
+
+.custom-scroll
+	overflow: auto
+	height: 250px
+
+
+// options-list
+
+.options-list
+	width: 290px
+	li
+		padding: 12px 10px
+		border-bottom: 1px solid #efefef
+		margin: 0
+		&:hover
+			background: #fbfbfb
+		&:first-child
+			border-top: 1px solid #efefef
+
+// page-title-rblock
+
+.page-title-rblock
+	float: right
+	padding: 20px 0 0 0
+	&.page-title-rblock_mod
+		padding: 0
+
+// color-picker
+
+.color-picker
+	display: inline-block
+	width: 148px
+	height: 48px
+	border: 1px solid #d7d7d7
+	border-radius: 15px
+
+.color-box
+	width: 24px
+	height: 24px
+	float: left
+	margin: 11px
+	border: 1px solid #d7d7d7
+	border-radius: 8px
+
+.color-info
+	background: url(../img/eyedropper.png) no-repeat right center
+	border-left: 1px solid #d7d7d7
+	overflow: hidden
+	margin: 0 13px 0 0
+	height: 48px
+	line-height: 48px
+	padding: 0 12px
+
+// double-cell-block
+
+.double-cell-block
+	display: table
+	width: 100%
+	.table-cell
+		width: 50%
+
+// simple-table
+
+.simple-table td
+	padding: 5px 10px
+	font-size: 14px
+	&:first-child
+		padding-left: 0
+
+// hierarchical-list
+
+.hierarchical-list
+	font-size: 14px
+	margin: 15px 0
+	li
+		margin: 0
+		padding: 0
+		position: relative
+		background: #ffffff
+	.alt
+		background: #f8f8f8
+	li
+		> span
+			display: block
+			padding: 12px 0
+			margin-left: 30px
+			position: relative
+		li
+			> span
+				margin-left: 50px
+			li > span
+				margin-left: 65px
+	.table-block
+		width: 100%
+		.table-cell
+			padding-right: 40px
+			&:first-child
+				width: 400px
+
+.exp-but
+	display: block
+	position: absolute
+	top: 14px
+	left: 10px
+	width: 12px
+	height: 13px
+	background: url(../img/exp-but.png) no-repeat 0 -13px
+	cursor: pointer
+	z-index: 999
+
+li
+	.exp-but
+		left: 10px
+	li
+		.exp-but
+			left: 30px
+		li .exp-but
+			left: 60px
+
+.exp-but.opened
+	background-position: 0 0
+
+.exp-line
+	position: absolute
+	top: 20px
+	left: 15px
+	border-left: 1px dotted #a1a1a1
+	height: 100%
+	z-index: 998
+
+li li .exp-line
+	left: 35px
+	bottom: 19px
+	height: auto
+.exp-h-line
+	position: absolute
+	top: 50%
+	left: 36px
+	border-bottom: 1px dotted #a1a1a1
+	width: 16px
+	z-index: 998
+
+.hierarchical-list_mod
+	li li > span
+		margin-left: 30px
+	.is-editable
+		// > span
+		// 	border-bottom: 1px dotted
+		.textbox
+			height: 40px
+			width: 377px
+	.hierarchical-list__tools
+		float: right
+		margin-top: 7px
+		margin-right: 20px
+		position: relative
+		z-index: 1
+		height: 26px
+		line-height: 26px
+	.hierarchical-list__translate
+		margin: 5px 30px 0
+	.hierarchical-list__translaterow
+		padding-bottom: 5px
+		a
+			font-size: 13px
+			margin-left: 10px
+	.hierarchical-list__translatelabel
+		display: inline-block
+		width: 60px
+		font-size: 13px
+	.hierarchical-list__add
+		padding: 15px 30px
+		font-size: 13px
+		background: #fff
+
+// popup
+
+.popup-overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba(255, 255, 255, 0.6)
+
+.popup
+	position: absolute
+	top: 100px
+	left: 0
+	width: 100%
+
+.popup-window
+	background: url("../img/search-bg-pat.png") repeat scroll 0 0 rgba(0, 0, 0, 0)
+	color: #ffffff
+	padding: 30px 35px
+	margin: 0 auto
+	border-radius: 20px
+	position: relative
+	.close-but
+		position: absolute
+		top: 12px
+		right: 12px
+	h1
+		font-size: 32px
+
+.popup-radios
+	padding: 20px 25px
+	font-size: 14px
+	label
+		cursor: pointer
+	.checked + label
+		border-bottom: 1px dashed #ffffff
+
+//***********
+//*	STYLE
+//*************
+
+html
+	height: 100%
+	background: #ffffff
+
+body
+	height: 100%
+	min-width: 1000px
+
+#wrapper
+	height: auto
+	min-height: 100% !important
+	position: relative
+
+.layout
+	width: 1000px
+	margin: 0 auto
+
+.mobile-show
+	display: none
+
+// HEADER
+
+#header
+	padding: 16px 0
+	background: #fff
+	> .layout
+		width: 970px
+		padding: 0 15px
+	.left
+		white-space: nowrap
+
+#site-logo
+	display: inline-block
+	vertical-align: middle
+	width: 160px
+	cursor: pointer
+	//float: left
+	padding: 12px 0
+	img
+		display: block
+		margin-top: 4px
+#site-logo-text
+	display: inline-block
+	vertical-align: middle
+	font-size: 45px
+	text-transform: uppercase
+	color: #3A719D    
+#slogan
+	width: 300px
+	height: 36px
+	border-left: 1px solid #b5ccde
+	display: inline-block
+	vertical-align: middle
+	white-space: normal
+	padding: 12px 0 12px 25px
+	margin: 0 0 0 22px 
+	overflow: hidden
+	font-size: 15px
+	line-height: 17px
+	font-weight: 300
+ 
+#signin-join
+	line-height: 60px
+	font-size: 15px 
+	> a 
+		margin: 0 0 0 18px
+
+// header-user
+
+.header-user
+	float: left
+	height: 58px
+	padding-top: 2px
+	.user-picture
+		vertical-align: middle
+	.user-details
+		display: inline-block
+		max-width: 255px
+		margin: 0 15px 0 12px
+		vertical-align: middle
+		> span
+			display: block
+		.user-role
+			font-size: 12px
+		.user-name
+			font-size: 14px
+			a
+				margin-left: 10px
+
+// header-user-options
+
+.header-user-options
+	float: right
+	border-left: 1px solid #b5ccde
+	padding: 7px 0 0 15px
+	height: 53px
+	width: 100px
+	p
+		margin: 4px 0
+		label
+			font-size: 15px
+			color: #676767
+			width: 27px
+			vertical-align: middle
+	.cfe-select.simple
+		font-size: 13px
+		.cfe-select-title-outer
+			border: none
+		.cfe-arrow
+			font-size: 14px
+
+// MAIN
+
+#main
+	border-top: 1px solid #5dbbda
+	&.no-border
+		border-top: none
+
+#main-top-pad
+	height: 16px
+	background: #ffffff
+
+// main-sep
+
+#main-sep
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	bottom: 0
+	left: 0
+	z-index: -1
+	.layout
+		height: 100%
+	i
+		display: block
+		height: 100%
+		width: 200px
+		border-right: 1px solid #e4e4e4
+
+#main-inner
+	padding: 10px 15px 30px 25px
+
+.frontpage #main-inner
+	padding-left: 0
+	padding-right: 0
+	margin-left: 20px
+
+// NAV
+
+nav
+	width: 200px
+	float: left
+	+ #main-inner
+		margin-left: 200px
+
+.frontpage nav + #main-inner
+	margin-left: 220px
+
+// main-nav
+
+#main-nav
+	line-height: 1
+	padding: 20px 0 35px
+	li
+		margin: 0
+	> li
+		> a
+			display: block
+			cursor: pointer
+			padding: 10px 20px 10px 18px
+			margin-left: 20px
+			font-size: 14px
+			position: relative
+			.fa
+				display: block
+				position: absolute
+				top: 10px
+				left: 0
+				&.collapse
+					display: none
+		&.expanded > a .fa
+			display: none
+			&.collapse
+				display: block
+		> ul
+			border-top: 1px solid #e4e4e4
+			border-bottom: 1px solid #e4e4e4
+			background: #fcfcfc
+			padding: 4px 0
+			> li > a
+				display: block
+				cursor: pointer
+				padding: 6px 20px 7px 10px
+				margin-left: 38px
+				position: relative
+				.fa
+					position: absolute
+					top: 7px
+					left: 0
+					font-size: 12px
+				&.active
+					color: #135388
+
+// main-nav-mobile
+
+#main-nav-mobile
+	display: none
+	margin: 10px 0 0 0
+	float: right
+	position: relative
+	font-size: 18px
+	font-weight: normal
+	overflow: hidden
+	.fa
+		padding: 0 0 0 8px
+		color: #252525
+	select
+		opacity: 0
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+// user-nav
+
+#user-nav
+	line-height: 1
+	padding: 8px 0 25px
+	li
+		margin: 0
+	> li
+		> a
+			display: block
+			position: relative
+			cursor: pointer
+			padding: 0 45px 0 30px
+			height: 54px
+			line-height: 53px
+			font-size: 14px
+			position: relative
+			transition: all 150ms linear
+			&:hover
+				background: #5cb7e0
+				color: #ffffff
+		&.active > a, &.expanded > a
+			background: #5cb7e0
+			color: #ffffff
+		>
+			a > span
+				display: inline-block
+				position: relative
+				vertical-align: middle
+				line-height: 1
+			ul
+				background: #ebebeb
+				padding: 10px 0 10px 30px
+				> li
+					> a
+						display: block
+						padding: 7px 15px
+					&.active > a
+						color: #252525
+	.notifications
+		display: block
+		position: absolute
+		top: 50%
+		right: 12px
+		width: 22px
+		height: 22px
+		margin: -11px 0 0 0
+		background: #ffb400
+		line-height: 21px
+		color: #ffffff
+		text-align: center
+		border-radius: 15px
+		cursor: pointer
+		font-size: 13px
+		font-style: normal
+	li
+		&.active .notifications, &.expanded .notifications
+			color: #5cb7e0
+			background: #ffffff
+	a:hover .notifications
+		color: #5cb7e0
+		background: #ffffff
+
+// SEARCH BLOCK
+
+#search-block
+	color: #ffffff
+	position: relative
+	background: #ffffff
+	background: url(../img/search-bg-pat.png) repeat 0 0
+	overflow: hidden
+	// +cover
+	h1
+		font-size: 38px
+		text-align: center
+	h2
+		font-size: 29px
+		line-height: 1.4
+		margin-bottom: 15px
+.search-block
+	position: relative
+	&#search-block
+		width: 100%
+		display: table
+		overflow: visible
+		text-align: center
+		& > .layout
+			display: table-cell
+			vertical-align: middle
+		.search-form
+			display: table-row
+			vertical-align: bottom
+.search-block-text
+	width: 740px
+	margin: 0 auto
+	text-align: center
+	font-weight: 300 
+	font-size: 40px
+	color: #000
+	+r(w999)
+		width: auto
+		font-size: 32px
+	+r(w760)
+		font-size: 26px
+	+r(w560)
+		font-size: 16px
+#search-form
+	margin: 30px 0 20px
+	p
+		margin: 16px auto
+
+.search-field
+	background: #ffffff
+	background: rgba(255, 255, 255, 0.8)
+	width: 540px
+	height: 59px
+	-webkit-border-radius: 15px
+	border-radius: 15px
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), inset 0 -1px 0 white
+	.textbox
+		background: none
+		border: none
+		padding: 0 25px
+		width: 305px
+		height: 57px
+		margin: 1px 0
+		font-size: 15px
+		-webkit-border-radius: 0
+		border-radius: 0
+		border-right: 1px solid #cbd7dd
+		border-right: 1px solid rgba(0, 0, 0, 0.1)
+
+#search-form
+	.def-button
+		height: 59px
+		padding: 0 70px
+		font-size: 22px
+		text-shadow: none
+		font-weight: 300
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.4)
+	.button-field
+		width: 540px
+		position: relative
+
+.detailed-search-button
+	position: absolute
+	font-weight: 300
+	top: 21px
+	right: 10px
+	color: #4c4c4c
+	font-size: 16px
+	i
+		font-style: normal
+		border-bottom: 1px dashed #4c4c4c
+		color: #4c4c4c
+	&:hover i
+		color: #135388
+		border-bottom: 1px dashed #135388
+
+// search-quotes
+
+.search-quotes
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	background: #000000
+	background: rgba(0, 0, 0, 0.6)
+	.layout
+		display: table
+		height: 220px
+	.quote
+		display: table-cell
+		text-align: center
+		width: 33%
+		padding: 0 10px
+		vertical-align: middle
+		p
+			font-size: 14px
+
+// smaller
+
+#search-block
+	&.smaller
+		h2
+			font-size: 22px
+			margin: 0
+		#search-form p
+			margin: 10px auto
+		.search-quotes
+			background: rgba(0, 0, 0, 0.4)
+			.layout
+				display: table
+				height: 125px
+	&.quotes-aside
+		#search-form
+			float: right
+			width: 780px
+			margin: 40px 0 30px
+		.search-quotes
+			position: static
+			bottom: auto
+			left: auto
+			width: 220px
+			float: left
+			background: none
+			margin: 50px 0 40px
+			.layout
+				display: block
+				height: auto
+			.quote
+				display: block
+				text-align: left
+				width: auto
+				padding: 0
+				margin: 0 0 0 15px
+				border-top: 1px dashed #ffffff
+				&:first-child
+					border-top: none
+				h2
+					font-size: 18px
+					margin: 12px 0
+	&.small
+		.layout
+			width: 970px
+		h1
+			font-size: 24px
+			margin: 0 0 20px
+			text-align: left
+		#search-form
+			margin: 20px 0 10px
+		.search-field
+			margin: 0 12px 10px 0
+			display: inline-block
+			vertical-align: top
+			width: 405px
+			height: 49px
+			.textbox
+				padding: 0 20px
+				width: 204px
+				height: 47px
+				margin: 1px 0
+				font-size: 14px
+		#search-form
+			.def-button
+				height: 49px
+				width: 128px
+				padding: 0
+				font-size: 18px
+				line-height: 48px
+			.button-field
+				margin: 0
+				display: inline-block
+				width: auto
+		.detailed-search-button
+			top: -38px
+			right: 1px
+			font-size: 14px
+	.top-wrap
+		padding: 50px 0 30px
+		h1
+			font-size: 32px
+	.bottom-wrap
+		border-top: 1px solid #68cae6
+		background: url(../img/search-white-fade.png) no-repeat center top
+		padding: 30px 0
+		.layout
+			width: 500px
+		h2
+			text-align: center
+			font-size: 25px
+			margin: 0 0 20px 0
+		.frow
+			text-align: center
+			label
+				display: inline-block
+				font-size: 16px
+				vertical-align: middle
+				padding-right: 10px
+				font-weight: 300
+				text-align: left
+
+// quotes-aside
+
+// smaller
+
+// search-form-short
+
+// BOTTOM BLOCK
+
+.bottom-block
+	border-top: 1px dashed #cacaca
+	padding: 30px 0
+	background: #fbfbfb
+	&.no-border
+		border-top: none
+
+// teaser-blocks
+
+.teaser-blocks
+	display: table
+	width: 100%
+	.block
+		display: table-cell
+		width: 33%
+		padding: 20px 0 0
+		text-align: center
+		border-left: 1px dashed #cacaca
+		&:first-child
+			border-left: none
+		h2
+			font-size: 30px
+			margin: 0 0 28px
+		p
+			margin: 10px 0
+			line-height: 1.4
+
+// proc-table
+
+.bottom-block .proc-table
+	border-top: none
+	margin: 0 0 20px
+	td
+		border-left: 1px dashed #cacaca
+		border-bottom: none
+		background: none
+		&:first-child
+			border-left: none
+	h3
+		font-size: 17px
+		font-weight: 400 !important
+	.more
+		margin: 12px 0 0
+
+// SERVICE
+
+// procedure-package
+
+.procedure-package-wrap
+	padding: 0 15px 0 15px
+	.header
+		display: table
+		width: 100%
+		padding: 0 0 15px 0
+		p
+			margin: 5px 0
+		.block
+			display: table-cell
+			padding: 0 15px 0 0
+		.title
+			font-weight: 400
+			margin: 0
+			span
+				font-size: 13px
+				padding-left: 15px
+		.price
+			font-size: 24px
+			font-weight: 400
+			margin: 10px 0 5px
+		.clinic-title
+			font-size: 15px
+		.rating
+			margin: 8px 0 7px
+			i
+				padding-right: 3px
+
+// package-desc
+
+.package-desc
+	padding: 0 0 0 28px
+	position: relative
+	.ver-line
+		position: absolute
+		top: 0
+		left: -15px
+		border-left: 1px dashed #7a7a7a
+		height: 100%
+		i
+			display: block
+			width: 16px
+			height: 13px
+			background: #ffffff
+			position: absolute
+			top: 0
+			left: -1px
+			border-bottom: 1px dashed #7a7a7a
+	.content
+		padding: 15px 0 5px
+		border-top: 1px dotted #cacaca
+
+// procedure-package-search
+
+.procedure-package-search
+	border-top: 1px dotted #7a7a7a
+	border-bottom: 1px dotted #7a7a7a
+	padding: 10px 0
+	display: none
+	&.active + .content
+		border-top: none
+	p
+		margin: 10px 0
+		> span
+			vertical-align: middle
+			margin-top: 5px !important
+			margin-bottom: 5px !important
+	label
+		display: inline-block
+		vertical-align: middle
+		width: 80px
+	.cfe-checkbox
+		margin: 0
+
+// package-procedure
+
+.package-procedure
+	position: relative
+	padding: 10px 0
+
+.package-procedure-inner
+	border: 1px dashed #7a7a7a
+	padding: 22px 28px
+
+.package-procedure
+	.ver-line
+		position: absolute
+		top: 0
+		left: -15px
+		border-left: 1px dashed #7a7a7a
+		height: 100%
+		i
+			display: block
+			width: 14px
+			position: absolute
+			top: 50%
+			left: 0
+			border-bottom: 1px dashed #7a7a7a
+	&:last-child .ver-line, .ver-line.last
+		height: 50%
+	&:last-child .ver-line i, .ver-line.last i
+		top: 100%
+	.book-procedure
+		font-size: 16px
+		margin: 20px 0 10px 0 !important
+		text-align: right
+		a
+			border-bottom: 1px dotted #4383b8
+			&:hover
+				border-bottom: 1px dotted #135388
+
+// dr-list-table
+
+.dr-list-table
+	td
+		vertical-align: middle
+		padding: 3px 15px 3px 0
+	.thumb
+		display: block
+		border-radius: 50px
+	p
+		margin: 2px 0
+
+.rating .fa
+	padding-right: 3px
+
+// proc-date-options
+
+.proc-date-options!
+
+.proc-date-options-block
+	display: table-cell
+	vertical-align: top
+	&:first-child
+		padding: 0 50px 0 0
+
+.proc-date-options-filter
+	font-size: 14px
+	label
+		display: inline-block
+		vertical-align: middle
+		height: 17px
+
+.proc-date-options-more
+	margin: 12px 0 0 0
+
+.proc-date-options-table
+	th
+		text-align: left
+		font-weight: 700
+		padding: 8px 20px 8px 0
+	td
+		padding: 8px 20px 8px 0
+	th
+		padding-bottom: 12px
+	td
+		vertical-align: middle
+	tr>td
+		cursor: pointer
+		label
+			cursor: pointer
+
+// ADD CLINIC
+
+.add-clinic-block
+	width: 704px
+
+.add-another-phone
+	display: inline-block
+	padding: 0 15px
+
+// defining-user-table
+
+.defining-users-table
+	margin: 20px 0
+	width: 100%
+	font-size: 14px
+	td
+		padding: 12px 15px
+	tr:nth-child(2n + 1) td
+		background: #f8f8f8
+	.defining-users-table__act
+		width: 120px
+		.fa
+			color: #4c4c4c
+		+r(w999)
+			width: auto
+
+// profile-completed
+
+.profile-completed
+	line-height: 38px
+	font-size: 14px
+	+ h2
+		padding-top: 6px
+
+.profile-percentage
+	display: inline-block
+	width: 38px
+	height: 38px
+	border-radius: 38px
+	background: #5cb7e0
+	text-align: center
+	line-height: 38px
+	color: #ffffff
+	margin: 0 0 0 10px
+
+// service-edit-table
+
+.services-edit
+	> li
+		border-top: 1px solid #efefef
+		padding: 10px 0 10px 40px
+		margin: 0
+		position: relative
+		&:first-child
+			border-top: none
+			> p span
+				padding: 0 15px
+	p
+		margin: 0
+	> li > p
+		margin: 0
+		padding: 0 5px
+	.edit
+		display: none
+	.view
+		padding: 0 15px
+	.edit-row
+		.edit
+			display: inherit
+		.view
+			display: none
+		.edit-but
+			color: #9f9f9f
+			border-bottom: 1px dotted #9f9f9f
+	.first-col
+		width: 40px
+		padding-left: 10px
+		text-align: center
+		display: block
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -8px
+	.second-col
+		width: 245px
+		display: table-cell
+		vertical-align: middle
+	.third-col
+		width: 115px
+		display: table-cell
+		vertical-align: middle
+	.fourth-col
+		width: 115px
+		text-align: center
+		display: table-cell
+		vertical-align: middle
+	.fifth-col
+		width: 140px
+		text-align: right
+		display: table-cell
+		vertical-align: middle
+	.row-additional-fields
+		padding: 10px 5px 0 5px
+
+.services-edit-add-another
+	padding: 10px 0 10px 70px
+	border-top: 1px solid #efefef
+	margin: 0
+
+.services-edit
+	> li.group
+		border: none
+		padding: 0
+	.group-info
+		border: 1px dashed #b3b3b3
+		border-bottom: none
+		padding: 18px 10px
+	.group-desc
+		background: #5cb7e0
+		border: 1px dashed #b3b3b3
+		padding: 10px 0
+		color: #ffffff
+		.second-col
+			width: 324px
+		a
+			color: #ffffff
+	.edit-row .group-desc .edit-but
+		color: #ffffff
+		border-bottom: 1px dotted #ffffff
+	> li
+		position: relative
+	.vline
+		position: absolute
+		border-left: 1px dashed #b3b3b3
+	.hline
+		position: absolute
+		border-top: 1px dashed #b3b3b3
+		width: 10px
+	.up-line-end
+		top: 50%
+		left: 0
+		height: 50%
+		.hline
+			top: 0
+			left: 0
+	.down-line-end
+		top: 0
+		left: 0
+		height: 50%
+		.hline
+			bottom: 0
+			left: 0
+	.line-full-end
+		top: 0
+		left: 0
+		height: 100%
+		.hline
+			top: 50%
+			left: 0
+	.line-full
+		top: 0
+		left: 0
+		height: 100%
+		.hline
+			display: none
+
+// ADMIN USERS
+
+.filter-user-search
+	margin: 10px 0
+	font-size: 14px
+	> span
+		display: inline-block
+		padding: 3px 10px
+		> label
+			margin-left: 6px
+
+// users-table
+
+.users-table
+	margin: 20px 0
+	width: 100%
+	font-size: 14px
+	tr:nth-child(even) td
+		background: #f8f8f8
+	th
+		font-weight: normal
+		text-align: left
+		a
+			color: #a8a8a8
+			.fa
+				padding-left: 5px
+		padding: 12px 0 12px 20px
+	td
+		padding: 12px 0 12px 20px
+		border-top: 1px solid #d7d7d7
+		border-bottom: 1px solid #d7d7d7
+		vertical-align: top
+		transition: background 150ms linear
+	tr:hover td
+		background: #EBEBEB
+	.edit td
+		padding: 12px 0 12px 0
+		background: #ffffff !important
+	.top-row
+		margin: 0 0 20px 0
+		div
+			display: inline-block
+			padding: 0 0 0 3px
+	.bottom-row > div
+		vertical-align: top
+		padding: 0 10px 0 10px
+		font-size: 13px
+		> p
+			margin: 0 0 5px
+
+.account-types-but
+	margin-left: 10px
+	border-bottom: 1px dotted #3a719d
+
+.account-types-popup-list
+	display: none
+	position: absolute
+	top: 150%
+	right: 0
+	width: 175px
+	background: #ffffff
+	padding: 5px 15px
+	border-radius: 15px
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3)
+
+// EMBEDDING
+
+.embedding-params
+	margin-bottom: 50px
+
+// ui-slider
+
+.slider-wrap
+	position: relative
+	width: 360px
+	padding: 17px 0 19px
+	.slider-value
+		position: absolute
+		top: 15px
+		right: 0
+	.slider-ruler
+		position: absolute
+		width: 100%
+		height: 11px
+		top: -14px
+		left: 0
+		background: url(../img/slider-ruler.png) repeat-x 9px 0, url(../img/slider-ruler.png) no-repeat 0 0
+	.slider-min-value
+		position: absolute
+		top: 16px
+		left: 0
+		color: #939292
+		font-size: 11px
+	.slider-max-value
+		position: absolute
+		top: 16px
+		right: 0
+		color: #939292
+		font-size: 11px
+
+.ui-slider
+	border: 1px solid #d7d7d7
+	-webkit-border-radius: 10px
+	border-radius: 10px
+	height: 10px
+
+.ui-slider-range
+	background: #7cc5e6
+	border-radius: 10px 0 0 10px !important
+	-webkit-border-radius: 10px 0 0 10px !important
+
+.ui-slider-handle
+	width: 15px !important
+	height: 34px !important
+	background: transparent url(../img/slider-handle.png) no-repeat center center !important
+	border: none !important
+	-webkit-border-radius: 0 !important
+	border-radius: 0 !important
+	margin: -10px 0 0 -8px !important
+
+// CLINIC
+
+.doctors-dialog
+	padding: 20px 30px
+	border: 1px solid #d7d7d7
+	background: #ffffff
+	border-radius: 15px
+	position: absolute
+	top: 110%
+	left: 0
+	z-index: 9999
+	width: 570px
+	.close-but
+		position: absolute
+		top: 10px
+		right: 10px
+	.dialog-tail
+		display: block
+		width: 17px
+		height: 15px
+		background: url(../img/dialog-tail.png) no-repeat
+		position: absolute
+		top: -14px
+		right: 85px
+
+.clinic-doctors-block
+	margin: 30px 0
+	.dr-list-table
+		float: left
+		margin: 0 0 0 30px
+
+// FOOTER
+
+.footer-push
+	height: 145px
+	overflow: hidden
+
+#footer
+	height: 145px
+	overflow: hidden
+	background: #414141
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	color: #e4e4e4
+	font-size: 12px
+	> .layout
+		width: 970px
+		padding: 35px 15px 0
+		display: table
+	h1
+		font-size: 25px
+		margin: 0 0 15px
+		b
+			font-weight: normal
+	a
+		color: #e4e4e4
+		border-bottom: 1px dotted #e4e4e4
+		&:hover
+			color: #b4b4b4
+			border-color: #b4b4b4
+	.text-dark
+		color: #979797
+
+.fcell
+	display: table-cell
+	vertical-align: top
+	padding-left: 40px
+	&:first-child
+		padding-left: 0
+
+// footer-about
+
+.footer-about
+	width: 290px
+
+// footer-links
+
+.footer-links
+	padding-top: 2px
+	li
+		margin: 0 0 10px
+		line-height: 1
+
+// social-links
+
+.social-copyright
+	text-align: right
+
+.social-links
+	padding: 8px 0 10px
+	a
+		display: inline-block
+		width: 43px
+		height: 43px
+		margin: 0 0 0 20px
+		line-height: 42px
+		text-align: center
+		border-radius: 43px
+		-webkit-border-radius: 43px
+		border: none !important
+		background: #4c4c4c
+		font-size: 21px
+		transition: all 150ms
+		&:hover
+			color: #ffffff !important
+			background: #6c6c6c
+
+//*************
+//*	 MOBILE
+//***************
+
+//*************
+//*	 < 768
+//***************
+@media (max-width: 999px)
+	body
+		min-width: 320px
+	.layout
+		width: auto !important
+	.mobile-land-hide
+		display: none
+	.mobile-block-center
+		display: block
+		text-align: center
+	.mobile-hidden
+		visibility: hidden
+	.mobile-show
+		display: inherit
+	p, li
+		margin: 5px 0
+	p:first-child
+		margin: 0 0 5px
+	h1, h2, h3, h4, h5, h6
+		margin: 0 0 15px
+	h1
+		font-size: 25px
+		margin: 0 0 20px 0
+	h2
+		font-size: 18px
+		margin: 0 0 15px 0
+	h3
+		font-size: 14px
+	.hor-separator
+		margin: 15px 0 !important
+	.custom-scroll
+		&.mobile-wide
+		width: 100% !important
+	.content
+		img
+			max-width: 300px
+			display: block
+			float: none !important
+			margin: 15px auto !important
+			display: block
+		table
+			th, td
+				padding: 10px
+			th
+				font-size: 13px
+	.form-width
+		width: auto
+	//*************
+	//*	INPUTS
+	//***************
+	.textbox
+		display: block
+		width: 100% !important
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		margin: 5px 0
+	.date-field
+		display: block
+		width: auto !important
+		margin: 5px 0
+		.textbox
+			margin: 0
+			line-height: 48px
+	// icon-field
+	.icon-field
+		display: block
+		.fa
+			top: 14px
+	//*************
+	//*	BUTTONS
+	//***************
+	.def-button.mobile-wide, .color-button.mobile-wide
+		display: block
+		width: 100% !important
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		margin: 5px 0 !important
+	//*************
+	//*	SHARED
+	//***************
+	// date-stamp
+	.date-stamp
+		font-size: 12px
+		line-height: 1
+		.fa
+			font-size: 11px
+			height: auto
+			vertical-align: top
+			line-height: 1
+	// dashed-box
+	.dashed-box, .dotted-box
+		margin: 20px 0
+		padding: 15px
+	// dotted-box
+	// acricle-title
+	.acricle-title
+		overflow: hidden
+		.heading
+			float: none
+			margin: 0 0 8px
+		.date-stamp
+			float: none
+			margin: 0 0 15px
+	// heading
+	.heading
+		margin: 0 10px 15px
+		text-align: center
+		.title
+			font-size: 25px
+			padding: 5px 0 0 0
+			margin: 0 0 15px
+			.fa
+				font-size: 20px
+				padding: 0 8px 0 0
+	// header-wbutton
+	.heading-wbutton
+		margin: 0 10pz 15px
+		text-align: center
+		.title
+			float: none
+			font-size: 25px
+			padding: 5px 0 0 0
+			margin: 0 0 15px
+			.fa
+				font-size: 20px
+				padding: 0 8px 0 0
+		> a
+			float: none
+			width: 240px
+			margin: 0 10px
+			.fa
+				font-size: 16px
+	// dotted-blocks
+	.dotted-blocks .block
+		padding: 20px 10px !important
+	// proc-table
+	.proc-table
+		margin: 20px 0 40px
+		th, td
+			padding: 8px 10px
+			width: auto !important
+		&.blocks-table
+			display: block
+			width: auto
+			tbody, tr
+				display: block
+				width: auto
+			td
+				display: block
+				padding: 15px 10px
+				text-align: center
+				width: auto
+	// switch-option
+	.switch-option
+		display: block
+		height: auto
+		width: auto
+		margin: 5px 0 !important
+		.options a
+			display: block
+			height: 44px
+			margin: 2px
+			width: auto
+			border-radius: 13px
+			&.active
+				color: #ffffff
+				background: #5cb7e0
+		.selection-box
+			display: none
+	// d-tabs
+	.d-tabs!
+	.d-tabs-switches
+		padding: 0
+		border-bottom: none
+		span
+			display: block
+			border-radius: 0
+			margin: 0 0 -1px
+	.d-tabs-contents section
+		padding: 15px 0
+	.d-tabs-column
+		display: block
+		padding: 0 !important
+	.d-tabs-block
+		padding: 0 0 20px 0 !important
+	.d-tabs-block-title
+		margin: 0 0 12px 0 !important
+	.d-tabs-save-but
+		text-align: right
+		padding: 0 10px 0 0
+		margin: 0 !important
+		font-size: 14px
+	// page-title-rblock
+	.page-title-rblock
+		padding: 5px 0 0 0
+	// double-cell-block
+	.double-cell-block
+		display: block
+		width: auto
+		.table-cell
+			width: auto
+			display: block
+			margin-bottom: 15px
+	// hierarchical-list
+	.hierarchical-list .table-block
+		width: auto
+		.table-cell
+			&:first-child
+				width: auto
+			padding-right: 20px
+	// popup
+	.popup
+		position: absolute
+		top: 100px
+		left: 0
+		width: 100%
+	.popup-window
+		width: auto !important
+		margin: 0 10px
+		padding: 20px 10px
+	.popup-radios
+		font-size: 13px
+		padding: 20px 0px
+	//************
+	//*	STYLE
+	//**************
+	// HEADER
+	#header
+		padding: 15px 0 10px
+		.right
+			clear: both
+			padding: 15px 0 0
+		> .layout
+			padding: 0 10px
+	#site-logo
+		width: auto
+		float: none
+		padding: 8px 0
+		img
+			display: block
+			width: auto
+			height: 23px
+			margin: 0
+	#slogan
+		display: none
+	#signin-join
+		line-height: 1
+		font-size: 13px
+		text-align: right
+		> a
+			margin: 0 0 0 10px
+	// header-user
+	#header > .layout > .right
+		float: none
+		padding: 0 0 0
+		position: relative
+	.header-user
+		float: none
+		padding: 5px 0
+		.user-picture
+			float: right
+		.user-details
+			text-align: right
+			max-width: none
+			display: block
+			margin: 10px 75px 0 0
+	// header-user-options
+	.header-user-options
+		float: none
+		border-left: none
+		height: auto
+		width: auto
+		padding: 0
+		p
+			float: right
+			margin: 5px 0 5px 20px
+			padding: 0
+			label
+				width: 20px
+	// MAIN
+	#main!
+	#main-top-pad, #main-sep
+		display: none
+	#main-inner
+		margin-left: 0
+		padding: 15px 10px 20px
+	// NAV
+	nav
+		display: none
+	#main-nav-mobile
+		display: block
+	nav + #main-inner, .frontpage nav + #main-inner
+		margin-left: 0
+	// SEARCH BLOCK
+	#search-block
+		height: auto !important
+		h1
+			font-size: 30px
+			padding: 0 15px
+			margin-bottom: 15px
+		h2
+			font-size: 22px
+			line-height: 1.1
+			margin-bottom: 10px
+	#search-form
+		margin: 20px 0 30px
+		p
+			margin: 16px auto
+	.search-field
+		background: none
+		width: 290px
+		margin: 0 auto
+		height: auto
+		-webkit-border-radius: 0
+		border-radius: 0
+		box-shadow: none
+		.textbox
+			background: #ffffff
+			background: rgba(255, 255, 255, 0.8)
+			padding: 0 25px
+			width: 240px !important
+			height: 50px
+			margin: 0
+			font-size: 14px
+			border: none
+			-webkit-border-radius: 15px
+			border-radius: 15px
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), inset 0 -1px 0 white
+			-webkit-box-sizing: content-box
+			-moz-box-sizing: content-box
+			box-sizing: content-box
+	#search-form
+		.def-button
+			height: 50px
+			width: 290px
+			padding: 0px
+			font-size: 20px
+		.button-field
+			width: auto
+	.detailed-search-button
+		position: static
+		font-weight: 300
+		top: auto
+		right: auto
+		display: block
+		margin-top: 10px
+	// search-quotes
+	.search-quotes
+		position: static
+		bottom: auto
+		left: auto
+		width: auto
+		padding: 15px 0
+		background: #000000
+		background: rgba(0, 0, 0, 0.6)
+		.layout
+			display: block
+			height: auto
+		.quote
+			display: block
+			text-align: center
+			width: auto
+			padding: 15px 15px
+			p
+				font-size: 14px
+	// quotes-aside
+	#search-block
+		&.quotes-aside
+			#search-form
+				float: none
+				width: auto
+				margin: 20px 0 20px
+			.search-quotes
+				display: block
+				position: static
+				bottom: auto
+				left: auto
+				width: 290px
+				float: none
+				margin: 20px auto
+				.quote
+					text-align: center
+					width: auto
+					padding: 0
+					margin: 0
+					h2
+						font-size: 18px
+						margin: 12px 0
+		&.small
+			h1
+				font-size: 30px
+				margin: 15px
+				text-align: center
+			#search-form
+				margin: 20px 0 30px
+			.search-field
+				margin: 16px auto
+				display: block
+				width: 290px
+				height: auto
+				.textbox
+					padding: 0 25px
+					width: 240px !important
+					height: 50px
+					margin: 0
+					font-size: 14px
+					-webkit-box-sizing: content-box
+					-moz-box-sizing: content-box
+					box-sizing: content-box
+			#search-form
+				.def-button
+					height: 50px
+					width: 290px
+					padding: 0
+					font-size: 20px
+					line-height: 48px
+				.button-field
+					display: block
+					width: auto
+		.top-wrap
+			padding: 30px 0 20px
+			margin: 0 10px
+			h1
+				font-size: 24px
+		.bottom-wrap
+			padding: 30px 0
+			.layout
+				width: auto
+				margin: 0 10px
+			h2
+				text-align: center
+				font-size: 20px
+				margin: 0 0 20px 0
+			.frow
+				text-align: center
+				label
+					display: block
+					font-size: 15px
+					vertical-align: middle
+					padding-right: 0
+					margin: 0 0 5px 0
+					font-weight: 300
+					text-align: center
+	// smaller
+	// search-form-short
+	// SERVICE
+	// procedure-package
+	.procedure-package-wrap .header
+		display: block
+		width: auto
+		padding: 0 0 15px 0
+		p
+			margin: 5px 0
+		.block
+			display: block
+			padding: 4px 15px 10px 0
+		.title span
+			font-size: 13px
+			padding-left: 10px
+	.package-procedure .book-procedure
+		text-align: left
+	// dr-list-table
+	.dr-list-table td
+		padding: 5px 15px 5px 0
+	// proc-date-options
+	.proc-date-options-block
+		display: block
+		&:first-child
+			padding: 0
+	.proc-date-options-filter > span
+		display: block
+		margin: 5px 0
+	.proc-date-options-table
+		th
+			text-align: center
+			font-weight: 700
+			label
+				margin: 0
+			&:first-child
+				text-align: left
+			padding: 8px 20px 8px 0
+		td
+			padding: 8px 20px 8px 0
+		th
+			padding-bottom: 12px
+	// ADD CLINIC
+	.add-another-phone
+		width: auto !important
+	// defining-user-table
+	.defining-users-table
+		display: block
+		tbody
+			display: block
+		tr
+			display: block
+			padding: 10px 0
+			&:nth-child(2n + 1)
+				background: #f8f8f8
+		td
+			display: block
+			padding: 7px 10px
+		tr:nth-child(2n + 1) td
+			background: transparent
+	// service-edit-table
+	.services-edit
+		> li
+			&:first-child
+				display: none
+			padding: 10px 0 25px 50px
+		.view
+			padding: 0
+		.mobile-show
+			display: inline
+		.first-col!
+		.second-col, .third-col
+			width: auto
+			display: block
+			vertical-align: middle
+			padding: 2px 0
+		.fourth-col
+			width: auto
+			text-align: left
+			display: block
+			vertical-align: middle
+			padding: 2px 0
+		.fifth-col
+			width: auto
+			display: block
+			position: absolute
+			bottom: 10px
+			right: 10px
+		.row-additional-fields
+			padding: 10px 0 10px 0
+	.services-edit-add-another
+		padding: 10px 0 10px 10px
+	.services-edit .group-desc
+		padding: 10px
+		position: relative
+		.second-col
+			width: auto
+		.edit input
+			margin-left: 0 !important
+	// BOTTOM BLOCK
+	.bottom-block
+		padding: 10px 0 20px
+	// teaser-blocks
+	.teaser-blocks
+		display: block
+		width: auto
+		text-align: center
+		.block
+			display: inline-block
+			width: 300px
+			padding: 0 10px
+			margin: 15px 0 0
+			border-left: none
+			h2
+				font-size: 28px
+				margin: 0 0 10px
+			p
+				margin: 10px 0
+				line-height: 1.4
+	// proc-table
+	.bottom-block .proc-table
+		td
+			border-top: 1px dashed #cacaca
+			border-left: none
+			&:first-child
+				border-left: none
+				border-top: none
+		.more
+			margin: 12px 0 0
+	// ADD CLINIC
+	.add-clinic-block
+		width: auto
+	// USERS
+	.filter-user-search
+		font-size: 13px
+		> span
+			display: block
+	// users-table
+	.users-table
+		font-size: 13px
+		display: block
+		width: auto
+		tbody, tr, td
+			display: block
+			width: auto
+		tr
+			border-top: 1px solid #d7d7d7
+			&:last-child
+				border-bottom: 1px solid #d7d7d7
+			&:first-child
+				display: none
+		td
+			&:first-child
+				padding: 10px 10px 10px
+			border: none
+			padding: 0px 10px 2px 10px
+			&:last-child
+				padding-bottom: 10px
+		.edit td
+			padding: 10px 0 10px 0
+		.top-row div
+			display: block
+			width: auto !important
+		.bottom-row > div
+			display: inline-block
+			padding: 0 10px 10px 10px !important
+			> p
+				margin: 0 0 5px
+	.account-types-but
+		display: none
+	.account-types-popup-list
+		display: block
+		position: static
+		top: auto
+		right: auto
+		width: auto
+		background: none
+		padding: 10px 10px 0 10px
+		border-radius: 0
+		box-shadow: none
+	// EMBEDDING
+	.embedding-params
+		margin-bottom: 30px
+		.table-cell
+			display: block
+			padding: 0 !important
+			margin: 0 0 15px
+	// ui-slider
+	.slider-wrap
+		width: 300px
+		.slider-value
+			position: absolute
+			top: 40px
+			right: 125px
+	// CLINIC
+	.clinic-service-search
+		.textbox
+			width: 180px !important
+			margin: 0
+		.fa
+			top: 10px
+	.doctors-dialog
+		padding: 15px 20px
+		left: -65px
+		z-index: 9999
+		width: auto
+		.close-but
+			position: absolute
+			top: 10px
+			right: 10px
+		.dialog-tail
+			display: none
+	.clinic-doctors-block
+		margin: 30px 0
+		.dr-list-table
+			float: left
+			margin: 0 0 0 30px
+	// FOOTER
+	.footer-push
+		display: none
+	#footer
+		height: auto
+		position: static
+		bottom: auto
+		left: auto
+		width: auto
+		> .layout
+			padding: 10px 10px 0
+			display: block
+			text-align: center
+		h1
+			font-size: 20px
+	.fcell
+		display: block
+		padding-left: 0
+		margin: 15px 0
+	// footer-about
+	.footer-about
+		display: inline-block
+		text-align: left
+	// footer-links
+	.footer-menu
+		display: inline-block
+		margin: 10px 20px 10px 0
+		text-align: left
+	.footer-links
+		padding-top: 4px
+		li
+			margin: 0 0 10px
+			line-height: 1
+	// social-links
+	.social-copyright
+		text-align: center
+	.social-links
+		padding: 0
+		a
+			display: inline-block
+			width: 36px
+			height: 36px
+			margin: 0px 10px 10px
+			line-height: 36px
+			text-align: center
+			border-radius: 36px
+			-webkit-border-radius: 36px
+			border: none !important
+			background: #4c4c4c
+			font-size: 21px
+			transition: all 150ms
+			&:hover
+				color: #ffffff !important
+				background: #6c6c6c
+
+//*************
+//*	 < 480
+//***************
+@media (max-width: 479px)
+	.mobile-port-hide
+		display: none
+	.content table
+		width: 100%
+		display: block
+		margin: 20px 0
+		tbody
+			display: block
+		tr
+			display: block
+			border-bottom: 1px solid #e4e4e4
+			border-left: 1px solid #e4e4e4
+			border-right: 1px solid #e4e4e4
+			&:first-child
+				border-top: 1px solid #e4e4e4
+			&:nth-child(2n)
+				background: #fafafa
+		th, td
+			padding: 10px 10px
+			border: none
+			border-top: 1px solid #f4f4f4
+			font-weight: normal
+			display: block
+			width: auto
+			text-align: left !important
+		th:first-child, td:first-child
+			border-top: none !important
+		th
+			background: #efefef
+			font-size: 14px
+			text-align: center
+			border-top: 1px solid #e4e4e4
+		td
+			vertical-align: top
+
+
+.js-hierarchlist
+	.js-hierarchlist-item
+		& > .hierarchical-list__translate
+			display: none
+		& > .js-hierarchlist-tools
+			.js-hierarchlist-save
+				display: none
+			.js-hierarchlist-edit
+				display: inline-block
+		&.is-editable
+			& > .hierarchical-list__translate
+				display: block
+			& > .js-hierarchlist-tools
+				.js-hierarchlist-save
+					display: inline-block
+				.js-hierarchlist-edit
+					display: none
+
+.list
+	font-size: 13px
+	li
+		position: relative
+		padding-left: 11px
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 4px
+			+arr(5,8,#000,right)
+	&_big
+		font-size: 15px
+.date
+	display: block
+	font-size: 12px
+	color: #a0a0a0 
+	.fa
+		margin-right: 4px
+
+.review
+	margin-bottom: 20px
+	&__head
+		margin-bottom: 10px
+		+clr
+	&__rate,
+	&__meta
+		float: left
+		width: 50%
+	.rating
+		margin-left: 6px
+
+.search-form
+	padding: 25px 0
+	// position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(#000, .5)
+	.search-form-in
+		height: 150px
+		padding-top: 30px
+		display: table-cell
+		vertical-align: middle
+	.search-form-row
+		font-size: 0
+	.search-form-label1
+		width: 835px
+		margin-right: 11px
+		display: inline-block
+		vertical-align: top
+		font-size: 14px
+		text-align: left
+		+r(w999)
+			width: auto
+			margin: 0 10px
+	.search-form-label2
+		width: 130px
+		display: inline-block
+		vertical-align: top
+		font-size: 14px
+		text-align: right
+		+r(w999)
+			width: 100%
+			text-align: center
+		.def-button
+			height: 59px
+			line-height: 59px
+			+r(w999)
+				display: block
+				margin: 0 auto
+	.search-form-label1-bottom
+		margin-top: 25px
+	.search-form-label2-bottom
+		margin-top: 25px
+		+r(w999)
+			display: block
+			margin: 10px 0
+	.search-form-open
+		font-size: 16px
+		border-bottom: 1px dashed #fff 
+		color: #FFF
+		&:hover
+			border-color: transparent
+
+.search-advanced
+	font-size: 0
+	.search-advanced-label1
+		width: 240px
+		padding-left: 25px
+		display: inline-block
+		vertical-align: top
+		font-size: 17px
+		+r(w999)
+			width: 100%
+			text-align: center
+			padding: 0
+			margin: 0 0 10px
+	.search-advanced-label2
+		display: inline-block
+		vertical-align: top
+		font-size: 17px
+		+r(w999)
+			width: 100%
+			margin: 0 0 10px
+			text-align: center
+	.search-advanced-label2-item
+		display: inline-block
+		vertical-align: top
+		margin-left: 26px
+		+r(w760)
+			width: 280px
+			display: block
+			margin: 0 auto 10px
+			text-align: left
+		&:first-child
+			margin-left: 0
+			+r(w760)
+				margin-left: auto
+	.search-advanced-label2-note
+		padding-left: 4px
+		margin-top: 4px
+		font-size: 13px
+	.search-advanced-in
+		font-size: 0
+		&.is-active
+			.search-advanced-note
+				color: #4c4c4c 
+	.search-advanced-note
+		margin-right: 10px
+		display: inline-block
+		vertical-align: middle
+		font-size: 17px
+		position: relative
+		z-index: 999
+	.search-advanced-select
+		display: inline-block
+		vertical-align: middle
+		font-size: 17px
+
+.search-field
+	&.m-mod
+		width: initial
+		margin: 0
+		.cfe-select
+			&.search
+				&.s-left
+					width: 194px
+					+r(w999)
+						width: 100%
+					.cfe-select-title-outer
+						border-left: none !important
+						border-right: 1px solid #cac9c9  
+		.textbox
+			width: 585px
+			border-right: none
+			+r(w999)
+				width: 100% !important
+				+box
+			
+//***********
+//*	select
+//*************
+.select
+	display: inline-block
+	vertical-align: middle
+	font-size: 17px
+	color: #fff
+	font-weight: bold
+	cursor: pointer
+	position: relative
+	+box
+	&.is-open
+		border-radius: 3px 3px 0 0
+	span
+		display: block
+		padding: 0
+		background: transparent
+		border-bottom: 1px dashed #fff 
+		// overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		color: #FFF
+		font-size: 17px
+		line-height: 1.4
+		position: relative
+		z-index: 999
+	em
+		font-style: normal
+	i
+		position: absolute
+		top: 12px
+		right: -20px
+		// +s(lalka)
+		+arr(10,6,#fff,bottom)
+	&.is-open
+		.select__drop
+			display: block
+		i
+			// +transform(rotate(180deg))
+		.select__scroll
+			background: #f6f8f9
+			opacity: 0.9 
+	.select__scroll
+		padding: 27px 11px 27px 0px
+		position: absolute
+		z-index: 10
+		top: -15px
+		left: -105px
+		right: -1px
+		background: transparent 
+		+border-radius(15px)
+		+box
+		width: 285px
+		+r(w760)
+			width: 235px
+			right: initial
+	.select__drop
+		display: none
+		margin: 20px 0px 0
+		font-size: 15px
+		color: #4c4c4c
+	ul
+		position: relative
+		height: 210px
+		overflow: auto
+		margin: 0
+	li
+		margin: 0
+		padding: 3px 24px 5px
+		font-size: 15px
+		font-weight: normal
+		color: #4c4c4c
+		font-weight: 600
+		cursor: pointer
+		+r(w999)
+			text-align: left
+		&:hover
+			background: #ebeaea 
+			color: #5cb7e0
+			margin-bottom: -1px
+			&:after
+				content: "\f105"
+				// display: inline-block
+				margin-left: 6px
+				font-family: 'FontAwesome'
+				font-size: 15px
+				color: #5cb7e0
+		&.is-selected
+			display: none
+		span
+			padding: 0
+
+.radio
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	font-size: 16px
+	input
+		+opacity(0)
+	input:checked + span
+		&:before
+			+s(ch_a)
+	input + span
+		padding-left: 3px
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			left: -20px
+			top: 0
+			+s(ch)
+
+.search-form-level2
+	.search-form-level2-in
+		padding-top: 40px
+		padding-bottom: 30px
+		margin-top: 25px
+		border-top: 1px dashed #cacaca
+		text-align: left
+		+r(w999)
+			text-align: center
+	.search-form-level2-row
+		font-size: 0
+	.search-form-level2-label1
+		width: 270px
+		padding-left: 20px
+		display: inline-block
+		vertical-align: top
+		font-size: 14px
+		+r(w999)
+			padding: 0
+	.search-form-level2-label2
+		width: 710px
+		display: inline-block
+		vertical-align: top
+		font-size: 14px
+		+r(w999)
+			width: 90%
+
+.help-info
+	margin-bottom: 20px
+	font-size: 16px
+	.fa
+		color: #FFB400
+		cursor: pointer
+
+.slider-ruler 
+	&.m-mod
+		background: none
+		&:before, &:after
+			content: ""
+			width: 1px
+			height: 11px
+			background: #d7d7d7
+			position: absolute
+			top: 0px
+		&:before
+			left: 3px
+		&:after
+			right: 3px
+
+.slider-wrap
+	&.m-mod
+		width: 687px
+		+r(w999)
+			width: 100%
+			#frame-width-slider
+				width: 100% !important
+		.slider-max-value, .slider-min-value
+			font-size: 15px
+			color: #FFF 
+
+.index-content
+	padding: 35px 0 0px
+	.index-content-top
+		margin-bottom: 45px
+		+clr
+		+r(w999)
+			padding: 0 3%
+	.index-content-title
+		float: left
+		font-size: 30px
+		color: #252525
+		+r(w760)
+			float: none
+			display: block
+			text-align: center
+		+r(w480)
+			font-size: 24px
+	.index-content-search
+		margin-top: 12px
+		float: right
+		+r(w760)
+			float: none
+			display: block
+			text-align: center
+		.index-content-search-meta
+			margin-right: 15px
+			font-size: 15px
+			color: #777 
+		.index-content-search-item
+			padding-right: 10px
+			margin-right: 15px
+			font-size: 15px
+			color: #3a719d
+			border: none
+			-webkit-appearance: none
+			-moz-appearance: none 
+			appearance: none
+			background: transparent url("../img/icons/arr-sel.png") no-repeat right center
+
+.index-doc-row
+	font-size: 0
+	+r(w999)
+		text-align: center
+	.index-doc-label
+		width: 32%
+		margin-left: 2%
+		margin-bottom: 2%
+		display: inline-block
+		vertical-align: top
+		font-size: 14px
+		+r(w999)
+			width: 46%
+		+r(w760)
+			width: 76%
+			margin: 0 auto 2%
+		+r(w480)
+			width: 96%
+		&:first-child
+			margin-left: 0
+			
+.my-time
+	padding: 10px 15px
+	background-color: #ffb300
+	box-shadow: 0 1px 2px rgba(0,0,0,.26), inset 0 1px 0 rgba(255,255,255,.75)
+	border-radius: 15px
+	font-size: 17px
+	font-weight: 600
+	+clr
+	&.m-blue
+		background: #5cb7e0 
+	.my-time-date
+		float: left
+	.my-time-time
+		float: right
+		font-size: 17px
+		color: #252525 
+		.fa
+			margin-right: 5px
+			font-size: 17px
+			color: #252525 
+
+.doc
+	padding: 12px 9px 9px 20px
+	border: 1px solid #d7d7d7
+	border-radius: 15px
+	font-size: 0
+	+r(w999)
+		overflow: hidden
+	.doc-left
+		width: 75px
+		margin-right: 20px
+		display: inline-block
+		vertical-align: middle
+		font-size: 17px
+		text-align: center
+		+r(w999)
+			float: left
+	.doc-media
+		width: 50px
+		height: 50px
+		margin: 0 auto 10px
+	.round
+		+border-radius(25px)
+	.doc-price
+		font-size: 16px
+		font-weight: 600
+		color: #585858
+		.fa
+			margin-right: 3px
+			font-size: 16px
+			font-weight: 600
+			color: #585858
+	.doc-right
+		width: 194px
+		display: inline-block
+		vertical-align: middle
+		font-size: 17px
+		+r(w999)
+			overflow: hidden
+			width: initial
+			display: block
+			text-align: left
+			padding: 0 5px
+	.doc-name
+		display: block
+		font-size: 17px
+		font-weight: bold
+		color: #3373a8
+		&:hover
+			color: #135388 
+	.doc-note
+		margin-bottom: 3px
+		display: block
+		font-size: 13px
+		color: #3373a8
+		&:hover
+			color: #135388 
+	.rating
+		font-size: 13px
+		+r(w760)
+			display: block
+	.my-time
+		margin-top: 10px
+		+r(w760)
+			display: inline-block
+		+r(w480)
+			font-size: 12px
+	.my-time-time
+		+r(w760)
+			margin-left: 20px
+		+r(w480)
+			font-size: 12px
+		.fa
+			+r(w480)
+				font-size: 12px
+
+.index-content-spinner
+	padding: 45px 0 55px
+	text-align: center
+	.fa
+		font-size: 50px
+		color: #9B9B9B
+		
+.clinic
+	padding: 12px 9px 0px
+	border: 1px solid #d7d7d7
+	border-radius: 15px
+	.clinic-logo
+		height: 112px
+		line-height: 112px
+		margin: 0 -9px
+		text-align: center
+		border-bottom: 1px solid #d7d7d7
+		img
+			+gray
+			+transition(all 250ms)
+			&:hover
+				+gray-zero
+				+transition(all 250ms)
+	.clinic-content
+		padding: 10px 15px
+		margin: 0 -9px
+		background: #FBFBFB
+		border-radius: 0 0 15px 15px
+	.clinic-name
+		display: block
+		margin-bottom: 5px
+		font-size: 17px
+		font-weight: 600 
+		color: #3373A8
+		&:hover
+			color: #135388 
+	.clinic-row
+		+clr
+		&.m-price
+			margin-top: 15px
+		.rating
+			float: right
+	.clinic-meta
+		float: left
+		font-size: 13px
+		color: #3373a8
+		&:hover
+			color: #135388
+	.clinic-price
+		float: left
+		margin-top: 11px
+		font-size: 17px
+		font-weight: 600 
+		color: #585858 
+		.fa
+			font-size: 17px
+			font-weight: 600
+			color: #585858  
+	.my-time
+		float: right
+		color: #FFF 
+		.fa
+			margin-left: 20px
+			color: #FFF
+		.my-time-time
+			color: #FFF
+
+
+	
+
+	
+
+
+
+
+	
+
+

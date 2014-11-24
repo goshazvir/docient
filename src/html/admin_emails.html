@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		include "header_user"
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				include "nav_user"
+				
+				<div id="main-inner" class="admin-msg">
+					<h1>New e-mail</h1>
+					<div class="adminbox">
+						<div class="adminbox__row">
+							<div class="adminbox__col">
+								<label class="adminbox__label">Subject</label>
+								<input type="text" class="textbox" placeholder="Hello everybody and welcome!" style="width: 327px">
+							</div>
+							<div class="adminbox__col">
+								<label class="adminbox__label">E-mail language</label>
+								<select class="custom mobile-wide" data-title="%var%"  style="width: 159px">
+									<option value="placeholder">English</option>
+									<option value="0">...</option>
+									<option value="0">...</option>
+								</select>
+							</div>
+							<div class="adminbox__col">
+								<label class="adminbox__label">User types</label>
+								<select class="custom mobile-wide" data-title="%var%" style="width: 203px">
+									<option value="placeholder">Health insurance</option>
+									<option value="0">...</option>
+									<option value="0">...</option>
+									<option value="0">...</option>
+								</select>
+							</div>
+						</div>
+						<div class="adminbox__row">
+							<div class="adminbox__col">
+								<select class="custom margin-r10 adminbox__uservisit" data-title="%var%" style="width: 245px">
+									<option value="placeholder">Users who had last visit within</option>
+									<option value="0">...</option>
+									<option value="0">...</option>
+									<option value="0">...</option>
+								</select>
+								<input type="text" class="textbox adminbox__uservisitdays" placeholder="365" style="width: 70px; text-align: center">
+							</div>
+							<div class="adminbox__col">
+								<label class="adminbox__label adminbox__label_inline">days, and</label>
+								<select class="custom mobile-wide" data-title="%var%" style="width: 296px">
+									<option value="placeholder">Users who didn’t recieve e-mail yet</option>
+									<option value="0">...</option>
+									<option value="0">...</option>
+									<option value="0">...</option>
+								</select>
+							</div>
+						</div>
+						<div class="adminbox__row">
+							<label class="adminbox__label adminbox__label_send">Send e-mail only to the patients of these doctors:</label>
+							<select class="adminbox__select_send custom mobile-wide" data-title="%var%" style="width: 371px">
+								<option value="placeholder">to all doctor’s patients</option>
+								<option value="0">...</option>
+								<option value="0">...</option>
+								<option value="0">...</option>
+							</select>
+						</div>
+						<div class="adminbox__row adminbox__row_half">
+							<div class="adminbox__col">
+								<label class="adminbox__label">Sender’s name</label>
+								<input type="text" class="textbox" placeholder="Kaupo Kuusk" style="width: 328px">
+							</div>
+							<div class="adminbox__col">
+								<label class="adminbox__label">Sender’s e-mail</label>
+								<input type="text" class="textbox" placeholder="info@docient.com" style="width: 339px">
+							</div>
+						</div>
+						<!-- begin msgpanel -->
+						<div class="msgpanel">
+							<div class="msgpanel__toolbar">
+								<img src="../img/msgtools.png" alt="tools">
+							</div>
+							<div class="msgpanel__content">
+								<div class="msgpanel__text custom-scroll">
+									<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+									<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+									<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+									<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+									<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+								</div>
+							</div>
+						</div>
+						<!-- end msgpanel -->
+						<div class="adminbox__action">
+							<button class="def-button blue"><i class="fa fa-share pad-r10"></i>Send e-mail</button>
+							<button type="submit" class="def-button"><i class="fa fa-save pad-r10"></i>Save template</button>
+						</div>
+					</div>
+
+
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		include "footer"
+		
+	</div>
+</body>
+</html>

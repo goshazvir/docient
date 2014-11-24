@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="../css/ie_lte8.css">
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" media="all" type="text/css" href="../css/cf_elements.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/smoothness/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" media="screen,projection,tv" type="text/css" href="../css/screen.css" />
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+
+		<header id="header">
+			<div class="layout">
+				<div class="left">
+					<a href="#" id="site-logo"><img src="../img/logo.png" alt="Docient"/></a>
+					<div id="slogan">Connecting doctors and patients<br/>all over the world</div>
+				</div>
+				<a href="#" id="main-nav-mobile" onclick="event.preventDefault();">MENU<i class="fa fa-align-justify"></i>
+					<select>
+						<optgroup label="Surgey">
+							<option>General surgery</option>
+							<option>Oral and Maxillofacial Surgery</option>
+							<option>Plastic surgery</option>
+						</optgroup>
+						<optgroup label="Cancer treatment">
+							<option>...</option>
+						</optgroup>
+					</select>
+				</a>
+				<div class="right">
+					<div id="signin-join">
+						<a href="#"><i class="fa fa-sign-in pad-r7"></i>Sign in</a>
+						<a href="#">Join DOCIENT</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main page-doctor"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+
+			<div class="layout">
+
+				<nav>
+					<ul id="main-nav">
+						<li class="expanded">
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Surgey</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>General surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Oral and Maxillofacial Surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Plastic surgery</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Cancer treatment</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>General surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Oral and Maxillofacial Surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Plastic surgery</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Gynecology</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Consultation</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>General surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Oral and Maxillofacial Surgery</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i>Plastic surgery</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Survey</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>...</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Prophylaxis</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>...</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Diagnostics</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>...</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up collapse"></i>Recovery</a>
+							<ul>
+								<li><a class="active" href="#"><i class="fa fa-caret-right"></i>...</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<div id="main-inner">
+					<div class="page-title-rblock userinfo">
+						<div class="userinfo__pic">
+							<img class="round" src="../img/content/tumb.jpg" alt="">
+						</div>
+						<div class="userinfo__meta">
+							<p><span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(1)</span></span></p>
+							<p class="text-grey"><strong class="text-blue pad-r10">75%</strong>Profile completed</p>
+						</div>
+					</div>
+					<h1>Prof. Kaupo Kuusk</h1>
+
+					<p class="hor-separator"></p>
+					<h2 class="pad-t7">Clinics</h2>
+					<ul class="list list_big">
+						<li><a href="#">Hambakliinik</a> (Estonia)</li>
+						<li><a href="#">Perh</a> (Estonia)</li>
+					</ul>
+					<p class="hor-separator"></p>
+
+					<div class="clinic-list">
+						<p class="clinic-service-search right">
+							<span class="icon-field">
+								<input type="text" class="textbox" name="" placeholder="search clinic service" style="height:38px; width:275px;">
+								<button class="fa fa-search"></button>
+							</span>
+						</p>
+						<h2 class="pad-t7">Clinic services</h2>
+						<ul class="hierarchical-list margin-t30">
+							<li class="alt">
+								<i class="exp-but"></i>
+								<i class="exp-line"></i>
+								<span>Gynecology</span>
+								<ul style="display: none;">
+									<li>
+										<i class="exp-line"></i>
+										<i class="exp-but"></i>
+										<span>Gynecology surgery</span>
+										<ul style="display: none;">
+											<li>
+												<i class="exp-h-line"></i>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500€</span>
+													<span class="table-cell"><a href="#">PERH</a> (Estonia)</span>
+												</span>
+											</li>
+											<li>
+												<i class="exp-h-line"></i>
+												<span class="table-block">
+													<a href="#" class="table-cell">Hand replacement and changing to a new better one</a>
+													<span class="table-cell">&nbsp;</span>
+													<span class="table-cell"><a href="#">PERH</a> (Estonia)</span>
+												</span>
+
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<i class="exp-but"></i>
+								<span>Survey</span>
+								<ul style="display: none;">
+									<li>
+										<i class="exp-but"></i>
+										<span>Gynecology surgery</span>
+										<ul style="display: none;">
+											<li>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500€</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+											</li>
+											<li>
+												<span class="table-block">
+													<a href="#" class="table-cell">Hand replacement and changing to a new better one</a>
+													<span class="table-cell">500€</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+												
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<p class="hor-separator"></p>
+					<h2 class="pad-t7">Doctor CV</h2>
+					<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+					<p>
+						<a href="#">
+							<i class="fa fa-arrow-circle-right"></i>
+							Read more...
+						</a>
+					</p>
+					<p class="hor-separator"></p>
+					<h2>Belongings to associations</h2>
+					<ul class="list">
+						<li>Member of <a href="#">Europian Dentist Association</a> since 2011</li>
+						<li>Member of <a href="#">Europian Dentist Association</a> since 201</li>
+					</ul>
+					<p class="hor-separator"></p>
+					<h2>Languages</h2>
+					<ul class="list">
+						<li>Estonian - very good</li>
+						<li>English - good</li>
+						<li>Finish - poor</li>
+					</ul>
+					<p class="hor-separator"></p>
+					<h2>Last articles of the doctor:</h2>
+					<ul class="list">
+						<li>
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+							<span class="date"><i class="fa fa-calendar"></i>20.12.20013|Sargery and eye removing</span>
+						</li>
+						<li>
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+							<span class="date"><i class="fa fa-calendar"></i>20.12.20013|Sargery and eye removing</span>
+						</li>
+						<li>
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+							<span class="date"><i class="fa fa-calendar"></i>20.12.20013|Sargery and eye removing</span>
+						</li>
+					</ul>
+					<p class="hor-separator"></p>
+					<h2>Read, what other patients wrote about prof. Kauppo</h2>
+					<div class="review">
+						<div class="review__head">
+							<div class="review__rate">
+								Most helpful review
+								<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i></span>
+							</div>
+							<div class="review__meta">
+								What is helpful for you?
+								<a href="#">Yes</a> /
+								<a href="#">No</a>
+							</div>
+						</div>
+						<div class="review__body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illum, porro unde enim minima!</p>
+							<p>
+								<a href="#">
+									<i class="fa fa-arrow-circle-right"></i>
+									Read more...
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__head">
+							<div class="review__rate">
+								Most helpful review
+								<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i></span>
+							</div>
+							<div class="review__meta">
+								What is helpful for you?
+								<a href="#">Yes</a> /
+								<a href="#">No</a>
+							</div>
+						</div>
+						<div class="review__body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illum, porro unde enim minima!</p>
+							<p>
+								<a href="#">
+									<i class="fa fa-arrow-circle-right"></i>
+									Read more...
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__head">
+							<div class="review__rate">
+								Most helpful review
+								<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i></span>
+							</div>
+							<div class="review__meta">
+								What is helpful for you?
+								<a href="#">Yes</a> /
+								<a href="#">No</a>
+							</div>
+						</div>
+						<div class="review__body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illum, porro unde enim minima!</p>
+							<p>
+								<a href="#">
+									<i class="fa fa-arrow-circle-right"></i>
+									Read more...
+								</a>
+							</p>
+						</div>
+					</div>
+					<p class="hor-separator"></p>
+					<!-- <div class="clinic-doctors-block">
+						<h2>Doctors who work in Medikum Perearstikeskus</h2>
+						<table class="dr-list-table">
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+						</table>
+						<table class="dr-list-table">
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+						</table>
+						<div class="clear"></div>
+					</div>
+					
+					<p class="hor-separator"></p> -->
+					
+					<h2>Write message for prof. Medikum Perearstikeskus</h2>
+					<p><input type="text" class="textbox margin-r10" style="width:230px;" placeholder="Your first name"><input type="text" class="textbox" style="width:230px;" placeholder="Your last name"></p>
+					<p><input type="email" class="textbox margin-r10" style="width:230px;" placeholder="Email address"><input type="tel" class="textbox w230" style="width:230px;" placeholder="Phone number"></p>
+					<p><textarea class="textbox" style="width:502px;" placeholder="Write your message here..."></textarea></p>
+					<p class="margin-t20 text-center form-width"><button class="def-button"><i class="fa fa-comments pad-r10"></i>Send message</button></p>
+					
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+
+		<div class="footer-push"></div>
+		<footer id="footer">
+			<div class="layout">
+				<div class="footer-about fcell">
+					<h1>What is <b>DOC</b>IENT?</h1>
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">About DOCIENT project</a></li>
+						<li><a href="#">News / Press</a></li>
+						<li><a href="#">Vacancies</a></li>
+						<li><a href="#">Partners / Health Insurers</a></li>
+					</ul>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Feedback form</a></li>
+						<li class="text-dark">+1 646-419-4452</li>
+						<li><a href="#">info@docent.com</a></li>
+					</ul>
+				</div>
+				<div class="fcell social-copyright">
+					<div class="social-links">
+						<a href="#" title=""><i class="fa fa-facebook"></i></a><a href="#" title=""><i class="fa fa-twitter"></i></a><a href="#" title=""><i class="fa fa-google-plus"></i></a><a href="#" title=""><i class="fa fa-youtube"></i></a>
+					</div>
+					<p class="text-dark">Copyright by DOCIENT</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+</body>
+</html>

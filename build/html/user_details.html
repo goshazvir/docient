@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="../css/ie_lte8.css">
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" media="all" type="text/css" href="../css/cf_elements.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/smoothness/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" media="screen,projection,tv" type="text/css" href="../css/screen.css" />
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		<header id="header">
+			<div class="layout">
+				<div class="left">
+					<a href="#" id="site-logo"><img src="../img/logo.png" alt="Docient"/></a>
+					<div id="slogan">Connecting doctors and patients<br/>all over the world</div>
+				</div>
+				<a href="#" id="main-nav-mobile" onclick="event.preventDefault();">MENU<i class="fa fa-align-justify"></i>
+					<select>
+						<optgroup label="Surgey">
+							<option>General surgery</option>
+							<option>Oral and Maxillofacial Surgery</option>
+							<option>Plastic surgery</option>
+						</optgroup>
+						<optgroup label="Cancer treatment">
+							<option>...</option>
+						</optgroup>
+					</select>
+				</a>
+				<div class="right">
+					<div class="header-user">
+						<div class="user-picture">
+							<img src="../img/content/user.jpg" alt=""/>
+							<a href="#" class="notifications">2</a>
+						</div>
+						<div class="user-details">
+							<span class="user-role">Moderator</span>
+							<span class="user-name">Anton Matiukhin<a href="#">Sign out</a></span>
+						</div>
+					</div>
+					<div class="header-user-options">
+						<p>
+							<label class="fa fa-globe"></label><select class="custom simple" data-title="%var%">
+								<option value="0" selected="selected">English</option>
+								<option value="1">Eesti</option>
+								<option value="2">Svensk</option>
+							</select>
+						</p>
+						<p>
+							<label class="fa fa-money"></label><select class="custom simple" data-title="%var%">
+								<option value="0" selected="selected">EUR</option>
+								<option value="1">USD</option>
+								<option value="2">SEK</option>
+							</select>
+						</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				<nav>
+					<ul id="user-nav">
+						<li class="expanded">
+							<a href="#"><span>Settings</span><i class="notifications">!</i></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+								<li class="active"><a href="#">+ Add clinic</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>My medical data</span></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>Communication with doctor</span><i class="notifications">2</i></a>
+						</li>
+						<li>
+							<a href="#"><span>My buyings / invoices</span></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>Feedback after visiting / services</span></a>
+						</li>
+					</ul>
+				</nav>
+				
+				<div id="main-inner">
+					<h1>Complete your registration</h1>
+
+					<div class="add-clinic-block">
+						<section>
+							<div class="d-tabs-column">
+								<div class="d-tabs-block">
+									<p class="d-tabs-block-title">Contact information</p>
+									<p>
+										<select class="custom margin-r10 vertical-top" data-title="%var%" style="width:98px">
+											<option value="0">Dr.</option>
+											<option value="1">Prof.</option>
+										</select><input type="text" class="textbox margin-r10" placeholder="First name" value="Anton" style="width:125px;"/><input type="text" class="textbox" placeholder="Lastname" value="Matiukhin" style="width:125px;"/>
+									</p>
+									<p>
+										<input type="tel" class="textbox margin-r10" placeholder="Phone number" style="width:233px;"/>
+										<span class="inline-block vertical-middle" style="width:150px;">
+											<span class="table-cell"><input type="checkbox" class="custom" checked="checked"/></span>
+											<label class="table-cell pad-l10">Allow patients to see phone number</label>
+										</span>
+									</p>
+									<p>
+										<input type="email" class="textbox" placeholder="Email address" value="antonmatiukhin@gmail.com" style="width:400px;"/>
+									</p>
+									<p>
+										<input type="password" class="textbox margin-r10" placeholder="Password" style="width:179px;"/><input type="password" class="textbox" placeholder="Retype password" style="width:179px;"/>
+									</p>
+								</div>
+								<div class="d-tabs-block">
+									<p class="d-tabs-block-title">User address</p>
+									<p>
+										<select class="custom mobile-wide vertical-top margin-r10" data-title="%var%" style="width:211px;">
+											<option value="placeholder">Country</option>
+											<option value="0">Estonia</option>
+											<option value="0">Estonia</option>
+											<option value="0">Estonia</option>
+										</select><input type="text" class="textbox" placeholder="City / Town" style="width:179px;"/>
+									</p>
+									<p>
+										<input type="text" class="textbox margin-r10" placeholder="Address" style="width:290px;"/><input type="text" class="textbox" placeholder="ZIP" style="width:68px;"/>
+									</p>
+								</div>
+							</div>
+							<div class="d-tabs-column pad-l30">
+								<div class="d-tabs-block">
+									<p class="d-tabs-block-title">Image</p>
+									<p class="text-center"><button type="button" class="color-button lblue" style="width:210px;">Browse file...<i class="fa fa-upload pad-l7"></i></button></p>
+									<p class="user-picture-big">
+										<img src="../img/content/user_profile.jpg" alt=""/><!-- 140x140 -->
+										<a href="#">Delete</a>
+									</p>
+								</div>
+							</div>
+							<p class="useragree"><input type="checkbox" class="custom"><label class="margin-r10">Agree to the terms</label></p>
+							<p class="text-center margin-b20"><button type="submit" class="def-button">Save changes</button></p>
+						</section>
+						<div class="userdetails">
+							<p class="hor-separator"></p>
+							<h2 class="userdetails__title"><span><i class="fa fa-user"></i></span>Your account is verified completely!</h2>
+							<section class="userdetails__row">
+								<div class="d-tabs-column">
+									<h2><i class="fa fa-facebook pad-r10"></i>Facebook</h2>
+									<p>Sign in with Facebook and discover your trusted connections to hosts and guests all over the world.</p>
+								</div>
+								<div class="d-tabs-column pad-l30">
+									<a href="#" class="color-button lblue">Connect profiles</a>
+								</div>
+							</section>
+							<section class="userdetails__row">
+								<div class="d-tabs-column">
+									<h2><i class="fa fa-google-plus-square pad-r10"></i>Google</h2>
+									<p>Connect your DOCIENT account to your Google account for simplicity and ease.</p>
+								</div>
+								<div class="d-tabs-column pad-l30">
+									<a href="#" class="color-button lblue">Connect profiles</a>
+								</div>
+							</section>
+							<section class="userdetails__row">
+								<div class="d-tabs-column">
+									<h2><i class="fa fa-linkedin-square pad-r10"></i>LinkedIn</h2>
+									<p>You can now connect your DOCIENT account with the world’s largest professional network. Connecting with LinkedIn builds confidence between guests and hosts by establishing a link to your professional life.</p>
+								</div>
+								<div class="d-tabs-column pad-l30">
+									<a href="#" class="color-button lblue">Connect profiles</a>
+								</div>
+							</section>
+						</div>
+
+						<p class="text-center margin-b20"><button type="submit" class="def-button">Save changes</button></p>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		<div class="footer-push"></div>
+		<footer id="footer">
+			<div class="layout">
+				<div class="footer-about fcell">
+					<h1>What is <b>DOC</b>IENT?</h1>
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">About DOCIENT project</a></li>
+						<li><a href="#">News / Press</a></li>
+						<li><a href="#">Vacancies</a></li>
+						<li><a href="#">Partners / Health Insurers</a></li>
+					</ul>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Feedback form</a></li>
+						<li class="text-dark">+1 646-419-4452</li>
+						<li><a href="#">info@docent.com</a></li>
+					</ul>
+				</div>
+				<div class="fcell social-copyright">
+					<div class="social-links">
+						<a href="#" title=""><i class="fa fa-facebook"></i></a><a href="#" title=""><i class="fa fa-twitter"></i></a><a href="#" title=""><i class="fa fa-google-plus"></i></a><a href="#" title=""><i class="fa fa-youtube"></i></a>
+					</div>
+					<p class="text-dark">Copyright by DOCIENT</p>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+</body>
+</html>

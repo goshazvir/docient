@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	include "head_css"
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+		include "header"
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				include "nav"
+				
+				<div id="main-inner">
+					
+					<section class="procedure-package-wrap">
+						<div class="package-desc">
+							<div class="ver-line"><i></i></div>
+							<div class="header">
+								<div class="block">
+									<h2 class="title"><a  href="#">Lasik eye surgery</a><span class="text-grey"><i class="fa fa-briefcase"></i> package</span></h2>
+									<p class="text-grey">13.10.2013 - 15.10.2013</p>
+									<p class="price">1400 &euro;</p>
+									<p><span class="text-grey"><i class="fa fa-briefcase w20"></i>package price:</span> <strong>500 &euro;</strong></p>
+								</div>
+								<div class="block">
+									<p class="text-grey"><i class="fa fa-plane w20"></i>Flight <i class="fa fa-exchange"></i> included(500 &euro;)</p>
+									<p class="text-grey"><i class="fa fa-building-o w20"></i>Hotel included(400 &euro;)</p>
+									<p class="text-grey"><i class="fa fa-reply w20"></i>Health insurance(-500 &euro;)</p>
+									<p><a href="#" onclick="openPPSearch(event);">Flight and hotel options</a></p>
+								</div>
+								<div class="block">
+									<p class="clinic-title"><a href="#">KSA Silmaklinik</a></p>
+									<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+									<p class="no-margin">Dr. Ants Haavel</p>
+									<p class="no-margin">Estonia</p>
+								</div>
+							</div>
+							<div class="procedure-package-search">
+								<p>
+									<input type="checkbox" class="custom" checked="checked"/><label class="margin-r10">Include flight</label><select class="custom w200 mobile-wide" data-title="<i class='fa fa-location-arrow'></i><span>%var%</span>">
+										<option value="0">Estonia</option>
+										<option value="1">Norway</option>
+										<option value="2">Sweden</option>
+										<option value="3">Zimbabwe</option>
+									</select><span class="fa fa-exchange font20 pad-h5 text-grey vertical-middle mobile-block-center"></span><select class="custom w200 margin-r10 mobile-wide" data-title="%var%">
+										<option value="0">Tallinn</option>
+										<option value="1">Tartu</option>
+										<option value="2">Pärnu</option>
+										<option value="3">New-York</option>
+									</select><select class="custom w145 mobile-wide" data-title="%var%">
+										<option value="0" selected>1 adult</option>
+										<option value="1">2 adults</option>
+										<option value="2">99 adults</option>
+									</select>
+								</p>
+								<p>
+									<input type="checkbox" class="custom" checked="checked"/><label class="margin-r10">Include hotel</label><span class="rating-blue margin-r10"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span><span class="switch-option margin-r10">
+										<span class="selection-box"></span>
+										<span class="options">
+											<a data-value="airport" href="#" class="active"><span class="title">Close to airport</span></a><a data-value="clinic" href="#"><span class="title">Close to clinic</span></a>
+										</span>
+										<input type="hidden" name="sdf"/>
+									</span><select class="custom w145 mobile-wide" data-title="%var%">
+										<option value="0" selected>1 adult</option>
+										<option value="1">2 adults</option>
+										<option value="2">99 adults</option>
+									</select>
+								</p>
+								<p class="text-right mobile-block-center"><button type="submit" class="def-button" style="padding:0; width:145px;">OK</button></p>
+							</div>
+							<div class="content">
+								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
+								<p>Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+								<div style="display:none;">
+									<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
+									<p>Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+								</div>
+								<p><a href="#" onclick="$(this).hide().parent().prev().slideUp(0).slideDown(250); event.preventDefault();">Read more...</a></p>
+								<p>Required steps before visit: <a href="#">Questionnaire</a></p>
+							</div>
+						</div>
+						<div class="package-procedure">
+							<div class="package-procedure-inner">
+								<div class="ver-line"><i></i></div>
+								<div class="header">
+									<div class="block">
+										<h2 class="title"><a  href="#">Implantation</a><span class="text-grey"><i class="fa fa-bookmark"></i> main procedure</span></h2>
+										<p class="text-grey">13.10.2013 - 15.10.2013</p>
+										<p class="price">900 &euro;</p>
+									</div>
+									<div class="block">
+										<p class="text-grey no-margin"><i class="fa fa-info-circle w20"></i>It is the main procedure.</p>
+										<p class="text-grey no-margin"><i class="fa w20"></i>You can not book this procedure first</p>
+										<p class="book-procedure"><a href="#"><i class="fa fa-calendar pad-r10"></i>Book this procedure</a></p>
+									</div>
+								</div>
+								<div class="content">
+									<p>Here is written pre-procedure description . It may consist long text, pictures and tables. It may consist also long text, pictures and tables. It may consist also long text, pictures and tables. It may consist also long text, pictures and tables.</p>
+									<p>Here is written pre-procedure description . It may consist long text, pictures and tables. It may consist also long text, pictures and tables. It may consist also long text, pictures and tables. It may consist also long text, pictures and tables.</p>
+								</div>
+							</div>
+						</div>
+						<div class="package-procedure">
+							<div class="package-procedure-inner">
+								<div class="ver-line"><i></i></div>
+								<div class="header">
+									<div class="block">
+										<h2 class="title"><a  href="#">Consultation</a><span class="text-grey"><i class="fa fa-bookmark"></i> required pre-procedure</span></h2>
+										<p class="text-grey">13.10.2013 - 15.10.2013</p>
+										<p class="price">900 &euro;</p>
+									</div>
+									<div class="block">
+										<p class="text-grey no-margin"><i class="fa fa-info-circle w20"></i>It is required pre-procedure before main procedure.</p>
+										<p class="text-grey no-margin"><i class="fa w20"></i>You can only book this procedure as first</p>
+										<p class="book-procedure"><a href="#"><i class="fa fa-calendar pad-r10"></i>Book this procedure</a></p>
+									</div>
+								</div>
+								<div class="content">
+									<p>Here is written pre-procedure description . It may consist long text, pictures and tables. It may consist also long text, pictures and tables. It may consist also long text, pictures and tables. It may consist also long text, pictures and tables.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<p class="center-brow"><button type="" class="def-button"><i class="fa fa-suitcase pad-r10"></i>Book the package</button></p>
+					
+					<div class="dotted-blocks">
+						<div class="block pad-h25">
+							<h2>Booking time for Consultation (Implantation of tooth)</h2>
+							<table class="dr-list-table">
+								<tr>
+									<td>
+										<input type="checkbox" class="custom"/>
+									</td>
+									<td>
+										<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+									</td>
+									<td>
+										<p>Dr. House</p>
+										<p>
+											<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+											<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+											<span class="pad-r10 text-grey">Profile completed</span>
+											<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" class="custom"/>
+									</td>
+									<td>
+										<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+									</td>
+									<td>
+										<p>Dr. House</p>
+										<p>
+											<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+											<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+											<span class="pad-r10 text-grey">Profile completed</span>
+											<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" class="custom"/>
+									</td>
+									<td>
+										<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+									</td>
+									<td>
+										<p>Dr. House</p>
+										<p>
+											<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+											<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+											<span class="pad-r10 text-grey">Profile completed</span>
+											<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="block pad-h25 proc-date-options">
+							<form>
+							<div class="proc-date-options-block">
+								<!-- <img src="../img/content/calender.jpg" alt=""/> -->
+								<div id="datepicker" class="dpicker"></div>
+							</div>
+							<div class="proc-date-options-block">
+								<p class="proc-date-options-filter">
+									<span>
+										<label>Show results: </label>
+										<select class="custom simple margin-r20" data-title="%var%">
+											<option value="0">Closest date</option>
+											<option value="0">Some option</option>
+										</select>
+									</span>
+									<span>
+										<label>Hotel: </label>
+										<select class="custom simple" data-title="%var%">
+											<option value="0">Close to clinic</option>
+											<option value="0">Some option</option>
+										</select>
+									</span>
+								</p>
+								<table class="proc-date-options-table">
+									<tr>
+										<th colspan="2">Closest dates:</th>
+										<th><input type="checkbox" class="custom" name="z" checked="checked"/><label>Trip</label></th>
+										<th><input type="checkbox" class="custom" name="zz" checked="checked"/><label>Hotel</label></th>
+									</tr>
+									<tr>
+										<td><input type="radio" class="custom" name="proc_date" checked="checked"></td><!-- custom radio inputs work only inside form element -->
+										<td><label>23. nov (08.45) Dr. Who Cares</label></td>
+										<td>97 &euro;</td>
+										<td>140 &euro;</td>
+									</tr>
+									<tr>
+										<td><input type="radio" class="custom" name="proc_date"></td><!-- custom radio inputs work only inside form element -->
+										<td><label>23. nov (08.45) Dr. Who Cares</label></td>
+										<td>97 &euro;</td>
+										<td>140 &euro;</td>
+									</tr>
+									<tr>
+										<td><input type="radio" class="custom" name="proc_date"></td><!-- custom radio inputs work only inside form element -->
+										<td><label>23. nov (08.45) Dr. Who Cares</label></td>
+										<td>97 &euro;</td>
+										<td>140 &euro;</td>
+									</tr>
+									<tr>
+										<td><input type="radio" class="custom" name="proc_date"></td><!-- custom radio inputs work only inside form element -->
+										<td><label>23. nov (08.45) Dr. Who Cares</label></td>
+										<td>97 &euro;</td>
+										<td>140 &euro;</td>
+									</tr>
+									<tr>
+										<td><input type="radio" class="custom" name="proc_date"></td><!-- custom radio inputs work only inside form element -->
+										<td><label>23. nov (08.45) Dr. Who Cares</label></td>
+										<td>97 &euro;</td>
+										<td>140 &euro;</td>
+									</tr>
+								</table>
+								<p class="proc-date-options-more"><a href="#">Show more...</a></p>
+							</div>
+							</form>
+						</div>
+						<div class="block pad-h25">
+							<h2>Booking procedure on 23. nov&nbsp;&nbsp;&nbsp;(8.45) Dr Who Cares</h2>
+							<p><input type="text" class="textbox margin-r10" style="width:230px;" placeholder="Your first name"/><input type="text" class="textbox" style="width:230px;" placeholder="Your last name"/></p>
+							<p><input type="email" class="textbox margin-r10" style="width:230px;" placeholder="Email address"/><input type="tel" class="textbox w230" style="width:230px;" placeholder="Phone number"/></p>
+							<p><textarea class="textbox" style="width:502px;" placeholder="Your comments"></textarea></p>
+							<p><input type="checkbox" class="custom"/><label>I agree with <a href="#">terms and conditions of Docient</a></label></p>
+							<p><input type="checkbox" class="custom"/><label>I agree with <a href="#">terms and conditions of Hambakliinik OÜ</a></label></p>
+							<p class="margin-t30 text-center"><button class="def-button"><i class="fa fa-bookmark pad-r10"></i>Book procedure</button></p>
+						</div>
+						<div class="block pad-h25">
+							<h2>Book flight also<i class="fa fa-plane pad-l10"></i></h2>
+							<p>
+								<span class="date-field"><input type="date" class="textbox" value="2014-12-31"/></span>
+								<span class="fa fa-exchange font20 text-grey pad-l10 pad-r10 mobile-block-center"></span>
+								<span class="date-field"><input type="date" class="textbox" value="2014-12-31"/></span>
+								<select class="custom margin-l10 mobile-wide" data-title="%var%">
+									<option value="0" selected>1 adult</option>
+									<option value="1">2 adults</option>
+									<option value="2">99 adults</option>
+								</select>
+								<span class="mobile-block-center"><button type="button" class="def-button margin-l10 pad-h25 vertical-middle">Book</button></span>
+							</p>
+						</div>
+						<div class="block pad-h25">
+							<h2>Book hotel also<i class="fa fa-building-o pad-l10"></i></h2>
+							<p style="margin-top:35px;">
+								<span class="date-field"><label>Check in</label><input type="date" class="textbox" value="2014-12-31"/></span>
+								<span class="text-grey pad-l10 pad-r10 mobile-hidden">-</span>
+								<span class="date-field"><label>Check out</label><input type="date" class="textbox" value="2014-12-31"/></span>
+								<select class="custom margin-l10 mobile-wide" data-title="%var%">
+									<option value="0" selected>1 adult</option>
+									<option value="1">2 adults</option>
+									<option value="2">99 adults</option>
+								</select>
+								<span class="mobile-block-center"><button type="button" class="def-button margin-l10 pad-h25 vertical-middle">Book</button></span>
+							</p>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		include "footer"
+		
+	</div>
+	
+	<script>
+		function openPPSearch(e){
+			var s = $(".procedure-package-search");
+			
+			if(s.hasClass("active")) s.slideUp(200, function(){s.removeClass("active");});
+			else s.slideUp(0).slideDown(200).addClass("active");
+			
+			e.preventDefault();
+		};
+	</script>
+</body>
+</html>

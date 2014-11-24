@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+</head>
+<body ontouchstart="">
+	<div id="wrapper" class="authorization">
+
+		include "header"
+
+		<!-- begin userlogin -->
+		<div class="userlogin">
+			<div class="layout">
+				<form action="#">
+					<div class="userlogin__info">
+						<h1>Join <strong>DOC</strong>IENT</h1>
+						<div class="userlogin__radios">
+							<p>
+								<input type="radio" class="custom type-2" name="radiosss" checked="checked"/>
+								<label>as a patient</label>
+							</p>
+							<p>
+								<input type="radio" class="custom type-2" name="radiosss"/>
+								<label>as a represantative of a clinic</label>
+							</p>
+						</div>
+					</div>
+					<div class="userlogin__form">
+						<div class="userlogin__row">
+							<div class="userlogin__colleft">
+								<a href="#" class="def-button def-button_openid wide"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
+							</div>
+							<div class="userlogin__colright">
+								<a href="#" class="def-button def-button_openid wide"><i class="fa fa-google-plus"></i>Sign in with Google +</a>
+							</div>
+						</div>
+						<div class="userlogin__row">
+							<div class="userlogin__sep">or</div>
+						</div>
+						<div class="userlogin__row">
+							<div class="userlogin__colleft">
+								<input type="text" class="textbox type-2 wide" placeholder="Your first name">
+							</div>
+							<div class="userlogin__colright">
+								<input type="email" class="textbox type-2 wide" placeholder="Your last name">
+							</div>
+						</div>
+						<div class="userlogin__row">
+							<input type="email" class="textbox type-2 wide" placeholder="Your e-mail address">
+						</div>
+
+						<div class="userlogin__row">
+							<input type="password" class="textbox type-2 wide" placeholder="Choose password">
+						</div>
+
+						<div class="userlogin__submit">
+							<button class="def-button wide">Sign Up</button>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- end userlogin -->
+		
+		include "footer"
+		
+	</div>
+</body>
+</html>

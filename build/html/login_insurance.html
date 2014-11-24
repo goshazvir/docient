@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+
+	<script src="../js/scripts.min.js"></script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="../css/ie_lte8.css">
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" media="all" type="text/css" href="../css/cf_elements.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/smoothness/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" media="screen,projection,tv" type="text/css" href="../css/screen.css" />
+</head>
+<body ontouchstart="">
+	<div id="wrapper" class="authorization">
+
+		<header id="header">
+			<div class="layout">
+				<div class="left">
+					<a href="#" id="site-logo"><img src="../img/logo.png" alt="Docient"/></a>
+					<div id="slogan">Connecting doctors and patients<br/>all over the world</div>
+				</div>
+				<a href="#" id="main-nav-mobile" onclick="event.preventDefault();">MENU<i class="fa fa-align-justify"></i>
+					<select>
+						<optgroup label="Surgey">
+							<option>General surgery</option>
+							<option>Oral and Maxillofacial Surgery</option>
+							<option>Plastic surgery</option>
+						</optgroup>
+						<optgroup label="Cancer treatment">
+							<option>...</option>
+						</optgroup>
+					</select>
+				</a>
+				<div class="right">
+					<div id="signin-join">
+						<a href="#"><i class="fa fa-sign-in pad-r7"></i>Sign in</a>
+						<a href="#">Join DOCIENT</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+
+		<!-- begin userlogin -->
+		<div class="userlogin">
+			<div class="layout">
+				<form action="#">
+					<div class="userlogin__info">
+						<h1>Sign in to <strong>DOC</strong>IENT</h1>
+						<div class="userlogin__radios">
+							<p>
+								<input type="radio" class="custom type-2" name="radiosss"/>
+								<label>as a patient, doctor or represantative of a clinic</label>
+							</p>
+							<p>
+								<input type="radio" class="custom type-2" name="radiosss" checked="checked"/>
+								<label>as health insurer</label>
+							</p>
+						</div>
+					</div>
+					<div class="userlogin__form">
+						<div class="userlogin__row">
+							<div class="userlogin__colleft">
+								<a href="#" class="def-button def-button_openid wide"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
+							</div>
+							<div class="userlogin__colright">
+								<a href="#" class="def-button def-button_openid wide"><i class="fa fa-google-plus"></i>Sign in with Google +</a>
+							</div>
+						</div>
+						<div class="userlogin__row">
+							<div class="userlogin__sep">or</div>
+						</div>
+
+						<div class="userlogin__row">
+							<div class="userlogin__colleft">
+								<input type="text" class="textbox type-2 wide" placeholder="Your phone number">
+							</div>
+							<div class="userlogin__colright">
+								<button class="def-button wide">Send me passcode</button>
+							</div>
+						</div>
+
+						<div class="userlogin__row">
+							<div class="userlogin__colleft">
+								<input type="text" class="textbox type-2 wide" placeholder="Passcode">
+							</div>
+							<div class="userlogin__colright">
+								<button class="def-button wide">Sign In</button>
+							</div>
+						</div>
+						<div class="userlogin__msg">
+							<i class="fa fa-exclamation-triangle"></i>
+							Passcode is invalid. Get out of here!
+						</div>
+
+
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- end userlogin -->
+		
+		<div class="footer-push"></div>
+		<footer id="footer">
+			<div class="layout">
+				<div class="footer-about fcell">
+					<h1>What is <b>DOC</b>IENT?</h1>
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">About DOCIENT project</a></li>
+						<li><a href="#">News / Press</a></li>
+						<li><a href="#">Vacancies</a></li>
+						<li><a href="#">Partners / Health Insurers</a></li>
+					</ul>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Feedback form</a></li>
+						<li class="text-dark">+1 646-419-4452</li>
+						<li><a href="#">info@docent.com</a></li>
+					</ul>
+				</div>
+				<div class="fcell social-copyright">
+					<div class="social-links">
+						<a href="#" title=""><i class="fa fa-facebook"></i></a><a href="#" title=""><i class="fa fa-twitter"></i></a><a href="#" title=""><i class="fa fa-google-plus"></i></a><a href="#" title=""><i class="fa fa-youtube"></i></a>
+					</div>
+					<p class="text-dark">Copyright by DOCIENT</p>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+</body>
+</html>

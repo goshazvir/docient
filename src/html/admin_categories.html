@@ -1,0 +1,654 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+
+	<script>
+		function showAccountTypes(e){
+			e.preventDefault();
+			
+			var list = $(e.target).next(".account-types-popup-list");
+			if(list.hasClass("active")){
+				list.removeClass("active").fadeOut(200);
+			}else{
+				list.addClass("active").fadeOut(0).fadeIn(200);
+			}
+		}
+	</script>
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		include "header_user"
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				include "nav_user"
+				
+				<div id="main-inner" class="admincat">
+					<div class="overflow">
+						<div class="page-title-rblock">
+							Translations to edit:
+							<select class="custom simple" data-title="%var%">
+								<option value="0">choose</option>
+								<option value="1">...</option>
+								<option value="2">...</option>
+							</select>
+							<button type="button" class="color-button small gray"><i class="fa fa-reply pad-r7"></i>CSV export</button>
+							<button type="button" class="color-button small lblue"><i class="fa fa-share pad-r7"></i>CSV import</button>
+						</div>
+						<h1>Categories</h1>
+					</div>
+
+					<ul class="hierarchical-list hierarchical-list_mod clear js-hierarchlist">
+						<li class="js-hierarchlist-item">
+							<i class="exp-but"></i>
+							<div class="hierarchical-list__tools js-hierarchlist-tools">
+								<button type="button" class="color-button small lblue margin-r10"><i class="fa fa-share pad-r7"></i>CSV</button>
+								<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+							</div>
+							<span>Surgery</span>
+							<div class="hierarchical-list__translate">
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+							</div>
+							<ul class="js-hierarchlist">
+								<li class="js-hierarchlist-item">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Gynecology surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="js-hierarchlist-item is-editable">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Plastic surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Plastic Surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Пластическая хирургия">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Acuna matata">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="hierarchical-list__add"><a href="#">+ Add another sub-category</a></li>
+							</ul>
+						</li>
+
+						<li class="js-hierarchlist-item">
+							<i class="exp-but"></i>
+							<div class="hierarchical-list__tools js-hierarchlist-tools">
+								<button type="button" class="color-button small lblue margin-r10"><i class="fa fa-share pad-r7"></i>CSV</button>
+								<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+							</div>
+							<span>Cencer treatment</span>
+							<div class="hierarchical-list__translate">
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+							</div>
+							<ul class="js-hierarchlist">
+								<li class="js-hierarchlist-item">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Gynecology surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="js-hierarchlist-item is-editable">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Plastic surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Plastic Surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Пластическая хирургия">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Acuna matata">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="hierarchical-list__add"><a href="#">+ Add another sub-category</a></li>
+							</ul>
+						</li>
+
+						<li class="js-hierarchlist-item">
+							<i class="exp-but"></i>
+							<div class="hierarchical-list__tools js-hierarchlist-tools">
+								<button type="button" class="color-button small lblue margin-r10"><i class="fa fa-share pad-r7"></i>CSV</button>
+								<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+							</div>
+							<span>Gynecology</span>
+							<div class="hierarchical-list__translate">
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+							</div>
+							<ul class="js-hierarchlist">
+								<li class="js-hierarchlist-item">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Gynecology surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="js-hierarchlist-item is-editable">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Plastic surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Plastic Surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Пластическая хирургия">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Acuna matata">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="hierarchical-list__add"><a href="#">+ Add another sub-category</a></li>
+							</ul>
+						</li>
+
+						<li class="js-hierarchlist-item">
+							<i class="exp-but"></i>
+							<div class="hierarchical-list__tools js-hierarchlist-tools">
+								<button type="button" class="color-button small lblue margin-r10"><i class="fa fa-share pad-r7"></i>CSV</button>
+								<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+							</div>
+							<span>Consultation</span>
+							<div class="hierarchical-list__translate">
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+							</div>
+							<ul class="js-hierarchlist">
+								<li class="js-hierarchlist-item">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Gynecology surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="js-hierarchlist-item is-editable">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Plastic surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Plastic Surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Пластическая хирургия">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Acuna matata">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="hierarchical-list__add"><a href="#">+ Add another sub-category</a></li>
+							</ul>
+						</li>
+
+						<li class="js-hierarchlist-item">
+							<i class="exp-but"></i>
+							<div class="hierarchical-list__tools js-hierarchlist-tools">
+								<button type="button" class="color-button small lblue margin-r10"><i class="fa fa-share pad-r7"></i>CSV</button>
+								<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+							</div>
+							<span>Survey</span>
+							<div class="hierarchical-list__translate">
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+							</div>
+							<ul class="js-hierarchlist">
+								<li class="js-hierarchlist-item">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Gynecology surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="js-hierarchlist-item is-editable">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Plastic surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Plastic Surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Пластическая хирургия">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Acuna matata">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="hierarchical-list__add"><a href="#">+ Add another sub-category</a></li>
+							</ul>
+						</li>
+
+						<li class="js-hierarchlist-item">
+							<i class="exp-but"></i>
+							<div class="hierarchical-list__tools js-hierarchlist-tools">
+								<button type="button" class="color-button small lblue margin-r10"><i class="fa fa-share pad-r7"></i>CSV</button>
+								<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+							</div>
+							<span>Prophylaxis</span>
+							<div class="hierarchical-list__translate">
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+							</div>
+							<ul class="js-hierarchlist">
+								<li class="js-hierarchlist-item">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Gynecology surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="js-hierarchlist-item is-editable">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Plastic surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Plastic Surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Пластическая хирургия">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Acuna matata">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="hierarchical-list__add"><a href="#">+ Add another sub-category</a></li>
+							</ul>
+						</li>
+
+						<li class="js-hierarchlist-item">
+							<i class="exp-but"></i>
+							<div class="hierarchical-list__tools js-hierarchlist-tools">
+								<button type="button" class="color-button small lblue margin-r10"><i class="fa fa-share pad-r7"></i>CSV</button>
+								<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+							</div>
+							<span>Diagnostics</span>
+							<div class="hierarchical-list__translate">
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+							</div>
+							<ul class="js-hierarchlist">
+								<li class="js-hierarchlist-item">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Gynecology surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="js-hierarchlist-item is-editable">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Plastic surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Plastic Surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Пластическая хирургия">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Acuna matata">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="hierarchical-list__add"><a href="#">+ Add another sub-category</a></li>
+							</ul>
+						</li>
+
+						<li class="js-hierarchlist-item">
+							<i class="exp-but"></i>
+							<div class="hierarchical-list__tools js-hierarchlist-tools">
+								<button type="button" class="color-button small lblue margin-r10"><i class="fa fa-share pad-r7"></i>CSV</button>
+								<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+								<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+							</div>
+							<span>Recovery</span>
+							<div class="hierarchical-list__translate">
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+								<div class="hierarchical-list__translaterow">
+									<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+									<a href="#">duplicate translation</a>
+								</div>
+							</div>
+							<ul class="js-hierarchlist">
+								<li class="js-hierarchlist-item">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Gynecology surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Gynecology surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="js-hierarchlist-item is-editable">
+									<div class="hierarchical-list__tools js-hierarchlist-tools">
+										<a href="#" class="margin-r10 js-hierarchlist-save"><i class="fa fa-save"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-edit"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="margin-r10 js-hierarchlist-del"><i class="fa fa-trash-o"></i></a>
+									</div>
+									<span>Plastic surgery</span>
+									<div class="hierarchical-list__translate">
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">English:</span><input type="text" class="textbox" placeholder="Plastic Surgery">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Russian:</span><input type="text" class="textbox" placeholder="Пластическая хирургия">
+											<a href="#">duplicate translation</a>
+										</div>
+										<div class="hierarchical-list__translaterow">
+											<span class="hierarchical-list__translatelabel">Suahili:</span><input type="text" class="textbox" placeholder="Acuna matata">
+											<a href="#">duplicate translation</a>
+										</div>
+									</div>
+								</li>
+								<li class="hierarchical-list__add"><a href="#">+ Add another sub-category</a></li>
+							</ul>
+						</li>
+
+
+						<li class="hierarchical-list__add"><a href="#">+ Add another sub-category</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		include "footer"
+		
+	</div>
+	
+</body>
+</html>

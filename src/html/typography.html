@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+		include "header"
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				include "nav"
+				
+				<div id="main-inner">
+					<h1>Pellentesque eget ornare sisi. (h1)</h1>
+					<p class="hor-separator"></p>
+					<div class="acricle-title">
+						<h2 class="heading">Pellentesque habitant morbi (h2)</h2>
+						<div class="date-stamp"><i class="fa fa-calendar"></i><span>2014/01/09</span></div>
+					</div>
+					<div class="content">
+						<h3>Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque (h3)</h3>
+						<p><img src="../img/content/article-image.jpg" alt="" style="float:left; margin:0 15px 15px 0;"/></p>
+						<p>Sednon neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+						<p>Nam suscipit aliquam facilisis. Phasellus tristique ornare elit. Phasellus vel erat eu turpis dignissim tincidunt quis tempor metus. Mauris ullamcorper elit nec diam tempus hendrerit. <a href="#">Quisque sit amet mollis elit</a>, et cursus mauris. Nam quis neque quis mauris convallis faucibus id suscipit tellus.</p>
+						<p>Selecting of text with mouse, turpis leo dictum massa. Integer justo metus, cursus quis dapibus id, commodo nec tortor. Nam tristique nulla ante, non ultricies sapien gravida ut. Nulla porttitor lobortis ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur a tortor nec odio mollis interdum.</p>
+						<p><a href="#"><i class="fa fa-arrow-circle-right"></i> Read more...</a></p>
+						<br/>
+						<h3>Example of the list:</h3>
+						<ul>
+							<li>Nullam ac pretium risus</li>
+							<li>Nam vulputate vel enim sit amet pellentesque</li>
+						</ul>
+						<p class="hor-separator"></p>
+						<h3>Example of table:</h3>
+						<table>
+							<tr>
+								<th>Table heading</th>
+								<th>Table heading</th>
+								<th>Table heading</th>
+								<th>Table heading</th>
+							</tr>
+							<tr>
+								<td>ed condimentum eu massa. 1</td>
+								<td>ed condimentum eu massa. 1</td>
+								<td style="text-align:center;"><span class="font20">250&euro; 1</span></td>
+								<td style="text-align:center;"><span class="font20"><i class="fa fa-star-o"></i></span> 1</td>
+							</tr>
+							<tr>
+								<td>ed condimentum eu massa. 2</td>
+								<td>ed condimentum eu massa. 2</td>
+								<td style="text-align:center;"><span class="font20">250&euro;</span> 2</td>
+								<td style="text-align:center;"><span class="font20"><i class="fa fa-plane"></i></span> 2</td>
+							</tr>
+							<tr>
+								<td>ed condimentum eu massa. 3</td>
+								<td>ed condimentum eu massa. 3</td>
+								<td style="text-align:center;"><span class="font20">250&euro;</span> 3</td>
+								<td style="text-align:center;"><span class="font20"><i class="fa fa-plane"></i></span> 3</td>
+							</tr>
+						</table>
+						<div class="dashed-box">
+							<h3>Highlight style for the text</h3>
+							<p>Morbi consequat, tellus sed blandit ultricies, turpis leo dictum massa, id vestibulum libero sapien sit amet turpis. Integer justo metus, cursus quis dapibus id, commodo nec tortor. Nam tristique nulla ante, non ultricies sapien gravida ut. Nulla porttitor lobortis ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur a tortor nec odio mollis interdum. Ut eget tellus adipiscing, convallis felis quis, accumsan ipsum.</p>
+							<p><a href="#"><i class="fa fa-arrow-circle-right"></i> Read more...</a></p>
+						</div>
+						<div class="dotted-box">
+							<h3>Highlight style for the text</h3>
+							<p>Morbi consequat, tellus sed blandit ultricies, turpis leo dictum massa, id vestibulum libero sapien sit amet turpis. Integer justo metus, cursus quis dapibus id, commodo nec tortor. Nam tristique nulla ante, non ultricies sapien gravida ut. Nulla porttitor lobortis ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur a tortor nec odio mollis interdum. Ut eget tellus adipiscing, convallis felis quis, accumsan ipsum.</p>
+							<p><a href="#"><i class="fa fa-arrow-circle-right"></i> Read more...</a></p>
+						</div>
+						<form>
+							<p><input type="text" class="textbox" placeholder="Text box"/> <input type="text" class="textbox error" placeholder="Error class"/></p>
+							<p><textarea class="textbox" placeholder="Text area"></textarea> <textarea class="textbox error" placeholder="Error class"></textarea></p>
+							<p><span class="date-field"><input type="date" class="textbox" value="2014-12-31"/></span></p>
+							<p>
+								<select class="custom" data-title="%var%">
+									<option value="0" selected>Dropdown</option>
+									<option value="1">Selection 1</option>
+									<option value="2">Selection 2</option>
+								</select>
+								<select class="custom error" data-title="%var%">
+									<option value="0" selected>Error class</option>
+									<option value="1">Selection 1</option>
+									<option value="2">Selection 2</option>
+								</select>
+								<select class="custom simple" data-title="%var%">
+									<option value="0" selected>Simple dropdown</option>
+									<option value="1">Selection 1</option>
+									<option value="2">Selection 2</option>
+								</select>
+							</p>
+							<p><input type="file" class="custom" data-placeholder="Browse file..."/></p>
+							<p><input type="checkbox" class="custom" checked /><label>checkbox</label></p>
+							<p><input type="radio" class="custom" name="test" checked /><label>radio</label></p>
+							<p><input type="radio" class="custom" name="test" /><label>radio</label></p>
+						</form>
+						<p><button type="button" class="def-button">Default button</button></p>
+						<p><button type="button" class="color-button">Blue button<i class="fa fa-share pad-l7"></i></button></p>
+						<p><button type="button" class="color-button lblue">Light blue button<i class="fa fa-share pad-l7"></i></button></p>
+						<p><button type="button" class="color-button purple">Purple button<i class="fa fa-share pad-l7"></i></button></p>
+						<p><button type="button" class="color-button lpurple">Light purple button<i class="fa fa-share pad-l7"></i></button></p>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		include "footer"
+		
+	</div>
+</body>
+</html>

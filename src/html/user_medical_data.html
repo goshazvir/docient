@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+
+	<script>
+		function showAccountTypes(e){
+			e.preventDefault();
+			
+			var list = $(e.target).next(".account-types-popup-list");
+			if(list.hasClass("active")){
+				list.removeClass("active").fadeOut(200);
+			}else{
+				list.addClass("active").fadeOut(0).fadeIn(200);
+			}
+		}
+	</script>
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+		
+
+		include "header_user"
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+			
+			<div class="layout">
+				
+				include "nav_user"
+				
+				<div id="main-inner">
+					<h1>Medical data</h1>
+					<!-- begin datamed -->
+					<div class="datamed">
+						<div class="datamed__upload">
+							<h2>Upload new document</h2>
+							<p>
+								<select class="custom mobile-wide w345 margin-r10" data-title="%var%">
+									<option value="placeholder">Choose category</option>
+									<option value="0">...</option>
+									<option value="0">...</option>
+									<option value="0">...</option>
+								</select><input type="text" class="textbox w315 vertical-middle mobile-wide" placeholder="Name your document"/>
+							</p>
+							<p>
+								<input type="file" class="datamed__file custom vertical-middle" data-placeholder="Browse file..."/>
+								<button type="button" class="def-button w345 vertical-middle">Save this document</button>
+							</p>
+						</div>
+						<p class="hor-separator"></p>
+						<h2>My medical records</h2>
+						<table class="defining-users-table">
+							<tbody>
+								<tr>
+									<td><a href="#">Medical record 651421</a></td>
+									<td>Date created: 12.12.2013</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-download pad-r5"></i>Download</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">Medical record 32435434</a></td>
+									<td>Date created: 12.12.2013</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-download pad-r5"></i>Download</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">Medical record 34234357</a></td>
+									<td>Date created: 12.12.2013</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-download pad-r5"></i>Download</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="hor-separator"></p>
+						<h2>My invoices</h2>
+						<!-- begin invoice -->
+						<div class="invoice">
+							<a href="#" class="invoice__close"><i class="fa fa-times-circle"></i></a>
+							<div class="invoice__top">
+								<h2 class="invoice__title">Invoice nr: A2013-003231</h2>
+								<div class="invoice__date">Date: 13.11.2013</div>
+								<p class="hor-separator"></p>
+							</div>
+							<div class="invoice__info">
+								<div class="double-cell-block">
+									<div class="table-cell">
+										<h2>Seller:</h2>
+										<div class="invoice__infosub"><a href="#">TSÕGANODENTOSTRY LLC</a></div>
+										<table class="simple-table">
+											<tbody>
+												<tr>
+													<td>Address:</td>
+													<td>Caries str 2, Labaduu, Romania&nbsp;12435</td>
+												</tr>
+												<tr>
+													<td>Licence:</td>
+													<td>L01547</td>
+												</tr>
+												<tr>
+													<td>Phone:</td>
+													<td>377987456321</td>
+												</tr>
+												<tr>
+													<td>Bank account:</td>
+													<td>RO4312091823867345</td>
+												</tr>
+												<tr>
+													<td>Registration&nbsp;nr.:</td>
+													<td>321456987</td>
+												</tr>
+												<tr>
+													<td>VAT number:</td>
+													<td>RO1029333</td>
+												</tr>
+										</tbody>
+									</table>
+									</div>
+									<div class="table-cell">
+										<h2>Buyer:</h2>
+										<div class="invoice__infosub">Kaupo Kuusk</div>
+										<table class="simple-table">
+											<tbody>
+												<tr>
+													<td>Address:</td>
+													<td>Masina 22, Tallinn,<br>
+													Estonia&nbsp;10144</td>
+												</tr>
+												<tr>
+													<td>Phone:</td>
+													<td>+377987456321</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="invoice__price">
+								<p class="hor-separator"></p>
+								<table class="invoice__pricetable">
+									<thead>
+										<tr>
+											<th>Service / Product Name</th>
+											<th>Quantity</th>
+											<th>Price</th>
+											<th class="mobile-port-hide">Vat</th>
+											<th>Sum</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Consultation and treatment plan</td>
+											<td>1</td>
+											<td>250</td>
+											<td class="mobile-port-hide">-</td>
+											<td>250</td>
+										</tr>
+										<tr>
+											<td>Associated services (hosting and transportation)</td>
+											<td>1</td>
+											<td>500</td>
+											<td class="mobile-port-hide">-</td>
+											<td>500</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="inovice__pricetotal">
+									<p>All together <span>750 €</span></p>
+								</div>
+								<div class="inovice__pricetotal">
+									<p>Total paid <span>750 €</span></p>
+								</div>
+							</div>
+							<div class="invoice__action">
+								<p class="hor-separator"></p>
+								<div class="invoice__actionlabel">Payment: cash, card, bank transfer, prepay</div>
+								<div class="invoice__actionbtn">
+									<a href="#"><i class="fa fa-download"></i> Download invoice</a>
+									<a href="#"><i class="fa fa-print"></i> Print invoice</a>
+								</div>
+							</div>
+						</div>
+						<!-- end invoice -->
+						<table class="defining-users-table">
+							<tbody>
+								<tr>
+									<td><a href="#">Invoice nr: A2013- 651421</a></td>
+									<td>Date created: 12.12.2013</td>
+									<td>2500 €</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-download pad-r5"></i>Download</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">Invoice nr: A2013- 651421</a></td>
+									<td>Date created: 12.12.2013</td>
+									<td>2500 €</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-download pad-r5"></i>Download</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">Invoice nr: A2013- 651421</a></td>
+									<td>Date created: 12.12.2013</td>
+									<td>2500 €</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-download pad-r5"></i>Download</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="hor-separator"></p>
+						<h2>My documents</h2>
+						<table class="defining-users-table">
+							<tbody>
+								<tr>
+									<td>Ultrasound</td>
+									<td><a href="#">Dr. Kaupo Kuusk <i class="fa fa-external-link"></i></a></td>
+									<td>Date: 12.12.2011</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-eye pad-r5"></i>View</a></td>
+								</tr>
+								<tr>
+									<td>Pictures (5)</td>
+									<td><a href="#">Dr. Kaupo Kuusk <i class="fa fa-external-link"></i></a></td>
+									<td>Date: 12.12.2011</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-eye pad-r5"></i>View</a></td>
+								</tr>
+								<tr>
+									<td>Something else</td>
+									<td><a href="#">Dr. Kaupo Kuusk <i class="fa fa-external-link"></i></a></td>
+									<td>Date: 12.12.2011</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-eye pad-r5"></i>View</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="hor-separator"></p>
+						<h2>My surveys</h2>
+						<table class="defining-users-table">
+							<tbody>
+								<tr>
+									<td>Dental survey</td>
+									<td><a href="#">Dr. Kaupo Kuusk <i class="fa fa-external-link"></i></a></td>
+									<td>Date: 12.12.2011</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-eye pad-r5"></i>View</a></td>
+								</tr>
+								<tr>
+									<td>Leg survey</td>
+									<td><a href="#">Dr. Kaupo Kuusk <i class="fa fa-external-link"></i></a></td>
+									<td>Date: 12.12.2011</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-eye pad-r5"></i>View</a></td>
+								</tr>
+								<tr>
+									<td>Very long long name survey...</td>
+									<td><a href="#">Dr. Kaupo Kuusk <i class="fa fa-external-link"></i></a></td>
+									<td>Date: 12.12.2011</td>
+									<td class="defining-users-table__act"><a href="#"><i class="fa fa-eye pad-r5"></i>View</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- end datamed -->
+					
+					
+
+					
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		include "footer"
+		
+	</div>
+	
+</body>
+</html>

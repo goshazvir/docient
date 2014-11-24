@@ -1,0 +1,569 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	include "head_css"
+</head>
+<body ontouchstart="">
+	<div id="wrapper">
+
+		include "header"
+
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			<div id="main-top-pad"></div>
+
+			<div class="layout">
+
+				include "nav"
+
+				<div id="main-inner">
+					<h1>Medicum Perearstikeskus<span class="subheader">Medicum Perearstikeskus AS</span></h1>
+
+					<p class="hor-separator"></p>
+
+					<div class="double-cell-block">
+						<div class="table-cell">
+							<h2>Legal data</h2>
+							<table class="simple-table">
+								<tr>
+									<td>Licence nr.:</td>
+									<td>9293487987423</td>
+								</tr>
+								<tr>
+									<td>Registration nr.:</td>
+									<td>9293487987423</td>
+								</tr>
+								<tr>
+									<td>Phone:</td>
+									<td>+372 76763627</td>
+								</tr>
+								<tr>
+									<td>E-mail:</td>
+									<td><a href="#">info@medicum.ee</a></td>
+								</tr>
+							</table>
+						</div>
+						<div class="table-cell">
+							<h2>Contact details</h2>
+							<table class="simple-table">
+								<tr>
+									<td>Phone:</td>
+									<td>+372 76763627</td>
+								</tr>
+								<tr>
+									<td>E-mail:</td>
+									<td><a href="#">info@medicum.ee</a></td>
+								</tr>
+								<tr>
+									<td>Address:<br/><a href="#" class="font12"><i class="fa fa-map-marker pad-r5"></i>Show map</td>
+									<td>Punane 61, Tallinn<br/>13811, Harjumaa<br/>Estonia</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<p class="hor-separator"></p>
+
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+
+					<p class="hor-separator"></p>
+
+					<div>
+						<p class="clinic-service-search right">
+							<span class="icon-field">
+								<input type="text" class="textbox" name="" placeholder="search clinic service" style="height:38px; width:275px;"/>
+								<button class="fa fa-search"></button>
+							</span>
+						</p>
+						<h2 class="pad-t7">Clinic services</h2>
+						<ul class="hierarchical-list clear margin-t30">
+							<li>
+								<i class="exp-but"></i>
+								<i class="exp-line"></i>
+								<span>Gynecology</span>
+								<ul>
+									<li>
+										<i class="exp-line"></i>
+										<i class="exp-but"></i>
+										<span>Gynecology surgery</span>
+										<ul>
+											<li>
+												<i class="exp-h-line"></i>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+											</li>
+											<li>
+												<i class="exp-h-line"></i>
+												<span class="table-block">
+													<a href="#" class="table-cell">Hand replacement and changing to a new better one changing to a new better one</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+
+											</li>
+											<li>
+												<i class="exp-h-line"></i>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+													<div class="doctors-dialog">
+														<table class="dr-list-table">
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+														</table>
+														<i class="dialog-tail"></i>
+														<a href="#" class="close-but"></a>
+													</div>
+												</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<i class="exp-line"></i>
+										<i class="exp-but"></i>
+										<span>Gynecology surgery</span>
+										<ul>
+											<li>
+												<i class="exp-h-line"></i>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+											</li>
+											<li>
+												<i class="exp-h-line"></i>
+												<span class="table-block">
+													<a href="#" class="table-cell">Hand replacement and changing to a new better one</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+												
+											</li>
+											<li>
+												<i class="exp-h-line"></i>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+													<div class="doctors-dialog">
+														<table class="dr-list-table">
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+														</table>
+														<i class="dialog-tail"></i>
+														<a href="#" class="close-but"></a>
+													</div>
+												</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<i class="exp-but"></i>
+										<span>Gynecology surgery</span>
+										<ul>
+											<li>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+											</li>
+											<li>
+												<span class="table-block">
+													<a href="#" class="table-cell">Hand replacement and changing to a new better one</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+												
+											</li>
+											<li>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+													<div class="doctors-dialog">
+														<table class="dr-list-table">
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+														</table>
+														<i class="dialog-tail"></i>
+														<a href="#" class="close-but"></a>
+													</div>
+												</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<i class="exp-but"></i>
+								<span>Sergery</span>
+								<ul>
+									<li>
+										<i class="exp-but"></i>
+										<span>Gynecology surgery</span>
+										<ul>
+											<li>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+											</li>
+											<li>
+												<span class="table-block">
+													<a href="#" class="table-cell">Hand replacement and changing to a new better one</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+												</span>
+												
+											</li>
+											<li>
+												<span class="table-block">
+													<a href="#" class="table-cell">Leg surgery</a>
+													<span class="table-cell">500&euro;</span>
+													<a href="#" class="table-cell">doctors</a>
+													<div class="doctors-dialog">
+														<table class="dr-list-table">
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+																</td>
+																<td>
+																	<p>Dr. House</p>
+																	<p>
+																		<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+																		<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+																		<span class="pad-r10 text-grey">Profile completed</span>
+																		<a href="#" class="text-grey"><i class="fa fa-info-circle pad-r5"></i>View info</a>
+																	</p>
+																</td>
+															</tr>
+														</table>
+														<i class="dialog-tail"></i>
+														<a href="#" class="close-but"></a>
+													</div>
+												</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="clinic-doctors-block">
+						<h2>Doctors who work in Medikum Perearstikeskus</h2>
+						<table class="dr-list-table">
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+						</table>
+						<table class="dr-list-table">
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="thumb" src="../img/content/tumb.jpg" alt=""/>
+								</td>
+								<td>
+									<p><a href="#">Dr. House</a></p>
+									<p>
+										<span class="pad-r10 rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><span class="text-grey">(78)</span></span>
+										<span class="pad-r10"><strong class="text-blue">75%</strong></span>
+										<span class="pad-r10 text-grey">Profile completed</span>
+									</p>
+								</td>
+							</tr>
+						</table>
+						<div class="clear"></div>
+					</div>
+					
+					<p class="hor-separator"></p>
+					
+					<h2>Write message to Medikum Perearstikeskus</h2>
+					<p><input type="text" class="textbox margin-r10" style="width:230px;" placeholder="Your first name"/><input type="text" class="textbox" style="width:230px;" placeholder="Your last name"/></p>
+					<p><input type="email" class="textbox margin-r10" style="width:230px;" placeholder="Email address"/><input type="tel" class="textbox w230" style="width:230px;" placeholder="Phone number"/></p>
+					<p><textarea class="textbox" style="width:502px;" placeholder="Write your message here..."></textarea></p>
+					<p class="margin-t20 text-center form-width"><button class="def-button"><i class="fa fa-comments pad-r10"></i>Send message</button></p>
+					
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+
+		include "footer"
+
+	</div>
+
+	<div class="popup-overlay"></div>
+	<div class="popup">
+		<div class="popup-window" style="width:430px;">
+			<a href="#" class="close-but white" onclick="temp_function();"></a>
+			<h1>Do you like DOCIENT?</h1>
+			<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+			<form>
+				<div class="popup-radios">
+					<p>
+						<input type="radio" class="custom type-2" name="radiosss" checked="checked"/>
+						<label>I want to recieve DOCIENT updates</label>
+					</p>
+					<p>
+						<input type="radio" class="custom type-2" name="radiosss"/>
+						<label>I want to recieve updates on this clinic</label>
+					</p>
+					<p>
+						<input type="radio" class="custom type-2" name="radiosss"/>
+						<label>I want to recieve new articles from this doctor</label>
+					</p>
+				</div>
+				<p>
+					<select class="custom type-2" data-title="%var%" style="width:430px;">
+						<option value="placeholder" selected="selected">Category</option>
+						<option value="0">...</option>
+						<option value="1">...</option>
+					</select>
+				</p>
+				<p><input type="text" class="textbox type-2" placeholder="Your name" style="width:400px;"/></p>
+				<p><input type="text" class="textbox type-2" placeholder="Your email address" style="width:400px;"/></p>
+				<p class="no-margin"><button class="def-button wide">Subscribe</button></p>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		function temp_function(){
+			$(".popup").add(".popup-overlay").remove();
+		}
+	</script>
+
+</body>
+</html>
