@@ -133,7 +133,46 @@ $(document).ready(function(){
       $(this).parents('.my-row').find('.js-input').fadeToggle();
     }
   });
-  
 
+  // sortable
+  function sortable(){
+    $("#sortable").sortable({
+      handle: 'i'
+    });
+  }
+  sortable();
+  // sortable popup
+  $('.sortable-send-popup1').on('click', function() {
+   if ($("#sortable-popup1").hasClass('is-active')) {
+    $("#sortable-popup1").removeClass('is-active');
+   }
+   else {
+    $("#sortable-popup1").addClass('is-active');
+   }
+  });
+  $('.sortable-send-popup2').on('click', function() {
+   if ($("#sortable-popup2").hasClass('is-active')) {
+    $("#sortable-popup2").removeClass('is-active');
+   }
+   else {
+    $("#sortable-popup2").addClass('is-active');
+   }
+  });
+  $('.sortable-send-popup3').on('click', function() {
+   if ($("#sortable-popup3").hasClass('is-active')) {
+    $("#sortable-popup3").removeClass('is-active');
+   }
+   else {
+    $("#sortable-popup3").addClass('is-active');
+   }
+  });
+  $('.sortable-send-popup4').on('click', function() {
+   if ($("#sortable-popup4").hasClass('is-active')) {
+    $("#sortable-popup4").removeClass('is-active');
+   }
+   else {
+    $("#sortable-popup4").addClass('is-active');
+   }
+  });
 
 });
