@@ -150,29 +150,5 @@ $(document).ready(function(){
     $("#sortable-popup1").addClass('is-active');
    }
   });
-  $('.sortable-send-popup2').on('click', function() {
-   if ($("#sortable-popup2").hasClass('is-active')) {
-    $("#sortable-popup2").removeClass('is-active');
-   }
-   else {
-    $("#sortable-popup2").addClass('is-active');
-   }
-  });
-  $('.sortable-send-popup3').on('click', function() {
-   if ($("#sortable-popup3").hasClass('is-active')) {
-    $("#sortable-popup3").removeClass('is-active');
-   }
-   else {
-    $("#sortable-popup3").addClass('is-active');
-   }
-  });
-  $('.sortable-send-popup4').on('click', function() {
-   if ($("#sortable-popup4").hasClass('is-active')) {
-    $("#sortable-popup4").removeClass('is-active');
-   }
-   else {
-    $("#sortable-popup4").addClass('is-active');
-   }
-  });
 
 });

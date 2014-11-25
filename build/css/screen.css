@@ -1425,7 +1425,7 @@ nav + #main-inner { margin-left: 200px; }
 .my-row.m-mod { padding: 8px 13px; }
 .my-row.m-mod .my-row-label { width: 100%; }
 .my-row.m-mod .my-row-label .checkbox2 { margin: 0; }
-.my-row.m-mod:hover span { color: #3373a8; }
+.my-row.m-mod:hover .sortable-link { color: #3373a8; }
 .my-row:hover { background: #fbfbfb; }
 .my-row .my-row-label { width: 180px; display: inline-block; vertical-align: middle; }
 .my-row .my-row-label .checkbox2 { margin: 14px 0 15px; }
