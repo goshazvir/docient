@@ -10,6 +10,7 @@
 						'src/js/libs/modernizr.min.js',
 						'src/js/libs/jquery-1.11.0.min.js',
 						'src/js/libs/jquery-ui-1.10.4.custom.min.js',
+						'src/js/libs/jquery.ui.touch-punch.min.js',
 						'src/js/libs/jquery.mousewheel.min.js',
 						'src/js/libs/jquery.mCustomScrollbar.min.js',
 						'src/js/libs/jquery.raty.js',
