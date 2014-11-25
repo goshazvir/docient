@@ -136,7 +136,7 @@ $(document).ready(function(){
 
   // sortable
   function sortable(){
-    $("#sortable").draggable({
+    $("#sortable").sortable({
       handle: 'i'
     });
   }
