@@ -1510,15 +1510,18 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .confirm-phone-in .confirm-phone-title { font-size: 15px; color: #4c4c4c; margin-right: 40px; display: inline-block; vertical-align: middle; }
 .confirm-phone-in .confirm-phone-input { display: inline-block; vertical-align: middle; }
 .confirm-phone-in .confirm-phone-tel { margin-left: 10px; padding: 13px 35px; display: inline-block; vertical-align: middle; background-color: #5bb7df; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; transition: background 150ms linear; font-size: 20px; font-weight: 300; color: white; }
+@media only screen and (max-width: 479px) { .confirm-phone-in .confirm-phone-tel { margin-left: 0; font-size: 16px; } }
 .confirm-phone-in .confirm-phone-tel:hover { background: #6cc7f0; transition: background 150ms linear; }
 .confirm-phone-in .confirm-phone-tel:active { background: #4ca7d0; }
 
 .confirm-account .confirm-account-top { margin-bottom: 20px; }
 .confirm-account .confirm-account-top .confirm-account-top-ico { margin-right: 10px; display: inline-block; vertical-align: middle; font-size: 18px; color: #ffb400; }
 .confirm-account .confirm-account-top .confirm-account-top-descr { width: 560px; display: inline-block; vertical-align: middle; }
+@media only screen and (max-width: 760px) { .confirm-account .confirm-account-top .confirm-account-top-descr { width: 80%; } }
 .confirm-account .confirm-account-title { font-size: 15px; color: #4c4c4c; margin-right: 40px; display: inline-block; vertical-align: middle; }
 .confirm-account .confirm-account-input { display: inline-block; vertical-align: middle; }
 .confirm-account .confirm-account-tel { margin-left: 10px; padding: 13px 35px; display: inline-block; vertical-align: middle; background-color: #5bb7df; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; transition: background 150ms linear; font-size: 20px; font-weight: 300; color: white; }
+@media only screen and (max-width: 479px) { .confirm-account .confirm-account-tel { margin-left: 0; font-size: 16px; } }
 .confirm-account .confirm-account-tel:hover { background: #6cc7f0; transition: background 150ms linear; }
 .confirm-account .confirm-account-tel:active { background: #4ca7d0; }
 
