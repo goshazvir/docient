@@ -176,5 +176,18 @@ $(document).ready(function(){
       }
   });
 
+  $('.confirm-phone').hide();
+  $('.confirm-account').hide();
+
+  $('.js-send-phone').on('click', function() {
+   $('.confirm-phone').slideDown();
+   return false;
+  });
+
+  $('.js-send-account').on('click', function() {
+   $('.confirm-account').slideDown();
+   return false;
+  });
+
 
 });
