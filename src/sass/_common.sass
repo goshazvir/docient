@@ -4702,6 +4702,53 @@ nav
 	.some-form-note
 		padding-left: 26px				
 		font-size: 13px
+
+.notify
+	.notify-title
+		margin-right: 70px
+		display: inline-block
+		vertical-align: middle
+		font-size: 21px
+		color: #252525 
+	.notify-btn
+		padding: 8px 20px
+		display: inline-block
+		vertical-align: middle
+		background-color: #5bb7df
+		@include box-shadow(0 1px 3px rgba(0,0,0,.66), inset 0 1px 0 rgba(255,255,255,.75))
+		+border-radius(15px)
+		transition: background 150ms linear
+		&:hover
+			background: #6cc7f0
+			transition: background 150ms linear
+		&:active
+			background: #4ca7d0 
+		.notify-btn-ico
+			margin-right: 5px
+			display: inline-block
+			vertical-align: middle
+			font-size: 15px
+			color: #FFF
+		.notify-btn-descr
+			display: inline-block
+			vertical-align: middle
+			color: #FFF 
+		.notify-btn-title
+			font-size: 20px
+		.notify-btn-note
+			font-size: 13px
+
+.confirm-phone, .confirm-account
+	.block
+		border-top: 1px dotted #bdbdbd
+		&:first-child
+			border-top: 1px dotted #bdbdbd
+
+.confirm-phone-top
+	margin-bottom: 20px
+	p
+		margin-bottom: 0
+
 		
 
 

@@ -1492,6 +1492,21 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .some-form .some-form-radio { font-size: 15px; }
 .some-form .some-form-note { padding-left: 26px; font-size: 13px; }
 
+.notify .notify-title { margin-right: 70px; display: inline-block; vertical-align: middle; font-size: 21px; color: #252525; }
+.notify .notify-btn { padding: 8px 20px; display: inline-block; vertical-align: middle; background-color: #5bb7df; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; transition: background 150ms linear; }
+.notify .notify-btn:hover { background: #6cc7f0; transition: background 150ms linear; }
+.notify .notify-btn:active { background: #4ca7d0; }
+.notify .notify-btn .notify-btn-ico { margin-right: 5px; display: inline-block; vertical-align: middle; font-size: 15px; color: white; }
+.notify .notify-btn .notify-btn-descr { display: inline-block; vertical-align: middle; color: white; }
+.notify .notify-btn .notify-btn-title { font-size: 20px; }
+.notify .notify-btn .notify-btn-note { font-size: 13px; }
+
+.confirm-phone .block, .confirm-account .block { border-top: 1px dotted #bdbdbd; }
+.confirm-phone .block:first-child, .confirm-account .block:first-child { border-top: 1px dotted #bdbdbd; }
+
+.confirm-phone-top { margin-bottom: 20px; }
+.confirm-phone-top p { margin-bottom: 0; }
+
 .cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png { font-size: 2em; }
 
 @font-face { font-family: "raty"; font-style: normal; font-weight: normal; src: url("fonts/raty.eot"); src: url("fonts/raty.eot?#iefix") format("embedded-opentype"); src: url("fonts/raty.svg#raty") format("svg"); src: url("fonts/raty.ttf") format("truetype"); src: url("fonts/raty.woff") format("woff"); }
