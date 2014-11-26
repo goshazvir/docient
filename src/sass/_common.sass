@@ -4631,7 +4631,69 @@ nav
 
 .block
 	&.m-mod
-		border-top: none 
+		border-top: none
+
+.payment
+	.payment-top
+		margin-bottom: 20px
+		font-size: 21px
+		strong
+		+r(w479)
+			font-size: 18px
+	.payment-list
+		margin-left: -30px
+		+clr
+		+r(w760)
+			margin-left: 0
+		li
+			float: left
+			width: 340px
+			margin: 0 0 0 30px
+			border-bottom: 1px dotted #bdbdbd
+			+r(w479)
+				width: auto
+			&.payment-dotted
+				border-top: 1px dotted #bdbdbd
+				&.m-mod
+					+r(w760)
+						border-top: 0
+			+r(w760)
+				float: none
+				margin: 0 0 10px
+	.payment-item
+		height: 68px
+		line-height: 68px
+		padding: 0px 17px 0px 7px
+		// border-top: 1px dotted #bdbdbd 
+		// border-top: 1px dotted #bdbdbd
+		+clr
+		+r(w479)
+			height: auto
+			line-height: 1.2
+		.payment-radio
+			width: 160px
+			display: inline-block
+			vertical-align: middle
+			line-height: 1
+			+r(w479)
+				width: auto
+				display: block
+				padding: 10px 0
+		.payment-logo
+			width: 152px
+			display: inline-block
+			vertical-align: middle
+			line-height: 1
+			text-align: right
+			+r(w479)
+				width: auto
+				display: block
+				padding: 10px 0
+				text-align: left
+				
+		
+
+
 
 
 

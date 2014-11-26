@@ -1470,6 +1470,24 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 
 .block.m-mod { border-top: none; }
 
+.payment .payment-top { margin-bottom: 20px; font-size: 21px; }
+@media only screen and (max-width: 479px) { .payment .payment-top { font-size: 18px; } }
+.payment .payment-list { margin-left: -30px; *zoom: 1; }
+.payment .payment-list:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 760px) { .payment .payment-list { margin-left: 0; } }
+.payment .payment-list li { float: left; width: 340px; margin: 0 0 0 30px; border-bottom: 1px dotted #bdbdbd; }
+@media only screen and (max-width: 479px) { .payment .payment-list li { width: auto; } }
+.payment .payment-list li.payment-dotted { border-top: 1px dotted #bdbdbd; }
+@media only screen and (max-width: 760px) { .payment .payment-list li.payment-dotted.m-mod { border-top: 0; } }
+@media only screen and (max-width: 760px) { .payment .payment-list li { float: none; margin: 0 0 10px; } }
+.payment .payment-item { height: 68px; line-height: 68px; padding: 0px 17px 0px 7px; *zoom: 1; }
+.payment .payment-item:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 479px) { .payment .payment-item { height: auto; line-height: 1.2; } }
+.payment .payment-item .payment-radio { width: 160px; display: inline-block; vertical-align: middle; line-height: 1; }
+@media only screen and (max-width: 479px) { .payment .payment-item .payment-radio { width: auto; display: block; padding: 10px 0; } }
+.payment .payment-item .payment-logo { width: 152px; display: inline-block; vertical-align: middle; line-height: 1; text-align: right; }
+@media only screen and (max-width: 479px) { .payment .payment-item .payment-logo { width: auto; display: block; padding: 10px 0; text-align: left; } }
+
 .cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png { font-size: 2em; }
 
 @font-face { font-family: "raty"; font-style: normal; font-weight: normal; src: url("fonts/raty.eot"); src: url("fonts/raty.eot?#iefix") format("embedded-opentype"); src: url("fonts/raty.svg#raty") format("svg"); src: url("fonts/raty.ttf") format("truetype"); src: url("fonts/raty.woff") format("woff"); }
