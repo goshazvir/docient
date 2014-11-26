@@ -1481,6 +1481,9 @@ textarea.textbox
 	border-top: 1px dotted #000000
 	border-bottom: 1px dotted #000000
 	background: #fcfcfc
+	&.m-mod
+		margin: 0 0 0px
+		border-bottom: none
 	.block
 		padding: 20px 0
 		border-top: 1px dotted #bdbdbd
@@ -2096,7 +2099,8 @@ nav
 	float: left
 	+ #main-inner
 		margin-left: 200px
-
+		&.m-mod
+			padding-bottom: 0
 .frontpage nav + #main-inner
 	margin-left: 220px
 
@@ -2509,6 +2513,16 @@ nav
 
 .procedure-package-wrap
 	padding: 0 15px 0 15px
+	&.m-mod
+		margin-top: 15px
+		padding: 15px 0px 0
+		border-top: 1px dotted black
+		.header
+			padding: 0 15px 15px
+			+box
+		.procedure-package-search
+			&.m-mod
+				padding: 10px 15px
 	.header
 		display: table
 		width: 100%
@@ -2566,6 +2580,8 @@ nav
 	border-bottom: 1px dotted #7a7a7a
 	padding: 10px 0
 	display: none
+	&.m-mod
+		border-bottom: none 
 	&.active + .content
 		border-top: none
 	p
@@ -3985,6 +4001,14 @@ nav
 		display: inline-block
 		vertical-align: middle
 		font-size: 17px
+	.select
+		.checkbox3
+			span
+				color: #4c4c4c
+				border-bottom: none
+	.checkbox3 input + span
+		&:before
+			top: 6px
 
 .search-field
 	&.m-mod
@@ -4086,10 +4110,10 @@ nav
 		&:hover
 			background: #ebeaea 
 			color: #5cb7e0
-			margin-bottom: -1px
 			&:after
 				content: "\f105"
-				// display: inline-block
+				display: inline-block
+				vertical-align: middle
 				margin-left: 6px
 				font-family: 'FontAwesome'
 				font-size: 15px
@@ -4582,7 +4606,94 @@ nav
 			+r(w560)
 				width: 133px
 				+text-overflow
-	
+
+
+.js-overlay
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	opacity: 0.2
+	z-index: -1
+	&.is-active
+		z-index: 1   
+
+.button-payment
+	margin: 30px -70px 0
+	padding: 25px 0 90px
+	border-top: 1px dotted #bdbdbd
+
+.padding-b10
+	padding-bottom: 10px
+.area-in
+	padding: 0 45px
+
+.block
+	&.m-mod
+		border-top: none
+
+.payment
+	.payment-top
+		margin-bottom: 20px
+		font-size: 21px
+		strong
+		+r(w479)
+			font-size: 18px
+	.payment-list
+		margin-left: -30px
+		+clr
+		+r(w760)
+			margin-left: 0
+		li
+			float: left
+			width: 340px
+			margin: 0 0 0 30px
+			border-bottom: 1px dotted #bdbdbd
+			+r(w479)
+				width: auto
+			&.payment-dotted
+				border-top: 1px dotted #bdbdbd
+				&.m-mod
+					+r(w760)
+						border-top: 0
+			+r(w760)
+				float: none
+				margin: 0 0 10px
+	.payment-item
+		height: 68px
+		line-height: 68px
+		padding: 0px 17px 0px 7px
+		// border-top: 1px dotted #bdbdbd 
+		// border-top: 1px dotted #bdbdbd
+		+clr
+		+r(w479)
+			height: auto
+			line-height: 1.2
+		.payment-radio
+			width: 160px
+			display: inline-block
+			vertical-align: middle
+			line-height: 1
+			+r(w479)
+				width: auto
+				display: block
+				padding: 10px 0
+		.payment-logo
+			width: 152px
+			display: inline-block
+			vertical-align: middle
+			line-height: 1
+			text-align: right
+			+r(w479)
+				width: auto
+				display: block
+				padding: 10px 0
+				text-align: left
+				
+		
+
+
 
 
 

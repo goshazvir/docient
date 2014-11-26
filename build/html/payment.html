@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		var viewport = "<meta name='viewport' content='";
+		if(window.screen && window.screen.width < 768){
+			viewport += "width=device-width, maximum-scale=1.0'/>";
+			window.isMobile = true;
+		} else{
+			viewport += "width=1000'/>";
+		}
+		document.write(viewport);
+	</script>
+	<script src="../js/scripts.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="../css/ie_lte8.css">
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" media="all" type="text/css" href="../css/cf_elements.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/smoothness/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" media="screen,projection,tv" type="text/css" href="../css/screen.css" />
+</head>
+<body ontouchstart="">
+	<div id="wrapper" class="wrapper-mod">
+		
+		<header id="header">
+			<div class="layout">
+				<div class="left">
+					<a href="#" id="site-logo"><img src="../img/logo.png" alt="Docient"/></a>
+					<div id="slogan">Connecting doctors and patients<br/>all over the world</div>
+				</div>
+				<a href="#" id="main-nav-mobile" onclick="event.preventDefault();">MENU<i class="fa fa-align-justify"></i>
+					<select>
+						<optgroup label="Surgey">
+							<option>General surgery</option>
+							<option>Oral and Maxillofacial Surgery</option>
+							<option>Plastic surgery</option>
+						</optgroup>
+						<optgroup label="Cancer treatment">
+							<option>...</option>
+						</optgroup>
+					</select>
+				</a>
+				<div class="right">
+					<div class="header-user">
+						<div class="user-picture">
+							<img src="../img/content/user.jpg" alt=""/>
+							<a href="#" class="notifications">2</a>
+						</div>
+						<div class="user-details">
+							<span class="user-role">Doctor</span>
+							<span class="user-name">Anton Matiukhin<a href="#">Sign out</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+		
+		<div id="main-sep"><div class="layout"><i></i></div></div>
+		<div id="main"><!-- MAIN -->
+			
+			<div class="layout">
+				
+				<nav class="nav-mod">
+					<ul id="user-nav" class="user-nav-mod">
+						<li>
+							<a href="#"><span>Settings</span></a>
+						</li>
+						<li>
+							<a href="#"><span>My medical data</span></a>
+						</li>
+						<li>
+							<a href="#"><span>Communication with doctor</span></a>
+						</li>
+						<li>
+							<a href="#"><span>My buyings / invoices</span></a>
+							<ul>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+								<li><a href="#">My Details</a></li>
+							</ul>
+						</li>
+						<li class="expanded">
+							<a href="#"><span>Feedback after visiting / services</span></a>
+						</li>
+					</ul>
+				</nav>
+				
+				<div id="main-inner" class="m-mod">
+					<h1>Payment</h1>
+					<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+					<section class="procedure-package-wrap m-mod">
+						<div class="header">
+							<div class="block">
+								<h2 class="title"><a  href="#">Lasik eye surgery</a><span class="text-grey"><i class="fa fa-briefcase"></i> package</span></h2>
+								<p class="text-grey">13.10.2013 - 15.10.2013</p>
+								<p class="price">1400 &euro;</p>
+								<p><span class="text-grey"><i class="fa fa-briefcase w20"></i>package price:</span> <strong>500 &euro;</strong></p>
+							</div>
+							<div class="block">
+								<p class="text-grey"><i class="fa fa-plane w20"></i>Flight <i class="fa fa-exchange"></i> included(500 &euro;)</p>
+								<p class="text-grey"><i class="fa fa-building-o w20"></i>Hotel included(400 &euro;)</p>
+								<p class="text-grey"><i class="fa fa-reply w20"></i>Health insurance(-500 &euro;)</p>
+								<p><a href="#" onclick="openPPSearch(event);">Flight and hotel options</a></p>
+							</div>
+							<div class="block">
+								<p class="clinic-title"><a href="#">KSA Silmaklinik</a></p>
+								<p class="rating"><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><i class="fa fa-star text-yellow"></i><a href="#"><span class="text-grey">(78)</span></a></p>
+								<p class="no-margin">Dr. Ants Haavel</p>
+								<p class="no-margin">Estonia</p>
+							</div>
+						</div>
+						<div class="procedure-package-search m-mod">
+							<p>
+								<input type="checkbox" class="custom" checked="checked"/><label class="margin-r10">Include flight</label><select class="custom w200 mobile-wide" data-title="<i class='fa fa-location-arrow'></i><span>%var%</span>">
+									<option value="0">Estonia</option>
+									<option value="1">Norway</option>
+									<option value="2">Sweden</option>
+									<option value="3">Zimbabwe</option>
+								</select><span class="fa fa-exchange font20 pad-h5 text-grey vertical-middle mobile-block-center"></span><select class="custom w200 margin-r10 mobile-wide" data-title="%var%">
+									<option value="0">Tallinn</option>
+									<option value="1">Tartu</option>
+									<option value="2">Pärnu</option>
+									<option value="3">New-York</option>
+								</select><select class="custom w145 mobile-wide" data-title="%var%">
+									<option value="0" selected>1 adult</option>
+									<option value="1">2 adults</option>
+									<option value="2">99 adults</option>
+								</select>
+							</p>
+							<p>
+								<input type="checkbox" class="custom" checked="checked"/><label class="margin-r10">Include hotel</label><span class="rating-blue margin-r10"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span><span class="switch-option margin-r10">
+									<span class="selection-box"></span>
+									<span class="options">
+										<a data-value="airport" href="#" class="active"><span class="title">Close to airport</span></a><a data-value="clinic" href="#"><span class="title">Close to clinic</span></a>
+									</span>
+									<input type="hidden" name="sdf"/>
+								</span><select class="custom w145 mobile-wide" data-title="%var%">
+									<option value="0" selected>1 adult</option>
+									<option value="1">2 adults</option>
+									<option value="2">99 adults</option>
+								</select>
+							</p>
+							<p class="text-right mobile-block-center"><button type="submit" class="def-button" style="padding:0; width:145px; margin-right: 30px;">OK</button></p>
+						</div>
+					</section>
+					<div class="dotted-blocks m-mod">
+						<div class="block pad-h25">
+							<div class="payment">
+								<div class="payment-top">
+									<p>You are about to pay <strong> 1400 Euro</strong> for procedure.</p>
+									<p>Please choose one of the payment methods:</p>
+								</div>
+								<form action="">
+									<ul class="payment-list">
+										<li class="payment-dotted">
+											<div class="payment-item">
+												<div class="payment-radio">
+													<input type="radio" class="custom" name="test" checked /><label>Swedbank</label>
+												</div>
+												<div class="payment-logo">
+													<img src="../img/par1.png" alt="">
+												</div>
+											</div>
+										</li>
+										<li class="payment-dotted m-mod">
+											<div class="payment-item">
+												<div class="payment-radio">
+													<input type="radio" class="custom" name="test" /><label>Danske Bank</label>
+												</div>
+												<div class="payment-logo">
+													<img src="../img/par2.png" alt="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="payment-item">
+												<div class="payment-radio">
+													<input type="radio" class="custom" name="test" /><label>SEB</label>
+												</div>
+												<div class="payment-logo">
+													<img src="../img/par3.png" alt="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="payment-item">
+												<div class="payment-radio">
+													<input type="radio" class="custom" name="test" /><label>PayPal</label>
+												</div>
+												<div class="payment-logo">
+													<img src="../img/par4.png" alt="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="payment-item">
+												<div class="payment-radio">
+													<input type="radio" class="custom" name="test" /><label>Nordea</label>
+												</div>
+												<div class="payment-logo">
+													<img src="../img/par5.png" alt="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="payment-item">
+												<div class="payment-radio">
+													<input type="radio" class="custom" name="test" /><label>Credit Card</label>
+												</div>
+												<div class="payment-logo">
+													<img src="../img/par6.png" alt="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="payment-item">
+												<div class="payment-radio">
+													<input type="radio" class="custom" name="test" /><label>Krediidipank</label>
+												</div>
+												<div class="payment-logo">
+													<img src="../img/par7.png" alt="">
+												</div>
+											</div>
+										</li>
+									</ul>
+								</form>
+							</div>
+						</div>
+						<div class="block pad-h25 m-mod">
+							<p class="padding-b10">
+								<label class="checkbox3 js-send-advanced-form">
+									<input type="checkbox" name="type">
+									<span>I want to recieve invoice for my company</span>
+								</label>
+							</p>
+							<div class="area-in js-advanced-form">
+								<p><input type="text" class="textbox margin-r10" style="width:230px;" placeholder="Company name *"/><input type="text" class="textbox" style="width:230px;" placeholder="Registration number *"/></p>
+								<p><input type="email" class="textbox margin-r10" style="width:230px;" placeholder="VAT number"/><input type="tel" class="textbox w230" style="width:230px;" placeholder="Contact person *"/></p>
+								<p><textarea class="textbox" style="width:502px;" placeholder="Company address"></textarea></p>
+								<p class="text-center button-payment"><button class="def-button"><i class="fa fa-arrow-right pad-r10"></i>Proceed to payment</button></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div><!-- MAIN END -->
+		
+		<div class="footer-push"></div>
+		<footer id="footer">
+			<div class="layout">
+				<div class="footer-about fcell">
+					<h1>What is <b>DOC</b>IENT?</h1>
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">About DOCIENT project</a></li>
+						<li><a href="#">News / Press</a></li>
+						<li><a href="#">Vacancies</a></li>
+						<li><a href="#">Partners / Health Insurers</a></li>
+					</ul>
+				</div>
+				<div class="fcell footer-menu">
+					<ul class="footer-links">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Feedback form</a></li>
+						<li class="text-dark">+1 646-419-4452</li>
+						<li><a href="#">info@docent.com</a></li>
+					</ul>
+				</div>
+				<div class="fcell social-copyright">
+					<div class="social-links">
+						<a href="#" title=""><i class="fa fa-facebook"></i></a><a href="#" title=""><i class="fa fa-twitter"></i></a><a href="#" title=""><i class="fa fa-google-plus"></i></a><a href="#" title=""><i class="fa fa-youtube"></i></a>
+					</div>
+					<p class="text-dark">Copyright by DOCIENT</p>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+	
+	<script>
+		function openPPSearch(e){
+			var s = $(".procedure-package-search");
+			
+			if(s.hasClass("active")) s.slideUp(200, function(){s.removeClass("active");});
+			else s.slideUp(0).slideDown(200).addClass("active");
+			
+			e.preventDefault();
+		};
+	</script>
+</body>
+</html>

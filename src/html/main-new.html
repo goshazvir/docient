@@ -34,9 +34,12 @@
 
 </head>
 <body ontouchstart="">
+
 	<div id="wrapper">
 
 		include "header-main"
+
+		<div class="js-overlay"></div>
 
 		<div id="search-block" class="search-block" style="background:url(../img/content/front_3.jpg); background-size:cover; height:605px; background-repeat: no-repeat; background-position: left center;"><!-- IMAGE 2400x604 -->
 			<div class="layout">
@@ -64,21 +67,65 @@
 										<div class="search-advanced-in">
 											<span class="search-advanced-note">Piirkond:</span>
 
-											<div class="select js-select"><span class="select__value"><em class="js-select-text">Harjumaa</em><i></i></span>
+											<div class="select js-select"><span class="select__value"><em class="">Harjumaa</em><i></i></span>
 											  <input type="hidden" val="" value="Петров Александр Васильевич" class="js-select-input">
 											  <div class="select__scroll">
 										  		<div class="select__drop js-select-drop">
 										  		  <ul class="jcustom-scroll">
-										  		    <li data-id="1" class="is-selected">Harjumaa</li>
-										  		    <li data-id="2">Harjumaa 2</li>
-										  		    <li data-id="3">Harjumaa 3</li>
-										  		    <li data-id="4">Harjumaa 4</li>
-										  		    <li data-id="5">Harjumaa 4</li>
-										  		    <li data-id="6">Harjumaa 4</li>
-										  		    <li data-id="7">Harjumaa 4</li>
-										  		    <li data-id="8">Harjumaa 4</li>
-										  		    <li data-id="9">Harjumaa 4</li>
-										  		    <li data-id="10">Harjumaa 4</li>
+										  		    <li data-id="1" class="is-selected">
+    								  		    	<label class="checkbox3">
+    	    												<input type="checkbox" name="type" checked="">
+    	    												<span>Harjumaa 1</span>
+    	    											</label>
+										  		    </li>
+										  		    <li data-id="2">
+										  		    	<label class="checkbox3">
+  		    												<input type="checkbox" name="type" checked="">
+  		    												<span>Harjumaa 2</span>
+  		    											</label>
+										  		    </li>
+										  		    <li data-id="3">
+										  		    	<label class="checkbox3">
+  		    												<input type="checkbox" name="type" checked="">
+  		    												<span>Harjumaa 3</span>
+  		    											</label>
+										  		    </li>
+										  		    <li data-id="4">
+										  		    	<label class="checkbox3">
+			    												<input type="checkbox" name="type" checked="">
+			    												<span>Harjumaa 4</span>
+			    											</label>
+										  		    </li>
+										  		    <li data-id="5">
+    								  		    	<label class="checkbox3">
+    	    												<input type="checkbox" name="type" checked="">
+    	    												<span>Harjumaa 4</span>
+    	    											</label>
+										  		    </li>
+										  		    <li data-id="6">
+    								  		    	<label class="checkbox3">
+    	    												<input type="checkbox" name="type" checked="">
+    	    												<span>Harjumaa 4</span>
+    	    											</label>
+										  		    </li>
+										  		    <li data-id="7">
+    								  		    	<label class="checkbox3">
+    	    												<input type="checkbox" name="type" checked="">
+    	    												<span>Harjumaa 4</span>
+    	    											</label>
+										  		    </li>
+										  		    <li data-id="8">
+										  		    	<label class="checkbox3">
+			    												<input type="checkbox" name="type" checked="">
+			    												<span>Harjumaa 4</span>
+			    											</label>
+										  		    </li>
+										  		    <li data-id="9">
+    								  		    	<label class="checkbox3">
+    	    												<input type="checkbox" name="type" checked="">
+    	    												<span>Harjumaa 4</span>
+    	    											</label>
+										  		    </li>
 										  		  </ul>
 										  		</div>
 											  </div>
@@ -114,6 +161,7 @@
 							<button type="submit" class="def-button">Otsi</button>
 							<div class="search-form-label2-bottom">
 								<a href="#" class="search-form-open js-open-level2">Tapsem otsing</a>
+								<a href="#" class="search-form-open js-open-level1">Üldotsing</a>
 							</div>
 						</div>
 					</div>
