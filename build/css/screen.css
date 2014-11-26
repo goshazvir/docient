@@ -536,6 +536,7 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .proc-table.blocks-table td.more p { font-size: 14px; }
 
 .dotted-blocks { margin: 30px 0; border-top: 1px dotted black; border-bottom: 1px dotted black; background: #fcfcfc; }
+.dotted-blocks.m-mod { margin: 0 0 0px; border-bottom: none; }
 .dotted-blocks .block { padding: 20px 0; border-top: 1px dotted #bdbdbd; }
 .dotted-blocks .block:first-child { border-top: none; }
 
@@ -732,6 +733,7 @@ body { height: 100%; min-width: 1000px; }
 
 nav { width: 200px; float: left; }
 nav + #main-inner { margin-left: 200px; }
+nav + #main-inner.m-mod { padding-bottom: 0; }
 
 .frontpage nav + #main-inner { margin-left: 220px; }
 
@@ -839,6 +841,9 @@ nav + #main-inner { margin-left: 200px; }
 .bottom-block .proc-table .more { margin: 12px 0 0; }
 
 .procedure-package-wrap { padding: 0 15px 0 15px; }
+.procedure-package-wrap.m-mod { margin-top: 15px; padding: 15px 0px 0; border-top: 1px dotted black; }
+.procedure-package-wrap.m-mod .header { padding: 0 15px 15px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.procedure-package-wrap.m-mod .procedure-package-search.m-mod { padding: 10px 15px; }
 .procedure-package-wrap .header { display: table; width: 100%; padding: 0 0 15px 0; }
 .procedure-package-wrap .header p { margin: 5px 0; }
 .procedure-package-wrap .header .block { display: table-cell; padding: 0 15px 0 0; }
@@ -855,6 +860,7 @@ nav + #main-inner { margin-left: 200px; }
 .package-desc .content { padding: 15px 0 5px; border-top: 1px dotted #cacaca; }
 
 .procedure-package-search { border-top: 1px dotted #7a7a7a; border-bottom: 1px dotted #7a7a7a; padding: 10px 0; display: none; }
+.procedure-package-search.m-mod { border-bottom: none; }
 .procedure-package-search.active + .content { border-top: none; }
 .procedure-package-search p { margin: 10px 0; }
 .procedure-package-search p > span { vertical-align: middle; margin-top: 5px !important; margin-bottom: 5px !important; }
@@ -1270,6 +1276,8 @@ nav + #main-inner { margin-left: 200px; }
 .search-advanced .search-advanced-in.is-active .search-advanced-note { color: #4c4c4c; }
 .search-advanced .search-advanced-note { margin-right: 10px; display: inline-block; vertical-align: middle; font-size: 17px; position: relative; z-index: 999; }
 .search-advanced .search-advanced-select { display: inline-block; vertical-align: middle; font-size: 17px; }
+.search-advanced .select .checkbox3 span { color: #4c4c4c; border-bottom: none; }
+.search-advanced .checkbox3 input + span:before { top: 6px; }
 
 .search-field.m-mod { width: initial; margin: 0; }
 .search-field.m-mod .cfe-select.search.s-left { width: 194px; }
@@ -1291,8 +1299,8 @@ nav + #main-inner { margin-left: 200px; }
 .select ul { position: relative; height: 210px; overflow: auto; margin: 0; }
 .select li { margin: 0; padding: 3px 24px 5px; font-size: 15px; font-weight: normal; color: #4c4c4c; font-weight: 600; cursor: pointer; }
 @media only screen and (max-width: 999px) { .select li { text-align: left; } }
-.select li:hover { background: #ebeaea; color: #5cb7e0; margin-bottom: -1px; }
-.select li:hover:after { content: "\f105"; margin-left: 6px; font-family: "FontAwesome"; font-size: 15px; color: #5cb7e0; }
+.select li:hover { background: #ebeaea; color: #5cb7e0; }
+.select li:hover:after { content: "\f105"; display: inline-block; vertical-align: middle; margin-left: 6px; font-family: "FontAwesome"; font-size: 15px; color: #5cb7e0; }
 .select li.is-selected { display: none; }
 .select li span { padding: 0; }
 
@@ -1450,6 +1458,17 @@ nav + #main-inner { margin-left: 200px; }
 .sortable-popup .checkbox3 { margin-top: 5px; }
 .sortable-popup .checkbox3:first-child { margin-top: 0; }
 @media only screen and (max-width: 560px) { .sortable-popup .checkbox3 span { width: 133px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; } }
+
+.js-overlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0.2; z-index: -1; }
+.js-overlay.is-active { z-index: 1; }
+
+.button-payment { margin: 30px -70px 0; padding: 25px 0 90px; border-top: 1px dotted #bdbdbd; }
+
+.padding-b10 { padding-bottom: 10px; }
+
+.area-in { padding: 0 45px; }
+
+.block.m-mod { border-top: none; }
 
 .cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png { font-size: 2em; }
 
