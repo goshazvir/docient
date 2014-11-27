@@ -180,13 +180,13 @@ $(document).ready(function(){
   $('.confirm-account').hide();
 
   $('.js-send-phone').on('click', function() {
-   $('.confirm-phone').slideDown();
-   return false;
+    $('.confirm-account').slideDown();
+    return false;
   });
 
   $('.js-send-account').on('click', function() {
-   $('.confirm-account').slideDown();
-   return false;
+  $('.confirm-phone').slideDown();
+    return false;
   });
 
 
