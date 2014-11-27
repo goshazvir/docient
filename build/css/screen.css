@@ -1525,18 +1525,21 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .confirm-account .confirm-account-tel:hover { background: #6cc7f0; transition: background 150ms linear; }
 .confirm-account .confirm-account-tel:active { background: #4ca7d0; }
 
-.my-table table { width: 100%; }
+.my-table table { width: 100%; border-collapse: separate; }
 .my-table td { padding: 15px 20px; vertical-align: middle; cursor: pointer; background: white; }
 .my-table td.is-unnactive { background: #fbfbfb; color: #7e7e7e; }
-.my-table td.table-wrap { padding: 0; }
+.my-table td.table-wrap { padding: 0; border-top: 0; border-left: 1px dashed #7a7a7a; border-left-color: #7a7a7a !important; border-right: 1px dashed #7a7a7a; border-bottom: 1px dashed #7a7a7a; }
 .my-table thead td { font-size: 13px; color: #6f6f6f; }
 .my-table tbody tr.no-blur .fa-ellipsis-h { display: none; }
 .my-table tbody tr.no-blur .fa-times-circle { display: block; }
-.my-table tbody tr td:first-child { border-left: 0; }
+.my-table tbody tr.is-open td { border-top-color: #7a7a7a; border-top-style: dashed; }
+.my-table tbody tr.is-open td:first-child { border-left-color: #7a7a7a; border-left-style: dashed; }
+.my-table tbody tr.is-open td:last-child { border-right-color: #7a7a7a; border-right-style: dashed; border-right-width: 1px; }
+.my-table tbody tr td:first-child { border-left-color: transparent; }
 .my-table tbody td { border-top: 1px solid #efefef; border-left: 1px dashed #cacaca; }
 .my-table .my-table-title { font-size: 15px; color: #4c4c4c; }
 .my-table .my-table-note { color: #4c4c4c; }
-.my-table .my-table-link { display: block; margin-bottom: 5px; }
+.my-table .my-table-link { display: inline-block; margin-bottom: 5px; }
 .my-table .fa-check { margin-right: 3px; font-size: 15px; color: #6bbce2; }
 .my-table .fa-ellipsis-h { font-size: 18px; color: #5cb7e0; }
 .my-table .my-table-price { font-size: 17px; color: #343434; }
@@ -1550,7 +1553,8 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .my-table .note-active { background: #fbfbfb; }
 .my-table .open-note { background: #fff0cc; }
 
-.blur #header, .blur .nav-mod, .blur #footer, .blur .page-blured, .blur .my-table tr:not(.no-blur) td { -webkit-filter: blur(2px); -moz-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px); pointer-events: none; }
+.blur #header, .blur .nav-mod, .blur #footer, .blur .page-blured, .blur #main-sep i, .blur .my-table tr:not(.no-blur) td { -webkit-filter: blur(1px); -moz-filter: blur(1px); -ms-filter: blur(1px); filter: blur(1px); pointer-events: none; }
+.blur #main { border-top-color: transparent; -moz-box-shadow: 1px 0 5px #5dbbda; -webkit-box-shadow: 1px 0 5px #5dbbda; box-shadow: 1px 0 5px #5dbbda; }
 
 .cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png { font-size: 2em; }
 

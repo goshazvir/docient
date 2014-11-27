@@ -192,25 +192,22 @@ $(document).ready(function(){
 
   $('.js-table-hide').hide();
 
-  $('.js-table-open').on('click', function(e) {
-    if (!$(this).hasClass('is-open')) {
-      // e.stopPropagation();
-      $('body').addClass('blur');
-      $(this).addClass('no-blur is-open').next().show();
-    }
+  $('.js-table-open').on('click', function() {
+    $('body').addClass('blur');
+    $(this).addClass('no-blur is-open')
+      .next().show();
   });
 
-  // $('.js-table-close').on('click', function() {
-  //   $(this).parents('.js-table-open').next().find('td').css('display', 'none');
-  //   $('body').removeClass('blur');
-  //   $('body').addClass('1111111123123');
-  // });
+  $('.js-table-open a').on('click', function ( e ) {
+    e.stopPropagation();
+  });
 
-  $('.js-table-close').on('click', function(e) {
-    // e.preventDefault();
-    // $(this).parents('.js-table-open').next().find('td').css('display', 'none');
-    $(this).parents('.js-table-open').removeClass('is-open');
+  $('.js-table-close').on('click', function( e ) {
+    e.stopPropagation();
     $('body').removeClass('blur');
+    $(this).parents('.js-table-open')
+      .removeClass('no-blur is-open')
+        .next().hide();
   });
 
 });
