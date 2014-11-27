@@ -180,14 +180,34 @@ $(document).ready(function(){
   $('.confirm-account').hide();
 
   $('.js-send-phone').on('click', function() {
-   $('.confirm-phone').slideDown();
-   return false;
+    $('.confirm-account').slideDown();
+    return false;
   });
 
   $('.js-send-account').on('click', function() {
-   $('.confirm-account').slideDown();
-   return false;
+  $('.confirm-phone').slideDown();
+    return false;
   });
 
+
+  $('.js-table-hide').hide();
+
+  $('.js-table-open').on('click', function() {
+    $('body').addClass('blur');
+    $(this).addClass('no-blur is-open')
+      .next().show();
+  });
+
+  $('.js-table-open a').on('click', function ( e ) {
+    e.stopPropagation();
+  });
+
+  $('.js-table-close').on('click', function( e ) {
+    e.stopPropagation();
+    $('body').removeClass('blur');
+    $(this).parents('.js-table-open')
+      .removeClass('no-blur is-open')
+        .next().hide();
+  });
 
 });

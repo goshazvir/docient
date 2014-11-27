@@ -1229,7 +1229,22 @@ textarea.textbox
 	border-radius: 15px
 	transition: background 150ms linear
 	+font-smoothing
-
+	&.m-gray
+		background: #ececec
+		color: #2f2f2f
+		&:hover
+			background: #f3f3f3
+		&:active
+			background: #DDD
+	&.m-blue
+		background: #5cb7e0
+		color: #FFF 
+		&:hover
+			background: #6cc7f0
+			color: #FFF 
+		&:active
+			background: #4ca7d0
+			color: #FFF 
 // def-button
 
 .def-button
@@ -2656,6 +2671,9 @@ nav
 .proc-date-options-block
 	display: table-cell
 	vertical-align: top
+	&.m-mod
+		&:first-child
+			padding: 0 40px 0 0
 	&:first-child
 		padding: 0 50px 0 0
 
@@ -4823,6 +4841,248 @@ nav
 			transition: background 150ms linear
 		&:active
 			background: #4ca7d0
+
+.my-table
+	table
+		width: 100%
+		border-collapse: separate
+	td
+		padding: 15px 20px
+		vertical-align: middle
+		cursor: pointer
+		background: #fff 
+		&.is-unnactive
+			background: #fbfbfb
+			color: #7e7e7e
+		&.table-wrap
+			padding: 0
+			border-top: 0
+			border-left: 1px dashed #7a7a7a
+			border-left-color: #7a7a7a !important
+			border-right: 1px dashed #7a7a7a
+			border-bottom: 1px dashed #7a7a7a
+		&.booking-detail-special
+			padding: 15px 45px
+			background: #fff0cc
+			td
+				background: #fff0cc
+			.my-table
+				td
+					border-top: 1px dotted #bdbdbd
+	table.ui-datepicker-calendar
+		tbody
+			tr
+				td
+					-webkit-filter: blur(0px) !important
+					-moz-filter: blur(0px) !important
+					-ms-filter: blur(0px) !important
+					filter: blur(0px) !important
+					pointer-events: auto !important
+	table.proc-date-options-table
+		tbody
+			tr
+				td
+					padding: 8px 20px 8px 0
+					border: 0
+	thead
+		td
+			font-size: 13px
+			color: #6f6f6f 
+	tbody
+		tr
+			&.no-blur
+				.my-table-descr-open
+					display: none
+				.my-table-descr-hide
+					display: block
+				.fa-ellipsis-h
+					display: none
+				.fa-times-circle
+					display: block
+				.open-note
+					background: #fff 
+			&.is-open
+				td
+					border-top-color: #7a7a7a
+					border-top-style: dashed
+					&:first-child
+						border-left-color: #7a7a7a
+						border-left-style: dashed
+					&:last-child
+						border-right-color: #7a7a7a
+						border-right-style: dashed
+						border-right-width: 1px
+			td
+				&:first-child
+					border-left-color: transparent
+		td
+			border-top: 1px solid #efefef
+			border-left: 1px dashed #cacaca
+	.my-table-title
+		font-size: 15px
+		color: #4c4c4c 
+	.my-table-note
+		color: #4c4c4c 
+	.my-table-link
+		display: inline-block
+		margin-bottom: 5px
+	.fa-check
+		margin-right: 3px
+		font-size: 15px
+		color: #6bbce2 
+	.fa-ellipsis-h
+		font-size: 18px
+		color: #5cb7e0
+	.my-table-price
+		font-size: 17px
+		color: #343434
+	.my-table-dotted
+		text-align: center
+	.my-table-ico
+		margin-right: 10px
+		display: inline-block
+		vertical-align: middle
+		font-size: 21px
+		color: #3a719d 
+	.my-table-descr
+		display: inline-block
+		vertical-align: middle
+	.my-table-clock
+		margin-right: 5px
+		vertical-align: middle
+		font-size: 15px
+		color: #4c4c4c
+	.my-table-circle
+		margin-right: 5px
+		vertical-align: middle
+		font-size: 15px
+		color: #ffb400
+	.fa-times-circle
+		display: none
+		font-size: 18px
+		color: #919191 
+	.fa-warning
+		font-size: 15px
+		color: #ffb400 
+	.note-active
+		background: #fbfbfb
+	.open-note
+		background: #fff0cc
+	.my-table-btn-wrap
+		padding: 0 15px
+		+clr
+	.my-table-btn-left
+		float: left
+		.fa
+			margin-right: 10px
+			display: inline-block !important
+		.fa-check-circle
+			font-size: 15px
+			color: #2f2f2f 
+	.my-table-btn-right
+		float: right
+		.fa
+			margin-right: 5px
+			display: inline-block !important
+		.fa-times-circle
+			color: #727272
+			font-size: 15px 
+	.my-table-descr-hide
+		display: none
+	.my-table-descr-big-detail
+		font-size: 21px
+		font-weight: 300 
+		color: #252525 
+.some-pay-wrap
+	+clr
+	.some-pay-descr
+		float: left
+	.some-pay-btn
+		float: right
+	.some-pay-descr-meta
+		margin-bottom: 5px
+		font-size: 13px
+		color: #252525 
+	.some-pay-descr-time
+		.fa-clock-o
+			font-size: 17px
+			color: #b9b9b9
+			vertical-align: middle
+		.some-pay-descr-time-hour
+			font-size: 21px
+			color: #c20000
+			font-weight: 600  
+		.some-pay-descr-time-meta
+			font-size: 21px
+			color: #252525
+
+.booking-detail
+	.booking-detail-topper
+		margin-bottom: 15px
+	.booking-detail-title
+		font-size: 21px
+		color: #252525 
+	.booking-detail-meta
+		font-size: 13px
+		color: #252525 
+		a
+			font-size: 13px
+			color: #3a719d 
+	.booking-detail-content
+		table.dr-list-table
+			tr
+				td
+					-webkit-filter: blur(0px)
+					-moz-filter: blur(0px)
+					-ms-filter: blur(0px)
+					filter: blur(0px)
+					pointer-events: auto
+					border: 0
+					padding: 3px 15px 3px 0
+
+.dr-list-table-meta-date
+	font-size: 13px
+	color: #252525 
+.dr-list-table-date
+	font-size: 17px
+	color: #252525 
+.cancel
+	color: #c20000
+	&:hover
+		color: #a90505 
+.change
+	display: inline-block
+	line-height: 1
+	font-size: 13px 
+	color: #4383b8
+	border-bottom: 1px dotted #4383b8
+	&:hover
+		color: #135388
+		border-color: #135388  
+.booking-detail-time-meta
+	font-size: 13px
+	color: #252525 
+.booking-detail-time
+	font-size: 21px
+	font-weight: bold
+	color: #252525 
+.blur
+	#header,
+	.nav-mod,
+	#footer, 
+	.page-blured,
+	#main-sep i,
+	.my-table tr:not(.no-blur) td
+		-webkit-filter: blur(1px)
+		-moz-filter: blur(1px)
+		-ms-filter: blur(1px)
+		filter: blur(1px)
+		pointer-events: none
+	#main
+		border-top-color: transparent
+		+box-shadow(1px 0 5px #5dbbda)
+		
+
 
 		
 
