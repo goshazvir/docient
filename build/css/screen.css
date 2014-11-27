@@ -1537,8 +1537,11 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .my-table td.table-wrap { padding: 0; border-top: 0; border-left: 1px dashed #7a7a7a; border-left-color: #7a7a7a !important; border-right: 1px dashed #7a7a7a; border-bottom: 1px dashed #7a7a7a; }
 .my-table td.table-wrap .my-table td { border-top: 1px dotted #bdbdbd; }
 .my-table thead td { font-size: 13px; color: #6f6f6f; }
+.my-table tbody tr.no-blur .my-table-descr-open { display: none; }
+.my-table tbody tr.no-blur .my-table-descr-hide { display: block; }
 .my-table tbody tr.no-blur .fa-ellipsis-h { display: none; }
 .my-table tbody tr.no-blur .fa-times-circle { display: block; }
+.my-table tbody tr.no-blur .open-note { background: white; }
 .my-table tbody tr.is-open td { border-top-color: #7a7a7a; border-top-style: dashed; }
 .my-table tbody tr.is-open td:first-child { border-left-color: #7a7a7a; border-left-style: dashed; }
 .my-table tbody tr.is-open td:last-child { border-right-color: #7a7a7a; border-right-style: dashed; border-right-width: 1px; }
@@ -1563,6 +1566,8 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .my-table .my-table-btn-wrap:after { content: " "; display: table; clear: both; }
 .my-table .my-table-btn-left { float: left; }
 .my-table .my-table-btn-right { float: right; }
+.my-table .my-table-descr-hide { display: none; }
+.my-table .my-table-descr-big-detail { font-size: 21px; color: #252525; }
 
 .some-pay-wrap { *zoom: 1; }
 .some-pay-wrap:after { content: " "; display: table; clear: both; }
@@ -1578,6 +1583,10 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .booking-detail .booking-detail-meta { font-size: 13px; color: #252525; }
 .booking-detail .booking-detail-meta a { font-size: 13px; color: #3a719d; }
 .booking-detail .booking-detail-content table.dr-list-table tr td { -webkit-filter: blur(0px); -moz-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px); pointer-events: auto; border: 0; padding: 3px 15px 3px 0; }
+
+.dr-list-table-meta-date { font-size: 13px; color: #252525; }
+
+.dr-list-table-date { font-size: 17px; color: #252525; }
 
 .blur #header, .blur .nav-mod, .blur #footer, .blur .page-blured, .blur #main-sep i, .blur .my-table tr:not(.no-blur) td { -webkit-filter: blur(1px); -moz-filter: blur(1px); -ms-filter: blur(1px); filter: blur(1px); pointer-events: none; }
 .blur #main { border-top-color: transparent; -moz-box-shadow: 1px 0 5px #5dbbda; -webkit-box-shadow: 1px 0 5px #5dbbda; box-shadow: 1px 0 5px #5dbbda; }

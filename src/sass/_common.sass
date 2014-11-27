@@ -4868,10 +4868,16 @@ nav
 	tbody
 		tr
 			&.no-blur
+				.my-table-descr-open
+					display: none
+				.my-table-descr-hide
+					display: block
 				.fa-ellipsis-h
 					display: none
 				.fa-times-circle
 					display: block
+				.open-note
+					background: #fff 
 			&.is-open
 				td
 					border-top-color: #7a7a7a
@@ -4945,7 +4951,11 @@ nav
 		float: left
 	.my-table-btn-right
 		float: right
-
+	.my-table-descr-hide
+		display: none
+	.my-table-descr-big-detail
+		font-size: 21px
+		color: #252525 
 .some-pay-wrap
 	+clr
 	.some-pay-descr
@@ -4992,6 +5002,13 @@ nav
 					pointer-events: auto
 					border: 0
 					padding: 3px 15px 3px 0
+
+.dr-list-table-meta-date
+	font-size: 13px
+	color: #252525 
+.dr-list-table-date
+	font-size: 17px
+	color: #252525 
 
 .blur
 	#header,
