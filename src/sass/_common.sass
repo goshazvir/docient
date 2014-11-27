@@ -2671,6 +2671,9 @@ nav
 .proc-date-options-block
 	display: table-cell
 	vertical-align: top
+	&.m-mod
+		&:first-child
+			padding: 0 40px 0 0
 	&:first-child
 		padding: 0 50px 0 0
 
@@ -4858,9 +4861,29 @@ nav
 			border-left-color: #7a7a7a !important
 			border-right: 1px dashed #7a7a7a
 			border-bottom: 1px dashed #7a7a7a
+		&.booking-detail-special
+			padding: 15px 45px
+			background: #fff0cc
+			td
+				background: #fff0cc
 			.my-table
 				td
 					border-top: 1px dotted #bdbdbd
+	table.ui-datepicker-calendar
+		tbody
+			tr
+				td
+					-webkit-filter: blur(0px) !important
+					-moz-filter: blur(0px) !important
+					-ms-filter: blur(0px) !important
+					filter: blur(0px) !important
+					pointer-events: auto !important
+	table.proc-date-options-table
+		tbody
+			tr
+				td
+					padding: 8px 20px 8px 0
+					border: 0
 	thead
 		td
 			font-size: 13px
@@ -4946,15 +4969,29 @@ nav
 	.open-note
 		background: #fff0cc
 	.my-table-btn-wrap
+		padding: 0 15px
 		+clr
 	.my-table-btn-left
 		float: left
+		.fa
+			margin-right: 10px
+			display: inline-block !important
+		.fa-check-circle
+			font-size: 15px
+			color: #2f2f2f 
 	.my-table-btn-right
 		float: right
+		.fa
+			margin-right: 5px
+			display: inline-block !important
+		.fa-times-circle
+			color: #727272
+			font-size: 15px 
 	.my-table-descr-hide
 		display: none
 	.my-table-descr-big-detail
 		font-size: 21px
+		font-weight: 300 
 		color: #252525 
 .some-pay-wrap
 	+clr
@@ -5009,7 +5046,26 @@ nav
 .dr-list-table-date
 	font-size: 17px
 	color: #252525 
-
+.cancel
+	color: #c20000
+	&:hover
+		color: #a90505 
+.change
+	display: inline-block
+	line-height: 1
+	font-size: 13px 
+	color: #4383b8
+	border-bottom: 1px dotted #4383b8
+	&:hover
+		color: #135388
+		border-color: #135388  
+.booking-detail-time-meta
+	font-size: 13px
+	color: #252525 
+.booking-detail-time
+	font-size: 21px
+	font-weight: bold
+	color: #252525 
 .blur
 	#header,
 	.nav-mod,
