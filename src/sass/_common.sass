@@ -4831,15 +4831,23 @@ nav
 		padding: 15px 20px
 		vertical-align: middle
 		cursor: pointer
+		background: #fff 
 		&.is-unnactive
 			background: #fbfbfb
 			color: #7e7e7e
+		&.table-wrap
+			padding: 0
 	thead
 		td
 			font-size: 13px
 			color: #6f6f6f 
 	tbody
 		tr
+			&.no-blur
+				.fa-ellipsis-h
+					display: none
+				.fa-times-circle
+					display: block
 			td
 				&:first-child
 					border-left: 0
@@ -4886,6 +4894,7 @@ nav
 		font-size: 15px
 		color: #ffb400
 	.fa-times-circle
+		display: none
 		font-size: 18px
 		color: #919191 
 	.fa-warning
@@ -4894,7 +4903,29 @@ nav
 	.note-active
 		background: #fbfbfb
 	.open-note
-		background: #fff0cc 
+		background: #fff0cc
+
+// #header,
+// .nav-mod,
+// #footer, 
+// .page-blured,
+// .my-table tr:not(.no-blur) td
+// 		transition: -webkit-filter .3s linear
+// 		transform: translate3d(0,0,0) 
+
+
+.blur
+	#header,
+	.nav-mod,
+	#footer, 
+	.page-blured,
+	.my-table tr:not(.no-blur) td
+		-webkit-filter: blur(2px)
+		-moz-filter: blur(2px)
+		-ms-filter: blur(2px)
+		filter: blur(2px)
+		pointer-events: none
+		
 
 
 		
