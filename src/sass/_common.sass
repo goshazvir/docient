@@ -1229,7 +1229,22 @@ textarea.textbox
 	border-radius: 15px
 	transition: background 150ms linear
 	+font-smoothing
-
+	&.m-gray
+		background: #ececec
+		color: #2f2f2f
+		&:hover
+			background: #f3f3f3
+		&:active
+			background: #DDD
+	&.m-blue
+		background: #5cb7e0
+		color: #FFF 
+		&:hover
+			background: #6cc7f0
+			color: #FFF 
+		&:active
+			background: #4ca7d0
+			color: #FFF 
 // def-button
 
 .def-button
@@ -4843,12 +4858,9 @@ nav
 			border-left-color: #7a7a7a !important
 			border-right: 1px dashed #7a7a7a
 			border-bottom: 1px dashed #7a7a7a
-			// .my-table
-			// 	tr
-			// 		td
-			// 			&:first-child
-			// 			&:last-child
-
+			.my-table
+				td
+					border-top: 1px dotted #bdbdbd
 	thead
 		td
 			font-size: 13px
@@ -4927,15 +4939,59 @@ nav
 		background: #fbfbfb
 	.open-note
 		background: #fff0cc
+	.my-table-btn-wrap
+		+clr
+	.my-table-btn-left
+		float: left
+	.my-table-btn-right
+		float: right
 
-// #header,
-// .nav-mod,
-// #footer, 
-// .page-blured,
-// .my-table tr:not(.no-blur) td
-// 		transition: -webkit-filter .3s linear
-// 		transform: translate3d(0,0,0) 
+.some-pay-wrap
+	+clr
+	.some-pay-descr
+		float: left
+	.some-pay-btn
+		float: right
+	.some-pay-descr-meta
+		margin-bottom: 5px
+		font-size: 13px
+		color: #252525 
+	.some-pay-descr-time
+		.fa-clock-o
+			font-size: 17px
+			color: #b9b9b9
+			vertical-align: middle
+		.some-pay-descr-time-hour
+			font-size: 21px
+			color: #c20000
+			font-weight: 600  
+		.some-pay-descr-time-meta
+			font-size: 21px
+			color: #252525
 
+.booking-detail
+	.booking-detail-topper
+		margin-bottom: 15px
+	.booking-detail-title
+		font-size: 21px
+		color: #252525 
+	.booking-detail-meta
+		font-size: 13px
+		color: #252525 
+		a
+			font-size: 13px
+			color: #3a719d 
+	.booking-detail-content
+		table.dr-list-table
+			tr
+				td
+					-webkit-filter: blur(0px)
+					-moz-filter: blur(0px)
+					-ms-filter: blur(0px)
+					filter: blur(0px)
+					pointer-events: auto
+					border: 0
+					padding: 3px 15px 3px 0
 
 .blur
 	#header,
