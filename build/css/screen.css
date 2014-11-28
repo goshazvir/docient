@@ -1539,7 +1539,7 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .my-table td.booking-detail-special { padding: 15px 45px; background: #fff0cc; }
 .my-table td.booking-detail-special td { background: #fff0cc; }
 .my-table td.booking-detail-special .my-table td { border-top: 1px dotted #bdbdbd; }
-.my-table table.ui-datepicker-calendar tbody tr td { -webkit-filter: blur(0px) !important; -moz-filter: blur(0px) !important; -ms-filter: blur(0px) !important; filter: blur(0px) !important; pointer-events: auto !important; }
+.my-table table.ui-datepicker-calendar tbody tr td { -webkit-filter: blur(0px) !important; -moz-filter: blur(0px) !important; -ms-filter: blur(0px) !important; filter: blur(0px) !important; pointer-events: auto !important; border: 0; }
 .my-table table.proc-date-options-table tbody tr td { padding: 8px 20px 8px 0; border: 0; }
 .my-table thead td { font-size: 13px; color: #6f6f6f; }
 .my-table tbody tr.no-blur .my-table-descr-open { display: none; }
