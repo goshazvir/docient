@@ -1532,6 +1532,8 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .confirm-account .confirm-account-tel:hover { background: #6cc7f0; transition: background 150ms linear; }
 .confirm-account .confirm-account-tel:active { background: #4ca7d0; }
 
+.my-table-wrapper { width: 100%; overflow-x: auto; }
+
 .my-table table { width: 100%; border-collapse: separate; }
 .my-table td { padding: 15px 20px; vertical-align: middle; cursor: pointer; background: white; }
 .my-table td.is-unnactive { background: #fbfbfb; color: #7e7e7e; }
