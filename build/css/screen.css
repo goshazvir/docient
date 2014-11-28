@@ -1562,7 +1562,7 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .my-table .my-table-price { min-width: 70px; font-size: 17px; color: #343434; }
 .my-table .my-table-dotted { text-align: center; }
 .my-table .my-table-ico { margin-right: 10px; display: inline-block; vertical-align: middle; font-size: 21px; color: #3a719d; }
-.my-table .my-table-descr { display: inline-block; vertical-align: middle; }
+.my-table .my-table-descr { width: 80%; display: inline-block; vertical-align: middle; }
 .my-table .my-table-clock { margin-right: 5px; vertical-align: middle; font-size: 15px; color: #4c4c4c; }
 .my-table .my-table-circle { margin-right: 5px; vertical-align: middle; font-size: 15px; color: #ffb400; }
 .my-table .fa-times-circle { display: none; font-size: 18px; color: #919191; }
