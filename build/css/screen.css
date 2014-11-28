@@ -1618,7 +1618,8 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .select-mod.is-open .select-drop { display: block; }
 .select-mod .select-value { display: inline-block; vertical-align: middle; cursor: pointer; }
 .select-mod em { display: block; padding: 0 40px 0 25px; font-style: normal; vertical-align: middle; line-height: 1; }
-.select-mod .select-drop { display: none; background: #f6f8f9; opacity: 0.9; position: relative; z-index: 1999; }
+.select-mod .select-drop { display: none; background: #f6f8f9; -moz-border-radius: 0 0 15px 15px; -webkit-border-radius: 0; border-radius: 0 0 15px 15px; opacity: 0.9; position: relative; z-index: 1999; }
+.select-mod .select-drop ul { padding: 20px 0; }
 .select-mod .select-drop li { margin: 0; padding: 5px 40px 5px 25px; line-height: 1.4; cursor: pointer; }
 .select-mod .select-drop li:hover { background: #ebeaea; }
 
