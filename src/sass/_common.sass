@@ -5145,12 +5145,11 @@ nav
 		vertical-align: middle
 		line-height: 1
 	i
-		width: 13px
-		height: 8px
+		width: 10px
+		height: 6px
 		background: url("../img/icons/arr-sel2.png")
 		position: absolute
 		top: 50%
-		margin-top: -1px
 		right: 23px
 	// input
 	.select-drop
@@ -5158,8 +5157,13 @@ nav
 		background: #f6f8f9
 		+border-radius(0 0 15px 15px)
 		opacity: 0.9
-		position: relative
+		// position: relative
+		position: absolute
+		right: 1px
+		left: 0px
 		z-index: 1999
+		+r(w999)
+			right: 0px
 		ul
 			padding: 20px 0
 		li
