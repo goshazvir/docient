@@ -4048,14 +4048,24 @@ nav
 			border-right: 0
 			+border-radius(15px 0 0 15px)
 			background: rgba(255, 255, 255, 0.8)
-			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), inset 0 -1px 0 white
+			box-shadow: inset 0 1px 0px rgba(0, 0, 0, 0.75), inset 0 -1px 0 white
+			// border-left: 1px solid transparent
 			&.is-open
 				+border-radius(15px 0 0 0)
+				background: #fff
+				// border-left-color: #e4e4e4
+				.select-drop
+					background: #FFF
+					border: 1px solid #e4e4e4
+					+opacity(1)
 		.textbox
 			width: 585px
 			+border-radius(0 15px 15px 0)
 			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), inset 0 -1px 0 white
 			background: rgba(255, 255, 255, 0.8)
+			&:focus
+				background: #FFF
+				color: #252525
 			+r(w999)
 				width: 100% !important
 				+box
@@ -4079,7 +4089,6 @@ nav
 		padding: 0
 		background: transparent
 		border-bottom: 1px dashed #fff 
-		// overflow: hidden
 		text-overflow: ellipsis
 		white-space: nowrap
 		color: #FFF
@@ -4093,16 +4102,14 @@ nav
 		position: absolute
 		top: 12px
 		right: -20px
-		// +s(lalka)
 		+arr(10,6,#fff,bottom)
 	&.is-open
 		.select__drop
 			display: block
-		i
-			// +transform(rotate(180deg))
 		.select__scroll
-			background: #f6f8f9
-			opacity: 0.9 
+			background: #FFFFFF
+			opacity: 1
+			border: 1px solid #e4e4e4
 	.select__scroll
 		padding: 27px 11px 27px 0px
 		position: absolute
