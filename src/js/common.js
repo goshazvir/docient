@@ -84,12 +84,8 @@ $(document).ready(function(){
     var list = el.find('.js-select-drop');
     el_title.click(function(event){
       if ($(this).parent().hasClass('is-open')) {
-        // $(this).parent().removeClass('is-open');
-        // $('.select__scroll .jcustom-scroll').mCustomScrollbar("destroy");
-        // $(this).parent().parent().removeClass('is-active');
       }
       else {
-        // el.removeClass('is-open');
         $(this).parent().addClass('is-open');
         $('.select__scroll .jcustom-scroll').mCustomScrollbar();
         event.stopPropagation();
@@ -102,21 +98,45 @@ $(document).ready(function(){
       event.stopPropagation();
     });
     item.bind("click",function(){
-      // $(this).addClass('is-selected').siblings().removeClass('is-selected');
-      // var text = $(this).text();
-      // var id = $(this).attr("data-id");
-      // $('.select__scroll .jcustom-scroll').mCustomScrollbar("destroy");
-      // $(this).parents(".js-select").find(".js-select-text").text(text);
-      // $(this).parents(".js-select").find(".js-select-input").val(id);
    });
   };
   select();
 
-  // $(document).click(function() {
-  //   $('.js-select').removeClass('is-open');
-  //   $('.search-advanced-in').removeClass('is-active');
-  //   $('.select__scroll .jcustom-scroll').mCustomScrollbar("destroy");
-  // });
+  function selectMod() {
+    var el = $('.js-select2');
+    var el_title = el.children("span");
+    var item = el.find('li');
+    var input = el.find(".js-select-input");
+    var el_text = el.find(".js-select-text");
+    var checkbox = el.find(".checkbox");
+    var list = el.find('.js-select-drop');
+    el_title.click(function(event){
+      if ($(this).parent().hasClass('is-open')) {
+        $(this).parent().removeClass('is-open');
+      }
+      else {
+        el.removeClass('is-open');
+        $(this).parent().addClass('is-open');
+      };
+      event.stopPropagation();
+    });
+    checkbox.click(function(event){
+      event.stopPropagation();
+    });
+    item.bind("click",function(){
+      $(this).addClass('is-selected').siblings().removeClass('is-selected');
+      var text = $(this).text();
+      var id = $(this).attr("data-id");
+      $(this).parents(".js-select2").find(".js-select-text").text(text);
+      $(this).parents(".js-select2").find(".js-select-input").val(id);
+   });
+  };
+  selectMod();
+  
+  $(document).click(function() {
+    $('.js-select2').removeClass('is-open');
+  });
+
   $('.js-overlay').on('click', function() {
       $('.js-overlay').removeClass('is-active');
       $('.js-select').removeClass('is-open');
