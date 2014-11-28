@@ -7,6 +7,14 @@ $(document).ready(function(){
       minDate: 0
     });
   });
+  
+  $(function() {
+    $( ".my-datepicker" ).datepicker({
+      showOtherMonths: true,
+      firstDay: 1,  
+      minDate: 0
+    });
+  });
 
   if ($('.js-rating').length > 0) {
     $('.js-rating').each(function(){
