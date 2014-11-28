@@ -1286,11 +1286,13 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .search-advanced .select .checkbox3 span { color: #4c4c4c; border-bottom: none; }
 .search-advanced .checkbox3 input + span:before { top: 6px; }
 
-.search-field.m-mod { width: initial; margin: 0; }
+.search-field.m-mod { width: initial; margin: 0; background: transparent; box-shadow: none; }
 .search-field.m-mod .cfe-select.search.s-left { width: 194px; }
 @media only screen and (max-width: 999px) { .search-field.m-mod .cfe-select.search.s-left { width: 100%; } }
 .search-field.m-mod .cfe-select.search.s-left .cfe-select-title-outer { border-left: none !important; border-right: 1px solid #cac9c9; }
-.search-field.m-mod .textbox { width: 585px; border-right: none; }
+.search-field.m-mod .select-mod { border-right: 0; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px; border-radius: 15px 0 0 15px; background: rgba(255, 255, 255, 0.8); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), inset 0 -1px 0 white; }
+.search-field.m-mod .select-mod.is-open { -moz-border-radius: 15px 0 0 0; -webkit-border-radius: 15px; border-radius: 15px 0 0 0; }
+.search-field.m-mod .textbox { width: 585px; -moz-border-radius: 0 15px 15px 0; -webkit-border-radius: 0; border-radius: 0 15px 15px 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), inset 0 -1px 0 white; background: rgba(255, 255, 255, 0.8); }
 @media only screen and (max-width: 999px) { .search-field.m-mod .textbox { width: 100% !important; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
 
 .select { display: inline-block; vertical-align: middle; font-size: 17px; color: white; font-weight: bold; cursor: pointer; position: relative; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -1609,8 +1611,16 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 
 .booking-detail-time { font-size: 21px; font-weight: bold; color: #252525; }
 
-.blur #header, .blur .nav-mod, .blur #footer, .blur .page-blured, .blur #main-sep i, .blur .my-table tr:not(.no-blur) td { -webkit-filter: blur(1px); -moz-filter: blur(1px); -ms-filter: blur(1px); filter: blur(1px); pointer-events: none; }
+.blur #header, .blur .nav-mod, .blur #footer, .blur .page-blured, .blur #main-sep i, .blur .my-table tr:not(.no-blur) td { -webkit-filter: blur(2px); -moz-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px); pointer-events: none; }
 .blur #main { border-top-color: transparent; -moz-box-shadow: 1px 0 5px #5dbbda; -webkit-box-shadow: 1px 0 5px #5dbbda; box-shadow: 1px 0 5px #5dbbda; }
+
+.select-mod { line-height: 57px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; overflow: visible; position: relative; z-index: 9999; border-right: 1px solid #cac9c9; font-size: 15px; color: #252525; }
+.select-mod.is-open .select-drop { display: block; }
+.select-mod .select-value { display: inline-block; vertical-align: middle; cursor: pointer; }
+.select-mod em { display: block; padding: 0 40px 0 25px; font-style: normal; vertical-align: middle; line-height: 1; }
+.select-mod .select-drop { display: none; background: #f6f8f9; opacity: 0.9; position: relative; z-index: 1999; }
+.select-mod .select-drop li { margin: 0; padding: 5px 40px 5px 25px; line-height: 1.4; cursor: pointer; }
+.select-mod .select-drop li:hover { background: #ebeaea; }
 
 .cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png { font-size: 2em; }
 

@@ -53,14 +53,20 @@
 				<div class="search-form-in layout">
 					<div class="search-form-row">
 						<div class="search-form-label1">
-							<p class="search-field m-mod">
-								<select class="custom search s-left" data-title="%var%">
-									<option value="0">in all categories</option>
-									<option value="1">some category</option>
-									<option value="ssdf">some really long long caregory</option>
-									<option value="XXX">Zzz</option>
-								</select><input type="text" class="textbox" placeholder="Otsi meditsiiniteenuseid, arste, kliiikuid, näidustust või diagnoosi"/>
-							</p>
+							<div class="search-field m-mod">
+								<div class="select-mod js-select2 cfe-select search s-left">
+									<span class="select-value"><em class="js-select-text">in all categories</em><i></i></span>
+									<input type="hidden" val="" class="js-select-input" value="in all categories">
+									<div class="select-drop js-select-drop">
+										<ul>
+											<li data-id="1" class="is-selected">in all categories</li>
+											<li data-id="2">some long long realy catelory</li>
+											<li data-id="3">in all categories 3</li>
+											<li data-id="4">in all categories 4</li>
+									  </ul>
+									</div>
+								</div><input type="text" class="textbox" placeholder="Otsi meditsiiniteenuseid, arste, kliiikuid, näidustust või diagnoosi"/>
+							</div>
 							<div class="search-form-label1-bottom">
 								<div class="search-advanced">
 									<div class="search-advanced-label1">
