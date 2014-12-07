@@ -1,5 +1,51 @@
 $(document).ready(function(){
 
+
+  $(".js-table-item1").click(function (){
+    var page = $(this).attr("href");
+    $('html, body').animate({
+     scrollTop: $(page).offset().top
+    }, 500);
+    return false;
+   });
+  $(".js-table-item2").click(function (){
+    var page = $(this).attr("href");
+    $('html, body').animate({
+     scrollTop: $(page).offset().top
+    }, 500);
+    return false;
+   });
+  $(".js-table-item3").click(function (){
+    var page = $(this).attr("href");
+    $('html, body').animate({
+     scrollTop: $(page).offset().top
+    }, 500);
+    return false;
+   });
+  $(".js-table-item4").click(function (){
+    var page = $(this).attr("href");
+    $('html, body').animate({
+     scrollTop: $(page).offset().top
+    }, 500);
+    return false;
+   });
+  $(".js-table-item5").click(function (){
+    var page = $(this).attr("href");
+    $('html, body').animate({
+     scrollTop: $(page).offset().top
+    }, 500);
+    return false;
+   });
+  $(".js-table-item6").click(function (){
+    var page = $(this).attr("href");
+    $('html, body').animate({
+     scrollTop: $(page).offset().top
+    }, 500);
+    return false;
+   });
+
+
+
   $(function() {
     $( "#datepicker" ).datepicker({
       showOtherMonths: true,
@@ -28,7 +74,19 @@ $(document).ready(function(){
         }
       });
     });
-      
+  }
+  if ($('.js-rating2').length > 0) {
+    $('.js-rating2').each(function(){
+      $(this).raty({
+        width: 185,
+        hints: ['Отвратительно', 'Плохо', 'Неплохо', 'Очень хорошо', 'Отлично'],
+        starOff: '../img/icons/star-off2.png',
+        starOn : '../img/icons/star-on2.png',
+        score: function() {
+          return $(this).attr('data-score');
+        }
+      });
+    });
   }
 
   $(".js-clone-btn").click(function() {
@@ -222,8 +280,23 @@ $(document).ready(function(){
 
   $('.js-table-open').on('click', function() {
     $('body').addClass('blur');
-    $(this).addClass('no-blur is-open')
-      .next().show();
+
+
+    // $(this).addClass('no-blur is-open')
+    //   .next().show();
+
+
+    if ($('.js-table-open').hasClass('no-blur is-open')) {
+      $('.js-table-open').removeClass('no-blur is-open');
+      $('.js-table-hide').hide();
+
+      $(this).addClass('no-blur is-open').next().show();
+    }
+
+    else {
+      $(this).addClass('no-blur is-open');
+      $(this).addClass('no-blur is-open').next().show();
+    }
   });
 
   $('.js-table-open a').on('click', function ( e ) {
@@ -233,6 +306,8 @@ $(document).ready(function(){
   $('.js-table-close').on('click', function( e ) {
     e.stopPropagation();
     $('body').removeClass('blur');
+
+
     $(this).parents('.js-table-open')
       .removeClass('no-blur is-open')
         .next().hide();

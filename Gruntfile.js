@@ -13,6 +13,7 @@
 						'src/js/libs/jquery.ui.touch-punch.min.js',
 						'src/js/libs/jquery.mousewheel.min.js',
 						'src/js/libs/jquery.mCustomScrollbar.min.js',
+						'src/js/libs/jquery.scrollTo.js',
 						'src/js/libs/jquery.raty.js',
 						'src/js/libs/jquery.tooltipster.min.js',
 						'src/js/cf_elements.js',
