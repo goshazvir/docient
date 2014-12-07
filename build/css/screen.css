@@ -1286,7 +1286,7 @@ nav + #main-inner.m-mod { padding-bottom: 0; }
 .search-advanced .select .checkbox3 span { color: #4c4c4c; border-bottom: none; }
 .search-advanced .checkbox3 input + span:before { top: 6px; }
 
-.search-field.m-mod { width: initial; margin: 0; background: transparent; box-shadow: none; }
+.search-field.m-mod { width: inherit; margin: 0; background: transparent; box-shadow: none; }
 .search-field.m-mod .cfe-select.search.s-left { width: 194px; }
 @media only screen and (max-width: 999px) { .search-field.m-mod .cfe-select.search.s-left { width: 100%; } }
 .search-field.m-mod .cfe-select.search.s-left .cfe-select-title-outer { border-left: none !important; border-right: 1px solid #cac9c9; }
