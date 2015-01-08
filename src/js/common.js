@@ -8,7 +8,7 @@ $(document).ready(function(){
     }, 500);
     return false;
    });
-  $(".js-table-item2").click(function (){
+  $(".js-table-item2").click(function (){ 
     var page = $(this).attr("href");
     $('html, body').animate({
      scrollTop: $(page).offset().top
@@ -281,21 +281,19 @@ $(document).ready(function(){
   $('.js-table-open').on('click', function() {
     $('body').addClass('blur');
 
-
-    // $(this).addClass('no-blur is-open')
-    //   .next().show();
-
-
     if ($('.js-table-open').hasClass('no-blur is-open')) {
       $('.js-table-open').removeClass('no-blur is-open');
       $('.js-table-hide').hide();
-
       $(this).addClass('no-blur is-open').next().show();
-    }
 
+      $('.my-table tr tr').removeClass('no-blur');
+    }
+ 
     else {
       $(this).addClass('no-blur is-open');
       $(this).addClass('no-blur is-open').next().show();
+
+      $('.my-table tr tr').addClass('no-blur');
     }
   });
 
@@ -306,6 +304,7 @@ $(document).ready(function(){
   $('.js-table-close').on('click', function( e ) {
     e.stopPropagation();
     $('body').removeClass('blur');
+    $('.my-table tr tr').removeClass('no-blur'); 
 
 
     $(this).parents('.js-table-open')
